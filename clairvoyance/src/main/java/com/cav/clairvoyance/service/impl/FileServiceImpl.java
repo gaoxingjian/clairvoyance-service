@@ -1,6 +1,5 @@
 package com.cav.clairvoyance.service.impl;
 
-import com.alibaba.fastjson.JSONObject;
 import com.cav.clairvoyance.domain.Result;
 import com.cav.clairvoyance.service.FileService;
 import org.springframework.stereotype.Service;
