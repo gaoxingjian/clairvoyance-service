@@ -2,6 +2,7 @@ package com.cav.clairvoyance.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.cav.clairvoyance.domain.Result;
 import com.cav.clairvoyance.service.FileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,6 +19,7 @@ import java.util.Scanner;
 public class CvController {
     @Autowired
     FileService fileService;
+
     @RequestMapping(value = "/analyse", method = RequestMethod.POST)
     public void analyse(@RequestBody String data, HttpServletResponse response) throws IOException {
         // 查看用户输入的代码
@@ -66,8 +68,8 @@ public class CvController {
      * 文件上传
      */
 
-    @PostMapping(value = "/upload")
-    public JSONObject upload(@RequestParam("file") MultipartFile file) throws Exception {
+    @PostMapping(value = "/upload") //
+    public Result upload(MultipartFile file) throws Exception {
         return fileService.upload(file);
     }
 
