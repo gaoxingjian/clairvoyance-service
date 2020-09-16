@@ -1,0 +1,11 @@
+spring:
+    mvc:
+        static-path-pattern: /static/**
+
+    thymeleaf:
+        prefix:
+        classpath: /templates/**
+        cache: false
+    resources:
+        static-locations: classpath:/static/, classpath:/static/images/
+    cache: false
