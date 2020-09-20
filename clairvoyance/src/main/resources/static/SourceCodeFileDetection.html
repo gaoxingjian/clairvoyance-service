@@ -96,12 +96,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!--            </div>-->
             <div class="row bg-title">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <button type="button" class="btn btn-primary" onclick="analyse()">go</button>
+                    <button type="button" class="btn btn-primary" onclick="bachAnalyse()">开始检测该文件</button>
                 </div>
                 <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                     <!--                    <a href="#" class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Upgrade to Pro</a>-->
                     <ol class="breadcrumb">
-                        <li><a href="#"><b>下载检测报告</b></a></li>
+                        <li><button type="button" class="btn btn-primary" onclick="loadDown()">下载检测报告</button></li>
                         <!--                        <li class="active">按钮</li>-->
                     </ol>
                 </div>
@@ -141,16 +141,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
     //     editor.setValue(value);
     // }
 
-    function analyse() {
+    function bachAnalyse() {
         var httpRequest = new XMLHttpRequest();//第一步：创建需要的对象
-        httpRequest.open('POST', '/analyse', true); //第二步：打开连接
+        httpRequest.open('POST', '/bachAnalyse', true); //第二步：打开连接
         httpRequest.setRequestHeader("Content-type", "application/json");//设置请求头 注：post方式必须设置请求头（在建立连接后设置请求头
-        httpRequest.send(getEditorValue());//发送请求 将情头体写在send中
+        httpRequest.send();//发送请求 将情头体写在send中
         httpRequest.onreadystatechange = function(){
             //若响应完成且请求成功
             if(httpRequest.status === 200){
-                var json = JSON.parse(httpRequest.responseText);
-
+                // var json = JSON.parse(httpRequest.response);
                 // document.getElementById("result").innerHTML = json.results;
             }
         }
