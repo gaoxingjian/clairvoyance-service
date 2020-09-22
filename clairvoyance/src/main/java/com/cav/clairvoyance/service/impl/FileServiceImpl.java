@@ -18,12 +18,14 @@ import java.util.zip.ZipFile;
 @Service
 public class FileServiceImpl implements FileService {
 
-    String winPath = "";
+    String winPath = "E:\\workspace\\clairvoyance-service\\clairvoyance\\files\\";
+    String linuxPath = "/home/mingliang/files";
     @Override
     public Result upload(MultipartFile file) throws Exception {
         if (file == null || file.isEmpty()) {
             throw new Exception("未选择需上传的待测文件");
         }
+        //String filePath = new File("files").getAbsolutePath();
         String filePath = new File("files").getAbsolutePath();
         System.out.println(filePath);
         File fileUpload = new File(filePath);
@@ -52,11 +54,11 @@ public class FileServiceImpl implements FileService {
                     ZipEntry entry = (ZipEntry) entries.nextElement();
                     // 如果是文件夹，就创建个文件夹
                     if (entry.isDirectory()) {  //如果压缩文件中的实例是个目录
-                        String dirPath = "E:\\workspace\\clairvoyance-service\\clairvoyance\\files\\" + entry.getName();
+                        String dirPath = filePath +"/"+ entry.getName();
                         fileUpload.mkdirs();
                     } else {
                         // 如果是文件，就先创建一个文件，然后用io流把内容copy过去
-                        File targetFile = new File("E:\\workspace\\clairvoyance-service\\clairvoyance\\files\\" + entry.getName());
+                        File targetFile = new File(filePath +"/"+ entry.getName());
                         // 保证这个文件的父文件夹必须要存在
                         if (!targetFile.getParentFile().exists()) {
                             targetFile.getParentFile().mkdirs();

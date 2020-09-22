@@ -139,7 +139,8 @@ public class CvController {
     }
     @GetMapping(value = "/download")
     private void download(HttpServletResponse response) throws IOException{
-        File file = new File("E:\\workspace\\clairvoyance-service\\clairvoyance\\reports\\detectionReport.txt");
+        String reportsPath = new File("reports").getAbsolutePath();
+        File file = new File(reportsPath+"/"+"detectionReport.txt");
         System.out.println(file.getName());
         InputStream ins = new FileInputStream(file);
         /* 设置文件ContentType类型，这样设置，会自动判断下载文件类型 */
