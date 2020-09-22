@@ -42,6 +42,34 @@ scratch. This page gets rid of all links and provides the needed markup only.
 </head>
 
 <body>
+
+
+
+<script>
+    function bachAnalyse() {
+        var httpRequest = new XMLHttpRequest();//第一步：创建需要的对象
+        httpRequest.open('GET', '/bachAnalyse', true); //第二步：打开连接
+        //httpRequest.setRequestHeader("Content-type", "application/json");//设置请求头 注：post方式必须设置请求头（在建立连接后设置请求头
+        httpRequest.send();//发送请求 将情头体写在send中
+        httpRequest.onreadystatechange = function(){
+            //若响应完成且请求成功
+            if(httpRequest.readyState == 4 && httpRequest.status == 200){
+                var jsonStr = httpRequest.responseText;
+                var result = JSON.parse(jsonStr);
+                if (result["code"] == 400) {
+                    alert("请上先传待测文件");
+                }else {
+                    alert("检测完毕，请点击'下载检测报告按钮'");
+                    document.getElementById("download").setAttribute("style", "visibility: visible");
+                }
+            }
+        }
+    }
+
+</script>
+
+
+
 <!-- Preloader -->
 <div class="preloader">
     <div class="cssload-speeding-wheel"></div>
@@ -69,7 +97,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <a href="https://toolman-demo.readthedocs.io/en/latest/index.html." class="waves-effect"><i class="fa fa-globe fa-fw" aria-hidden="true"></i><span class="hide-menu">Tool Website</span></a>
                 </li>
                 <li>
-                    <a href="blank.html" class="waves-effect"><i class="fa fa-columns fa-fw" aria-hidden="true"></i><span class="hide-menu">bach test</span></a>
+                    <a href="blank.html" class="waves-effect"><i class="fa fa-columns fa-fw" aria-hidden="true"></i><span class="hide-menu">code test</span></a>
+                </li>
+                <li>
+                    <a href="SourceCodeFileDetection.html" class="waves-effect"><i class="fa fa-columns fa-fw" aria-hidden="true"></i><span class="hide-menu">bach test</span></a>
                 </li>
             </ul>
         </div>
@@ -78,83 +109,30 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Page Content -->
     <div id="page-wrapper">
         <div class="container-fluid">
-            <div>
+            <div style="margin-bottom:10px">
                 <form action="/upload" method="post" enctype="multipart/form-data">
                     <input type="file" name="file" value="选择文件"/>
                     <input type="submit" value="上传文件" />
                 </form>
             </div>
-<!--            <div class="row" >-->
-<!--                <h5><b>代码编辑区域</b></h5>-->
-<!--                <textarea  id="codeArea" name="codeArea" rows="0" style="height:100px"></textarea>-->
-<!--                &lt;!&ndash;<div class="col-md-12">&ndash;&gt;-->
-<!--                &lt;!&ndash;                        <div class="white-box">&ndash;&gt;-->
-<!--                &lt;!&ndash;                            <h3 class="box-title">代码编辑区</h3>&ndash;&gt;-->
-<!--                &lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--                &lt;!&ndash;                    </div>&ndash;&gt;-->
-
-<!--            </div>-->
-            <div class="row bg-title">
+            <div class="row bg-title" style="margin-top:10px">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
                     <button type="button" class="btn btn-primary" onclick="bachAnalyse()">开始检测该文件</button>
                 </div>
                 <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-                    <!--                    <a href="#" class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Upgrade to Pro</a>-->
+
                     <ol class="breadcrumb">
-                        <li><button type="button" class="btn btn-primary" onclick="loadDown()">下载检测报告</button></li>
-                        <!--                        <li class="active">按钮</li>-->
+<!--                        <li><button type="button" class="btn btn-primary" onclick="download()">下载检测报告</button></li>-->
+                        <li><a href="http://localhost:8080/download" class="btn btn-primary" style="visibility: hidden" id="download">下载检测报告</a></li>
                     </ol>
                 </div>
             </div>
-<!--            <div>-->
-<!--                <h5><b>检测结果</b></h5>-->
-<!--&lt;!&ndash;                <textarea id="result" rows="0" style="height:100px; width: 1000px">&ndash;&gt;-->
-
-<!--&lt;!&ndash;                </textarea>&ndash;&gt;-->
-<!--            </div>-->
         </div>
-        <!-- /.container-fluid -->
-        <footer class="footer text-center"> &copy; Copyright 2020, USTC
-            <!--            <a href="http://www.baisheng999.com/" target="_blank" title="网站模板库">网站模板库</a>-->
-            <!--            - Collect from <a href="http://www.baisheng999.com/" title="网页模板" target="_blank">网页模板</a> -->
-        </footer>
+
+        <footer class="footer text-center"> &copy; Copyright 2020, USTC</footer>
     </div>
-    <!-- /#page-wrapper -->
 </div>
 
-<script>
-    // var myTextArea = document.getElementById('codeArea');
-    // //创建一个java编辑器
-    // var editor = CodeMirror.fromTextArea(myTextArea, {
-    //     lineNumbers: true,
-    //     mode: 'java',
-    //     theme: 'material'
-    // });
-    //
-    // editor.on('change', () => {
-    //     console.log(editor.getValue());
-    // });
-    // function getEditorValue() {
-    //     return editor.getValue();
-    // }
-    // function setEditorValue(value) {
-    //     editor.setValue(value);
-    // }
-
-    function bachAnalyse() {
-        var httpRequest = new XMLHttpRequest();//第一步：创建需要的对象
-        httpRequest.open('POST', '/bachAnalyse', true); //第二步：打开连接
-        httpRequest.setRequestHeader("Content-type", "application/json");//设置请求头 注：post方式必须设置请求头（在建立连接后设置请求头
-        httpRequest.send();//发送请求 将情头体写在send中
-        httpRequest.onreadystatechange = function(){
-            //若响应完成且请求成功
-            if(httpRequest.status === 200){
-                // var json = JSON.parse(httpRequest.response);
-                // document.getElementById("result").innerHTML = json.results;
-            }
-        }
-    }
-</script>
 
 
 

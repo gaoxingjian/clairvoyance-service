@@ -1,20 +1,18 @@
 package com.cav.clairvoyance.controller;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.cav.clairvoyance.domain.Result;
 import com.cav.clairvoyance.service.FileService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.servlet.ServletOutputStream;
+
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+
 
 @RestController
 public class CvController {
@@ -74,8 +72,8 @@ public class CvController {
         return fileService.upload(file);
     }
 
-    @PostMapping(value = "/bachAnalyse")
-    public void analyseFile(HttpServletResponse response) throws IOException {
+    @GetMapping(value = "/bachAnalyse")
+    public Result analyseFile() throws IOException {
         // 获得目录绝对路径
         String filePath = new File("files").getAbsolutePath();
         System.out.println(filePath);
@@ -83,11 +81,12 @@ public class CvController {
         File file = new File(filePath);
         // 得到目录下的所有东西（包括文件和目录）
         File[] tempList = file.listFiles();
-        //得到刚才上传的文件
-        String targetFile = tempList[tempList.length-1].toString();
+        if (tempList.length == 0) {
+            return new Result(400, "请先上传待检测源文件");
+        }
 
         //拼接好cmd命令
-        String cmdStr = "slither --detect ICfgReentrancy "+targetFile;
+        String cmdStr = "slither --detect ICfgReentrancy "+filePath;
         //声明出报告存放路径
         String reportsPath = new File("reports").getAbsolutePath();
         File reportsDir = new File(reportsPath);
@@ -95,13 +94,18 @@ public class CvController {
             reportsDir.mkdirs(); //造出一个文件夹，用来存放检测报告
         }
         //声明出报告文件，等待写入
+
         File reportFile = new File(reportsPath + "/detectionReport.txt");
+        if (reportFile.isFile() && reportFile.exists()) {  //如果这个检测报告文件存在，则删除这个报告检测文件
+            reportFile.delete();
+        }
         //声明一个文件写入者
         FileWriter writer = null;
         try {
             if (!reportFile.exists()) {
                 reportFile.createNewFile();// 创建目标文件
             }
+            reportFile.createNewFile();
             //得到文件写入者
             writer = new FileWriter(reportFile, true);
             //得到命令行进程
@@ -120,22 +124,27 @@ public class CvController {
                 System.out.println(content);
                 content = br.readLine();
             }
-            download(reportFile, response);
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             //文件读者关闭
             writer.close();
         }
-        System.out.println("mamamfmmamammamammamamamam");
-
+        //删除files目录下的所有文件
+        for (File f : tempList){
+            f.delete();
+        }
+        System.out.println(new Result(200, "源代码检测完毕，请下载检测报告"));
+        return new Result(200, "源代码检测完毕，请下载检测报告");
     }
-
-    private void download(File file, HttpServletResponse response) throws IOException{
-
+    @GetMapping(value = "/download")
+    private void download(HttpServletResponse response) throws IOException{
+        File file = new File("E:\\workspace\\clairvoyance-service\\clairvoyance\\reports\\detectionReport.txt");
+        System.out.println(file.getName());
         InputStream ins = new FileInputStream(file);
         /* 设置文件ContentType类型，这样设置，会自动判断下载文件类型 */
-        response.setContentType("multipart/form-data");
+        //response.setContentType("multipart/form-data");
+        response.setContentType("text/plain");
         /* 设置文件头：最后一个参数是设置下载文件名 */
         response.setHeader("Content-Disposition", "attachment;filename="+file.getName());
         try{
