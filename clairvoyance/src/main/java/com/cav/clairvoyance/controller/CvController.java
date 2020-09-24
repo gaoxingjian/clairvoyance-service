@@ -26,7 +26,8 @@ public class CvController {
         // 把用户输入的代码保存到e:\reentrancy.sol文件中
         try {
             //BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("e:\\reentrancy.sol"), "utf-8"));
-            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("/home/mingliang/files/reentrancy.sol"), "utf-8"));
+            //BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("/home/mingliang/files/reentrancy.sol"), "utf-8"));
+            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("/Users/jason/files/reentrancy.sol"), "utf-8"));
             out.write(data);
             out.close();
         } catch (IOException e) {
@@ -34,7 +35,9 @@ public class CvController {
         }
         //拼接检测命令
         //String cmdStr = "slither --detect ICfgReentrancy e:\\reentrancy.sol";
-        String cmdStr = "slither --detect ICfgReentrancy /home/mingliang/files/reentrancy.sol";
+        //String cmdStr = "slither --detect ICfgReentrancy /home/mingliang/files/reentrancy.sol";
+        String cmdStr = "slither --detect ICfgReentrancy /Users/jason/files/reentrancy.sol";
+
         // 查看即将执行的cmd 命令
         System.out.println(cmdStr);
 
@@ -86,7 +89,8 @@ public class CvController {
         }
 
         //拼接好cmd命令
-        String cmdStr = "slither --detect ICfgReentrancy "+filePath;
+        //String cmdStr = "slither --detect ICfgReentrancy "+filePath;
+        String cmdStr = "slither "+filePath;
         //声明出报告存放路径
         String reportsPath = new File("reports").getAbsolutePath();
         File reportsDir = new File(reportsPath);
