@@ -1,2 +1,29 @@
-__MACOSX
-reentrancy.sol
+合约Reentrance.函数donate(address) 不含有直接转张功能,跳过此函数的分析
+合约Reentrance.函数balanceOf(address) 不含有直接转张功能,跳过此函数的分析
+withdraw(uint256) 可以传送eth,但自身函数体内没直接的reetrance的结构需要进行前向的call graph
+开始进入前向路径分析
+完成前向路径分析
+开始进入后向路径分析
+完成后向路径分析
+合约Reentrance.函数fallback() 不含有直接转张功能,跳过此函数的分析
+		contract: Reentrance | function: withdraw(uint256) | accessPermision: False | 锁: False
+			path: ['entryPoint', 'balances[msg.sender] >= _amount', 'msg.sender.call.value(_amount)()']
+[cfg_Reentrancy in] contract: Reentrance . function: withdraw(uint256) | files/reentrancy.sol#15-22
+Start Contract Reentrance
+	To analyze：Reentrance.donate(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reentrance.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reentrance.withdraw(uint256)
+		contract: Reentrance | function: withdraw(uint256) | private: False | 锁/钱提前更新：False
+			path: ['entryPoint', 'balances[msg.sender] >= _amount', 'msg.sender.call.value(_amount)()']
+[cfg_Reentrancy in] contract: Reentrance . function: withdraw(uint256) | files/reentrancy.sol#15-22
+	To analyze：Reentrance.fallback()
+		cfg分析安全，所以开始ICFG的分析
+Function: withdraw(uint256) dest: msg.sender  isTaint True
+函数withdraw(uint256)的儿子们 [] 父亲们 []
+函数donate(address)的儿子们 [] 父亲们 []
+函数balanceOf(address)的儿子们 [] 父亲们 []
+函数fallback()的儿子们 [] 父亲们 []
+Function: withdraw(uint256) dest: msg.sender  isTaint True
+/Users/jason/develop/clairvoyance-service/files/reentrancy.sol

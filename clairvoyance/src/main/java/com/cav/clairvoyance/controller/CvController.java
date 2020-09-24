@@ -1,8 +1,11 @@
 package com.cav.clairvoyance.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.cav.clairvoyance.domain.Record;
 import com.cav.clairvoyance.domain.Result;
 import com.cav.clairvoyance.service.FileService;
+import com.cav.clairvoyance.service.RecordService;
+import com.cav.clairvoyance.utils.SHA1;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.*;
@@ -11,11 +14,16 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 
 
 @RestController
 public class CvController {
+    @Autowired
+    RecordService recordService;
     @Autowired
     FileService fileService;
 
@@ -23,6 +31,24 @@ public class CvController {
     public void analyse(@RequestBody String data, HttpServletResponse response) throws IOException {
         // 查看用户输入的代码
         System.out.println(data);
+        // SHA1求Hash
+        String hash = SHA1.getSHA1String(data);
+        System.out.println("Hash:" + hash);
+        List<Record> recordList = new ArrayList<Record>();
+        recordList = recordService.queryByHash(hash);
+
+        response.setContentType("application/json;charset=UTF-8");
+        PrintWriter writer = response.getWriter();
+
+        HashMap<String, String> ans = new HashMap<>();
+
+        if (!recordList.isEmpty()) {
+            ans.put("results", recordList.get(0).getDetectResult());
+            writer.print(JSONObject.toJSONString(ans));
+            return;
+        }
+
+
         // 把用户输入的代码保存到e:\reentrancy.sol文件中
         try {
             //BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("e:\\reentrancy.sol"), "utf-8"));
@@ -50,17 +76,22 @@ public class CvController {
             BufferedReader br = new BufferedReader(isr);
             String content = br.readLine();
             while (content != null) {
-                sb.append(content+"\n");
+                sb.append(content + "\n");
                 System.out.println(content);
                 content = br.readLine();
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-        HashMap<String, String> ans = new HashMap<>();
+
         ans.put("results", sb.toString());
-        response.setContentType("application/json;charset=UTF-8");
-        PrintWriter writer = response.getWriter();
+
+        // 将结果存入数据库
+        Record record = new Record();
+        record.setHash(hash);
+        record.setDetectResult(ans.get("results"));
+        record.setCreateTime(new Date());
+        recordService.saveRecord(record);
 
         writer.print(JSONObject.toJSONString(ans));
         //return "";
@@ -90,7 +121,7 @@ public class CvController {
 
         //拼接好cmd命令
         //String cmdStr = "slither --detect ICfgReentrancy "+filePath;
-        String cmdStr = "slither "+filePath;
+        String cmdStr = "slither " + filePath;
         //声明出报告存放路径
         String reportsPath = new File("reports").getAbsolutePath();
         File reportsDir = new File(reportsPath);
@@ -117,14 +148,14 @@ public class CvController {
             //得到命令行进程的输入流
             InputStream is = process.getInputStream();
             //得到进程输入流读者
-            InputStreamReader isr = new InputStreamReader(is, "gbk");
+            InputStreamReader isr = new InputStreamReader(is, "utf8");
             //得到输入流读者的缓冲读者
             BufferedReader br = new BufferedReader(isr);
             //缓冲读者按行读取内容
             String content = br.readLine();
             while (content != null) {
                 //文件写者去append内容
-                writer.append(content+"\n");
+                writer.append(content + "\n");
                 System.out.println(content);
                 content = br.readLine();
             }
@@ -135,34 +166,35 @@ public class CvController {
             writer.close();
         }
         //删除files目录下的所有文件
-        for (File f : tempList){
+        for (File f : tempList) {
             f.delete();
         }
         System.out.println(new Result(200, "源代码检测完毕，请下载检测报告"));
         return new Result(200, "源代码检测完毕，请下载检测报告");
     }
+
     @GetMapping(value = "/download")
-    private void download(HttpServletResponse response) throws IOException{
+    private void download(HttpServletResponse response) throws IOException {
         String reportsPath = new File("reports").getAbsolutePath();
-        File file = new File(reportsPath+"/"+"detectionReport.txt");
+        File file = new File(reportsPath + "/" + "detectionReport.txt");
         System.out.println(file.getName());
         InputStream ins = new FileInputStream(file);
         /* 设置文件ContentType类型，这样设置，会自动判断下载文件类型 */
         //response.setContentType("multipart/form-data");
         response.setContentType("text/plain");
         /* 设置文件头：最后一个参数是设置下载文件名 */
-        response.setHeader("Content-Disposition", "attachment;filename="+file.getName());
-        try{
+        response.setHeader("Content-Disposition", "attachment;filename=" + file.getName());
+        try {
             OutputStream os = response.getOutputStream();
             byte[] b = new byte[1024];
             int len;
-            while((len = ins.read(b)) > 0){
-                os.write(b,0,len);
+            while ((len = ins.read(b)) > 0) {
+                os.write(b, 0, len);
             }
             os.flush();
             os.close();
             ins.close();
-        }catch (IOException ioe){
+        } catch (IOException ioe) {
             ioe.printStackTrace();
         }
     }
