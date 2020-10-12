@@ -1,20 +1,58 @@
 spring:
+    application:
+        name: clairvoyance
     datasource:
         driver-class-name: com.mysql.jdbc.Driver
         url: jdbc:mysql://localhost:3306/clairvoyance?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
         username: root
         password: asd
-    mvc:
-        static-path-pattern: /static/**
+    servlet:
+        multipart:
+            max-file-size: 200MB
+            enabled: true
+            max-request-size: 200MB
+            # multipart上传文件时懒加载
+            resolve-lazily: false
+            # 上传文件的临时目录
+            #location:
+    #    mvc:
+#        static-path-pattern: /static/**
+#    jpa:
+#        hibernate:
+#            ddl-auto: create-drop
 
     thymeleaf:
-        prefix:
-        classpath: /templates/**
+        prefix: classpath:/templates/
+        suffix: .html
+        mode: HTML5
+        encoding: utf-8
         cache: false
-    resources:
-        static-locations: classpath:/static/, classpath:/static/images/
-    cache: false
+        #enabled: true
+        #check-template: true
+        #check-template-location: true
+#    resources:
+#        static-locations: classpath:/static/, classpath:/static/images/
+#    cache: false
 mybatis:
     type-aliases-package: com.cav.clairvoyance.domain
     configuration:
         log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+    file:
+        name: ${logging.file.path}/${spring.application.name}.log
+        path: logs
+    level:
+        com.cav.clairvoyance: debug
+file:
+    upload:
+        root:
+            dir:
+                windows: e:\\reentrancy.sol
+                mac: /Users/jason/files/
+                linux: /home/mingliang/files
+cmd:
+    str: slither --detect ICfgReentrancy
+    #str: ls
+    timeout: 3000
+swagger2:
+    enable: true

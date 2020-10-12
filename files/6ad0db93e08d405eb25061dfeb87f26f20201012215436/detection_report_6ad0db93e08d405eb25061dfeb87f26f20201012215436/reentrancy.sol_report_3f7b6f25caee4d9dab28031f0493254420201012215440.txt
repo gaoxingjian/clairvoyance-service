@@ -1,0 +1,11 @@
+Start Contract Reentrance
+	To analyze：Reentrance.donate(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reentrance.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reentrance.withdraw(uint256)
+		contract: Reentrance | function: withdraw(uint256) | private: False | 锁/钱提前更新：False
+			path: ['entryPoint', 'balances[msg.sender] >= _amount', 'msg.sender.call.value(_amount)()']
+[cfg_Reentrancy in] contract: Reentrance . function: withdraw(uint256) | files/6ad0db93e08d405eb25061dfeb87f26f20201012215436/reentrancy.sol#15-22
+	To analyze：Reentrance.fallback()
+		cfg分析安全，所以开始ICFG的分析
