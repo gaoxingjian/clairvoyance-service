@@ -1,6 +1,5 @@
 package com.cav.clairvoyance.controller;
 
-import com.cav.clairvoyance.domain.FileInfo;
 import com.cav.clairvoyance.exception.BusinessException;
 import com.cav.clairvoyance.exception.code.BaseResponseCode;
 import com.cav.clairvoyance.service.FileService;
@@ -23,9 +22,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URLEncoder;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+
 
 @Api(tags = "文件")
 @Controller
@@ -62,8 +59,6 @@ public class FileController {
 
             fileUploadRootDir = fileUploadRootDirLinux;
         }
-        System.out.println(osName);
-        System.out.println(fileUploadRootDir);
         FileUtil.makeDir(fileUploadRootDir);
     }
 

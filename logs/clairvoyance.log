@@ -215,3 +215,502 @@ com.cav.clairvoyance.exception.BusinessException: 操作失败
 2020-10-13 10:18:01.818  INFO 1023 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2020-10-13 10:18:01.820  INFO 1023 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2020-10-13 10:18:01.830  INFO 1023 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-13 16:12:39.833  INFO 6178 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MBP with PID 6178 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
+2020-10-13 16:12:39.839 DEBUG 6178 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-13 16:12:39.841  INFO 6178 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
+2020-10-13 16:12:40.108  INFO 6178 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-13 16:12:40.113  INFO 6178 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-13 16:12:42.313  WARN 6178 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-13 16:12:43.157  INFO 6178 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-13 16:12:43.173  INFO 6178 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-13 16:12:43.174  INFO 6178 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-13 16:12:43.311  INFO 6178 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-13 16:12:43.311  INFO 6178 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3197 ms
+2020-10-13 16:12:44.255  INFO 6178 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-13 16:12:44.390  INFO 6178 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 16:12:44.442  INFO 6178 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-13 16:12:44.546  WARN 6178 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-13 16:12:44.575  INFO 6178 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-13 16:12:44.576  INFO 6178 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-13 16:12:44.577  INFO 6178 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-13 16:12:44.577  INFO 6178 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-13 16:12:44.866  INFO 6178 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 16:12:44.871  INFO 6178 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-13 16:12:44.964  INFO 6178 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-13 16:12:45.032  INFO 6178 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-13 16:12:45.177  INFO 6178 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-13 16:12:45.183  INFO 6178 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-13 16:12:45.230  INFO 6178 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Started ClairvoyanceApplication in 7.206 seconds (JVM running for 9.4)
+2020-10-13 16:12:45.972  INFO 6178 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 16:12:45.972  INFO 6178 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-13 16:12:45.986  INFO 6178 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-10-13 16:13:01.990  INFO 6178 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-13 16:13:01.992  WARN 6178 --- [http-nio-8080-exec-5] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-10-13 16:13:02.240  INFO 6178 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-13 16:13:52.404  INFO 6178 --- [http-nio-8080-exec-6] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/32154422beb1449d8b00c65ce969d9aa20201013161352/32154422beb1449d8b00c65ce969d9aa20201013161352.sol
+2020-10-13 16:13:55.428 ERROR 6178 --- [http-nio-8080-exec-6] c.c.c.u.impl.LocalCommandExecutorImpl    : The command [slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/32154422beb1449d8b00c65ce969d9aa20201013161352/32154422beb1449d8b00c65ce969d9aa20201013161352.sol] timed out.
+
+java.util.concurrent.TimeoutException: null
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205) ~[na:1.8.0_261]
+	at com.cav.clairvoyance.utils.impl.LocalCommandExecutorImpl.executeCommand(LocalCommandExecutorImpl.java:67) ~[classes/:na]
+	at com.cav.clairvoyance.service.impl.AnalyseServiceImpl.analyseFile(AnalyseServiceImpl.java:30) [classes/:na]
+	at com.cav.clairvoyance.controller.AnalyseController.analyse(AnalyseController.java:59) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_261]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_261]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_261]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_261]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) [tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_261]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_261]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_261]
+
+2020-10-13 16:15:00.635  INFO 6178 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 16:15:00.637  INFO 6178 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-13 16:15:00.647  INFO 6178 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-13 16:15:05.746  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MBP with PID 6241 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
+2020-10-13 16:15:05.754 DEBUG 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-13 16:15:05.755  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
+2020-10-13 16:15:05.954  INFO 6241 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-13 16:15:05.963  INFO 6241 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-13 16:15:08.237  WARN 6241 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-13 16:15:09.003  INFO 6241 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-13 16:15:09.013  INFO 6241 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-13 16:15:09.013  INFO 6241 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-13 16:15:09.084  INFO 6241 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-13 16:15:09.085  INFO 6241 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3116 ms
+2020-10-13 16:15:10.156  INFO 6241 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-13 16:15:10.234  INFO 6241 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 16:15:10.437  INFO 6241 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-13 16:15:10.541  WARN 6241 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-13 16:15:10.562  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-13 16:15:10.563  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-13 16:15:10.564  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-13 16:15:10.564  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-13 16:15:10.731  INFO 6241 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 16:15:10.733  INFO 6241 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-13 16:15:10.749  INFO 6241 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-13 16:15:10.777  INFO 6241 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-13 16:15:11.003  INFO 6241 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-13 16:15:11.010  INFO 6241 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-13 16:15:11.032  INFO 6241 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 16:15:11.032  INFO 6241 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-13 16:15:11.043  INFO 6241 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-10-13 16:15:11.053  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Started ClairvoyanceApplication in 6.28 seconds (JVM running for 7.46)
+2020-10-13 16:15:29.339  INFO 6241 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-13 16:15:29.342  WARN 6241 --- [http-nio-8080-exec-3] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-10-13 16:15:29.527  INFO 6241 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-13 16:15:42.411  INFO 6241 --- [http-nio-8080-exec-4] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/ba4685b413c641459cdec2ac806eb0f420201013161542/ba4685b413c641459cdec2ac806eb0f420201013161542.sol
+2020-10-13 16:20:08.654  INFO 6241 --- [http-nio-8080-exec-9] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/2611179b6cf245df8f481438f5da8dd420201013162008/2611179b6cf245df8f481438f5da8dd420201013162008.sol
+2020-10-13 16:34:29.125  INFO 6241 --- [http-nio-8080-exec-3] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/ab84d108474647bb8a89da01883d3e5620201013163429/ab84d108474647bb8a89da01883d3e5620201013163429.sol
+2020-10-13 16:44:28.913  INFO 6241 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 16:44:28.917  INFO 6241 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-13 16:44:28.930  INFO 6241 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-13 16:44:29.235  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MBP with PID 6241 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
+2020-10-13 16:44:29.236 DEBUG 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-13 16:44:29.236  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
+2020-10-13 16:44:30.013  WARN 6241 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-13 16:44:30.177  INFO 6241 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-13 16:44:30.202  INFO 6241 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-13 16:44:30.204  INFO 6241 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-13 16:44:30.230  INFO 6241 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-13 16:44:30.230  INFO 6241 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 989 ms
+2020-10-13 16:44:30.751  INFO 6241 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-13 16:44:30.884  INFO 6241 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 16:44:30.905  INFO 6241 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-13 16:44:30.978  WARN 6241 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-13 16:44:31.008  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-13 16:44:31.008  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-13 16:44:31.008  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-13 16:44:31.010  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-13 16:44:31.403  INFO 6241 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 16:44:31.405  INFO 6241 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-13 16:44:31.406  INFO 6241 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-13 16:44:31.414  INFO 6241 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-13 16:44:31.460  INFO 6241 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-13 16:44:31.480  INFO 6241 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-13 16:44:31.507  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Started ClairvoyanceApplication in 2.333 seconds (JVM running for 1767.899)
+2020-10-13 16:44:31.526  INFO 6241 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-10-13 16:52:46.678  INFO 6241 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 16:52:46.687  INFO 6241 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-13 16:52:46.696  INFO 6241 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-10-13 17:14:11.200  INFO 6241 --- [Thread-31] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 17:14:11.556  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MBP with PID 6241 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
+2020-10-13 17:14:11.556 DEBUG 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-13 17:14:11.557  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
+2020-10-13 17:14:12.394  WARN 6241 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-13 17:14:12.535  INFO 6241 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-13 17:14:12.537  INFO 6241 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-13 17:14:12.537  INFO 6241 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-13 17:14:12.556  INFO 6241 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-13 17:14:12.558  INFO 6241 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 994 ms
+2020-10-13 17:14:13.103  INFO 6241 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-13 17:14:13.189  INFO 6241 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 17:14:13.207  INFO 6241 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-13 17:14:13.255  WARN 6241 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-13 17:14:13.264  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-13 17:14:13.264  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-13 17:14:13.265  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-13 17:14:13.265  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-13 17:14:13.425  INFO 6241 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 17:14:13.428  INFO 6241 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-13 17:14:13.430  INFO 6241 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-13 17:14:13.445  INFO 6241 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-13 17:14:13.506  INFO 6241 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-13 17:14:13.507  INFO 6241 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-13 17:14:13.518  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Started ClairvoyanceApplication in 2.043 seconds (JVM running for 3549.897)
+2020-10-13 17:14:13.522  INFO 6241 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-10-13 17:16:27.254  INFO 6241 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 17:16:27.264  INFO 6241 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-13 17:16:27.290  INFO 6241 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+2020-10-13 17:16:39.539  INFO 6241 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-10-13 17:16:39.539  WARN 6241 --- [http-nio-8080-exec-5] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-10-13 17:16:39.550  INFO 6241 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-10-13 17:16:39.555  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/0418c4d6a2a441229c6ab0889739342b20201013171636/test/test13.sol
+2020-10-13 17:16:42.004  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.controller.AnalyseController       : Start Contract owned
+	To analyze：owned.owned()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：owned.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract tokenRecipient
+Start Contract NecashTokenBase
+	To analyze：NecashTokenBase.NecashTokenBase()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashTokenBase._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashTokenBase.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashTokenBase.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashTokenBase.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashTokenBase.approveAndCall(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract NecashToken
+	To analyze：NecashToken.NecashTokenBase()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken.approveAndCall(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken.owned()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken.NecashToken()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken.freezeAccount(address,bool)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Pausable
+	To analyze：Pausable.owned()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.unpause()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract NeCashTokenSale
+	To analyze：NeCashTokenSale.owned()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.NeCashTokenSale()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.buyTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.changeMaxGasprice(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.changeTokenPrice(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.endSale()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.isValidPurchase()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.forwardFunds(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.calculateTokenAmount(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.calculatePriceForTokens(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.finalizeSale()
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 17:16:42.013  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/0418c4d6a2a441229c6ab0889739342b20201013171636/test/test12.sol
+2020-10-13 17:16:42.946  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.controller.AnalyseController       : Process finished with exit code 255
+Compilation failure or other problems, please check the code.
+2020-10-13 17:16:42.952  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/0418c4d6a2a441229c6ab0889739342b20201013171636/test/test11.sol
+2020-10-13 17:16:44.501  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.controller.AnalyseController       : Start Contract ERC721
+Start Contract CryptoCelebrity
+	To analyze：CryptoCelebrity.CryptoCelebrity()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.createPromoPerson(address,string,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.createContractPerson(string)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.getPerson(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.implementsERC721()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.name()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.ownerOf(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.payout(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.withdrawAmountTo(uint256,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.purchase(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.changePrice(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.priceOf(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.setCEO(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.setCOO(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.symbol()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.takeOwnership(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.tokensOfOwner(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._addressNotNull(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._approved(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._createPerson(string,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._owns(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._payout(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 17:16:44.511  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/0418c4d6a2a441229c6ab0889739342b20201013171636/test/test15.sol
+2020-10-13 17:16:45.561  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.controller.AnalyseController       : Start Contract Calculator
+Start Contract Ownable
+	To analyze：Ownable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Basic
+Start Contract ERC20
+Start Contract Sale
+	To analyze：Sale.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Sale.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Sale.Sale(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Sale.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Sale.buyTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Sale.setTokenSeller(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Sale.setCalculatorAddress(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Sale.setMinimalTokens(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Sale.withdraw(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 17:16:45.569  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/0418c4d6a2a441229c6ab0889739342b20201013171636/test/test14.sol
+2020-10-13 17:16:46.929  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.controller.AnalyseController       : Start Contract SafeMath
+	To analyze：SafeMath.safeAdd(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.safeSub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.safeMul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.safeDiv(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Interface
+Start Contract ApproveAndCallFallBack
+Start Contract Owned
+	To analyze：Owned.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Owned.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Owned.acceptOwnership()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract NEXToken
+	To analyze：NEXToken.safeAdd(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.safeSub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.safeMul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.safeDiv(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.acceptOwnership()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.approveAndCall(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.transferAnyERC20Token(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 17:18:37.416  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/c93a0f970b3c416085b4d183f778cd5720201013171837/c93a0f970b3c416085b4d183f778cd5720201013171837.sol
+2020-10-13 17:30:15.313  INFO 6241 --- [Thread-36] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 17:30:15.316  INFO 6241 --- [Thread-36] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-10-13 17:30:15.351  INFO 6241 --- [Thread-36] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-10-13 17:30:15.874  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MBP with PID 6241 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
+2020-10-13 17:30:15.880 DEBUG 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-13 17:30:15.881  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
+2020-10-13 17:30:16.596  WARN 6241 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-13 17:30:16.734  INFO 6241 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-13 17:30:16.738  INFO 6241 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-13 17:30:16.740  INFO 6241 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-13 17:30:16.796  INFO 6241 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-13 17:30:16.796  INFO 6241 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 909 ms
+2020-10-13 17:30:17.389  INFO 6241 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-13 17:30:17.504  INFO 6241 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 17:30:17.551  INFO 6241 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-13 17:30:17.619  WARN 6241 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-13 17:30:17.641  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-13 17:30:17.641  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-13 17:30:17.641  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-13 17:30:17.642  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-13 17:30:17.896  INFO 6241 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 17:30:17.898  INFO 6241 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-13 17:30:17.900  INFO 6241 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-13 17:30:17.908  INFO 6241 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-13 17:30:17.944  INFO 6241 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-13 17:30:17.945  INFO 6241 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-13 17:30:17.960  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Started ClairvoyanceApplication in 2.168 seconds (JVM running for 4514.331)
+2020-10-13 17:30:17.966  INFO 6241 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-10-13 17:30:22.471  INFO 6241 --- [Thread-53] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 17:30:22.726  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MBP with PID 6241 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
+2020-10-13 17:30:22.729 DEBUG 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-13 17:30:22.731  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
+2020-10-13 17:30:23.213  WARN 6241 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-13 17:30:23.332  INFO 6241 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-13 17:30:23.334  INFO 6241 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-13 17:30:23.335  INFO 6241 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-13 17:30:23.348  INFO 6241 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-13 17:30:23.348  INFO 6241 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 613 ms
+2020-10-13 17:30:23.809  INFO 6241 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-13 17:30:23.890  INFO 6241 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 17:30:23.908  INFO 6241 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-13 17:30:23.978  WARN 6241 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-13 17:30:23.986  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-13 17:30:23.987  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-13 17:30:23.988  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-13 17:30:23.992  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-13 17:30:24.172  INFO 6241 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 17:30:24.173  INFO 6241 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-13 17:30:24.176  INFO 6241 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-13 17:30:24.193  INFO 6241 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-13 17:30:24.262  INFO 6241 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-13 17:30:24.263  INFO 6241 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-13 17:30:24.273  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Started ClairvoyanceApplication in 1.612 seconds (JVM running for 4520.644)
+2020-10-13 17:30:24.276  INFO 6241 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-10-13 17:31:22.580  INFO 6241 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 17:31:22.594  INFO 6241 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-13 17:31:22.601  INFO 6241 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms

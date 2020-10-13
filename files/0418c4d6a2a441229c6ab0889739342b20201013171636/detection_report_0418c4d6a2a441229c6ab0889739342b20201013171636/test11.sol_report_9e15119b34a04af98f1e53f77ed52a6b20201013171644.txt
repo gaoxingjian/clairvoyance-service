@@ -1,0 +1,67 @@
+Start Contract ERC721
+Start Contract CryptoCelebrity
+	To analyze：CryptoCelebrity.CryptoCelebrity()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.createPromoPerson(address,string,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.createContractPerson(string)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.getPerson(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.implementsERC721()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.name()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.ownerOf(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.payout(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.withdrawAmountTo(uint256,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.purchase(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.changePrice(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.priceOf(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.setCEO(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.setCOO(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.symbol()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.takeOwnership(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.tokensOfOwner(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._addressNotNull(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._approved(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._createPerson(string,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._owns(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._payout(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析

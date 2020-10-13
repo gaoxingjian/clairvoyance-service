@@ -1,623 +1,114 @@
-2020-10-12 14:04:55.725  INFO 2545 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 2545 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 14:04:55.734 DEBUG 2545 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 14:04:55.735  INFO 2545 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 14:04:57.449  WARN 2545 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 14:04:59.753  INFO 2545 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 14:05:00.311  INFO 2545 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 14:05:00.604  WARN 2545 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 14:05:00.691  INFO 2545 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 14:05:00.694  INFO 2545 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 14:05:00.695  INFO 2545 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 14:05:00.696  INFO 2545 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 14:05:00.930  INFO 2545 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 14:05:00.963  INFO 2545 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 14:05:01.017  INFO 2545 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 14:05:01.192  INFO 2545 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 14:05:01.207  INFO 2545 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 14:05:01.223  INFO 2545 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 14:05:01.226  INFO 2545 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 14:05:01.270  INFO 2545 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.402 seconds (JVM running for 8.984)
-2020-10-12 14:05:02.968  INFO 2545 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 14:10:10.890  INFO 2624 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 2624 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 14:10:10.892 DEBUG 2624 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 14:10:10.894  INFO 2624 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 14:10:13.524  WARN 2624 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 14:10:18.600  INFO 2624 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 14:10:19.125  INFO 2624 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 14:10:19.432  WARN 2624 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 14:10:19.535  INFO 2624 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 14:10:19.536  INFO 2624 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 14:10:19.537  INFO 2624 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 14:10:19.538  INFO 2624 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 14:10:19.813  INFO 2624 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 14:10:19.845  INFO 2624 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 14:10:19.890  INFO 2624 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 14:10:20.087  INFO 2624 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 14:10:20.118  INFO 2624 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 14:10:20.141  INFO 2624 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 14:10:20.154  INFO 2624 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 14:10:20.228  INFO 2624 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 10.475 seconds (JVM running for 15.338)
-2020-10-12 14:10:22.351  INFO 2624 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 15:46:46.634  INFO 4390 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 4390 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 15:46:46.636 DEBUG 4390 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 15:46:46.637  INFO 4390 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 15:46:49.093  WARN 4390 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 15:46:51.332  INFO 4390 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 15:46:51.852  INFO 4390 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 15:46:52.132  WARN 4390 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 15:46:52.228  INFO 4390 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 15:46:52.229  INFO 4390 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 15:46:52.230  INFO 4390 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 15:46:52.231  INFO 4390 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 15:46:52.466  INFO 4390 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 15:46:52.501  INFO 4390 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 15:46:52.542  INFO 4390 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 15:46:52.697  INFO 4390 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 15:46:52.712  INFO 4390 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 15:46:52.727  INFO 4390 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 15:46:52.730  INFO 4390 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 15:46:52.771  INFO 4390 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.416 seconds (JVM running for 9.566)
-2020-10-12 15:46:54.703  INFO 4390 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 15:47:34.256  INFO 4399 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 4399 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 15:47:34.262 DEBUG 4399 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 15:47:34.264  INFO 4399 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 15:47:35.992  WARN 4399 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 15:47:38.175  INFO 4399 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 15:47:38.692  INFO 4399 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 15:47:38.973  WARN 4399 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 15:47:39.087  INFO 4399 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 15:47:39.089  INFO 4399 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 15:47:39.092  INFO 4399 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 15:47:39.095  INFO 4399 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 15:47:39.387  INFO 4399 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 15:47:39.415  INFO 4399 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 15:47:39.457  INFO 4399 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 15:47:39.640  INFO 4399 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 15:47:39.655  INFO 4399 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 15:47:39.669  INFO 4399 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 15:47:39.673  INFO 4399 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 15:47:39.711  INFO 4399 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.492 seconds (JVM running for 8.391)
-2020-10-12 15:47:41.405  INFO 4399 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 15:50:35.560  INFO 4431 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 4431 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 15:50:35.563 DEBUG 4431 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 15:50:35.578  INFO 4431 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 15:50:37.198  WARN 4431 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 15:50:39.282  INFO 4431 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 15:50:39.777  INFO 4431 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 15:50:40.049  WARN 4431 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 15:50:40.145  INFO 4431 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 15:50:40.147  INFO 4431 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 15:50:40.147  INFO 4431 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 15:50:40.148  INFO 4431 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 15:50:40.371  INFO 4431 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 15:50:40.402  INFO 4431 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 15:50:40.441  INFO 4431 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 15:50:40.627  INFO 4431 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 15:50:40.642  INFO 4431 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 15:50:40.658  INFO 4431 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 15:50:40.661  INFO 4431 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 15:50:40.704  INFO 4431 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.2 seconds (JVM running for 7.983)
-2020-10-12 15:50:42.551  INFO 4431 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 15:53:11.077  INFO 4464 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 4464 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 15:53:11.078 DEBUG 4464 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 15:53:11.079  INFO 4464 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 15:53:12.905  WARN 4464 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 15:53:15.060  INFO 4464 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 15:53:15.561  INFO 4464 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 15:53:15.826  WARN 4464 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 15:53:15.936  INFO 4464 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 15:53:15.937  INFO 4464 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 15:53:15.939  INFO 4464 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 15:53:15.939  INFO 4464 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 15:53:16.152  INFO 4464 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 15:53:16.182  INFO 4464 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 15:53:16.221  INFO 4464 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 15:53:16.400  INFO 4464 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 15:53:16.417  INFO 4464 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 15:53:16.433  INFO 4464 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 15:53:16.438  INFO 4464 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 15:53:16.489  INFO 4464 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.332 seconds (JVM running for 8.123)
-2020-10-12 15:53:18.077  INFO 4464 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 16:04:53.280  INFO 4687 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 4687 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 16:04:53.287 DEBUG 4687 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 16:04:53.294  INFO 4687 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 16:04:54.838  WARN 4687 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 16:04:56.979  INFO 4687 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 16:04:57.523  INFO 4687 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 16:04:57.839  WARN 4687 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 16:04:57.939  INFO 4687 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 16:04:57.941  INFO 4687 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 16:04:57.943  INFO 4687 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 16:04:57.944  INFO 4687 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 16:04:58.179  INFO 4687 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 16:04:58.213  INFO 4687 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 16:04:58.263  INFO 4687 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 16:04:58.453  INFO 4687 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 16:04:58.472  INFO 4687 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 16:04:58.488  INFO 4687 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 16:04:58.491  INFO 4687 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 16:04:58.535  INFO 4687 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.2 seconds (JVM running for 8.109)
-2020-10-12 16:05:00.314  INFO 4687 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 16:08:05.556  INFO 4749 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 4749 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 16:08:05.559 DEBUG 4749 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 16:08:05.559  INFO 4749 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 16:08:07.303  WARN 4749 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 16:08:09.447  INFO 4749 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 16:08:09.982  INFO 4749 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 16:08:10.265  WARN 4749 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 16:08:10.365  INFO 4749 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 16:08:10.366  INFO 4749 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 16:08:10.367  INFO 4749 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 16:08:10.368  INFO 4749 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 16:08:10.594  INFO 4749 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 16:08:10.625  INFO 4749 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 16:08:10.667  INFO 4749 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 16:08:10.854  INFO 4749 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 16:08:10.870  INFO 4749 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 16:08:10.887  INFO 4749 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 16:08:10.895  INFO 4749 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 16:08:10.967  INFO 4749 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.523 seconds (JVM running for 8.347)
-2020-10-12 16:08:11.314  INFO 4749 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:04:01.034  INFO 5939 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 5939 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 20:04:01.040 DEBUG 5939 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 20:04:01.044  INFO 5939 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 20:04:02.814  WARN 5939 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 20:04:05.184  INFO 5939 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 20:04:05.754  INFO 5939 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:04:06.115  WARN 5939 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 20:04:06.217  INFO 5939 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 20:04:06.219  INFO 5939 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 20:04:06.220  INFO 5939 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 20:04:06.221  INFO 5939 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 20:04:06.506  INFO 5939 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 20:04:06.540  INFO 5939 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 20:04:06.588  INFO 5939 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 20:04:06.803  INFO 5939 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 20:04:06.818  INFO 5939 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 20:04:06.835  INFO 5939 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 20:04:06.838  INFO 5939 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 20:04:06.889  INFO 5939 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.771 seconds (JVM running for 9.008)
-2020-10-12 20:04:07.287  INFO 5939 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:06:07.361  INFO 5956 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 5956 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 20:06:07.364 DEBUG 5956 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 20:06:07.376  INFO 5956 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 20:06:09.288  WARN 5956 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 20:06:11.533  INFO 5956 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 20:06:12.175  INFO 5956 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:06:12.507  WARN 5956 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 20:06:12.603  INFO 5956 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 20:06:12.605  INFO 5956 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 20:06:12.606  INFO 5956 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 20:06:12.607  INFO 5956 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 20:06:12.853  INFO 5956 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 20:06:12.893  INFO 5956 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 20:06:12.935  INFO 5956 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 20:06:13.121  INFO 5956 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 20:06:13.147  INFO 5956 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 20:06:13.165  INFO 5956 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 20:06:13.168  INFO 5956 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 20:06:13.230  INFO 5956 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.948 seconds (JVM running for 9.025)
-2020-10-12 20:06:13.644  INFO 5956 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:07:35.228  INFO 5966 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 5966 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 20:07:35.232 DEBUG 5966 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 20:07:35.233  INFO 5966 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 20:07:37.335  WARN 5966 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 20:07:39.811  INFO 5966 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 20:07:40.406  INFO 5966 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:07:40.676  WARN 5966 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 20:07:40.767  INFO 5966 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 20:07:40.770  INFO 5966 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 20:07:40.772  INFO 5966 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 20:07:40.774  INFO 5966 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 20:07:41.010  INFO 5966 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 20:07:41.041  INFO 5966 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 20:07:41.087  INFO 5966 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 20:07:41.286  INFO 5966 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 20:07:41.302  INFO 5966 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 20:07:41.318  INFO 5966 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 20:07:41.322  INFO 5966 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 20:07:41.368  INFO 5966 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.086 seconds (JVM running for 9.109)
-2020-10-12 20:07:41.728  INFO 5966 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:15:05.225  INFO 5992 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 5992 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 20:15:05.236 DEBUG 5992 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 20:15:05.238  INFO 5992 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 20:15:07.086  WARN 5992 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 20:15:09.354  INFO 5992 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 20:15:09.869  INFO 5992 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:15:10.182  WARN 5992 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 20:15:10.280  INFO 5992 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 20:15:10.281  INFO 5992 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 20:15:10.282  INFO 5992 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 20:15:10.282  INFO 5992 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 20:15:10.562  INFO 5992 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 20:15:10.597  INFO 5992 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 20:15:10.645  INFO 5992 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 20:15:10.829  INFO 5992 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 20:15:10.844  INFO 5992 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 20:15:10.862  INFO 5992 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 20:15:10.865  INFO 5992 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 20:15:10.906  INFO 5992 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.783 seconds (JVM running for 9.109)
-2020-10-12 20:15:11.282  INFO 5992 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:39:18.500  INFO 6119 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6119 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 20:39:18.506 DEBUG 6119 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 20:39:18.506  INFO 6119 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 20:39:20.347  WARN 6119 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 20:39:22.995  INFO 6119 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 20:39:23.662  INFO 6119 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:39:23.943  WARN 6119 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 20:39:24.040  INFO 6119 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 20:39:24.041  INFO 6119 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 20:39:24.042  INFO 6119 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 20:39:24.043  INFO 6119 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 20:39:24.291  INFO 6119 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 20:39:24.327  INFO 6119 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 20:39:24.364  INFO 6119 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 20:39:24.550  INFO 6119 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 20:39:24.571  INFO 6119 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 20:39:24.588  INFO 6119 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 20:39:24.608  INFO 6119 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 20:39:24.653  INFO 6119 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.199 seconds (JVM running for 8.987)
-2020-10-12 20:39:24.954  INFO 6119 --- [main] c.c.c.s.impl.LocalCommandExecutorImpl    : ls
-2020-10-12 20:39:24.983  INFO 6119 --- [main] c.c.c.s.impl.LocalCommandExecutorImpl    : ls
-2020-10-12 20:39:24.991  INFO 6119 --- [main] c.c.c.s.impl.LocalCommandExecutorImpl    : ls
-2020-10-12 20:39:25.018  INFO 6119 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:40:42.745  INFO 6135 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6135 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 20:40:42.748 DEBUG 6135 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 20:40:42.749  INFO 6135 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 20:40:44.769  WARN 6135 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 20:40:47.075  INFO 6135 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 20:40:47.661  INFO 6135 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:40:47.967  WARN 6135 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 20:40:48.086  INFO 6135 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 20:40:48.087  INFO 6135 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 20:40:48.088  INFO 6135 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 20:40:48.089  INFO 6135 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 20:40:48.366  INFO 6135 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 20:40:48.402  INFO 6135 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 20:40:48.448  INFO 6135 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 20:40:48.645  INFO 6135 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 20:40:48.670  INFO 6135 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 20:40:48.691  INFO 6135 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 20:40:48.696  INFO 6135 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 20:40:48.740  INFO 6135 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.032 seconds (JVM running for 8.946)
-2020-10-12 20:40:49.102  INFO 6135 --- [main] c.c.c.s.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test11.sol
-2020-10-12 20:40:49.133  INFO 6135 --- [main] c.c.c.s.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test12.sol
-2020-10-12 20:40:49.141  INFO 6135 --- [main] c.c.c.s.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test13.sol
-2020-10-12 20:40:49.178  INFO 6135 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:41:38.972  INFO 6148 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6148 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 20:41:38.976 DEBUG 6148 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 20:41:38.994  INFO 6148 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 20:41:40.773  WARN 6148 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 20:41:43.651  INFO 6148 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 20:41:44.236  INFO 6148 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:41:44.544  WARN 6148 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 20:41:44.646  INFO 6148 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 20:41:44.647  INFO 6148 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 20:41:44.648  INFO 6148 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 20:41:44.649  INFO 6148 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 20:41:44.906  INFO 6148 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 20:41:44.935  INFO 6148 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 20:41:44.979  INFO 6148 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 20:41:45.186  INFO 6148 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 20:41:45.200  INFO 6148 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 20:41:45.215  INFO 6148 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 20:41:45.219  INFO 6148 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 20:41:45.270  INFO 6148 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.453 seconds (JVM running for 9.484)
-2020-10-12 20:41:45.573  INFO 6148 --- [main] c.c.c.s.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test11.sol
-2020-10-12 20:41:45.594  INFO 6148 --- [main] c.c.c.s.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test12.sol
-2020-10-12 20:41:45.602  INFO 6148 --- [main] c.c.c.s.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test13.sol
-2020-10-12 20:41:45.629  INFO 6148 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:45:38.919  INFO 6175 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6175 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 20:45:38.924 DEBUG 6175 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 20:45:38.925  INFO 6175 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 20:45:40.982  WARN 6175 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 20:45:43.666  INFO 6175 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 20:45:44.245  INFO 6175 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:45:44.589  WARN 6175 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 20:45:44.698  INFO 6175 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 20:45:44.699  INFO 6175 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 20:45:44.701  INFO 6175 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 20:45:44.701  INFO 6175 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 20:45:44.947  INFO 6175 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 20:45:44.986  INFO 6175 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 20:45:45.034  INFO 6175 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 20:45:45.241  INFO 6175 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 20:45:45.260  INFO 6175 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 20:45:45.289  INFO 6175 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 20:45:45.296  INFO 6175 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 20:45:45.361  INFO 6175 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.513 seconds (JVM running for 9.738)
-2020-10-12 20:45:45.758  INFO 6175 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test11.sol
-2020-10-12 20:45:45.784  INFO 6175 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test12.sol
-2020-10-12 20:45:45.797  INFO 6175 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test13.sol
-2020-10-12 20:45:45.830  INFO 6175 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:52:52.003  INFO 6200 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6200 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 20:52:52.032 DEBUG 6200 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 20:52:52.036  INFO 6200 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 20:52:53.987  WARN 6200 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 20:52:56.602  INFO 6200 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 20:52:57.284  INFO 6200 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:52:57.641  WARN 6200 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 20:52:57.773  INFO 6200 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 20:52:57.776  INFO 6200 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 20:52:57.777  INFO 6200 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 20:52:57.778  INFO 6200 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 20:52:58.009  INFO 6200 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 20:52:58.048  INFO 6200 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 20:52:58.089  INFO 6200 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 20:52:58.281  INFO 6200 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 20:52:58.305  INFO 6200 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 20:52:58.325  INFO 6200 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 20:52:58.329  INFO 6200 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 20:52:58.373  INFO 6200 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.337 seconds (JVM running for 9.235)
-2020-10-12 20:52:58.709  INFO 6200 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test11.sol
-2020-10-12 20:52:58.730  INFO 6200 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test11.sol /Users/jason/files/test/test12.sol
-2020-10-12 20:52:58.738  INFO 6200 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test11.sol /Users/jason/files/test/test12.sol /Users/jason/files/test/test13.sol
-2020-10-12 20:52:58.768  INFO 6200 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:54:46.727  INFO 6213 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6213 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 20:54:46.729 DEBUG 6213 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 20:54:46.730  INFO 6213 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 20:54:48.525  WARN 6213 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 20:54:50.763  INFO 6213 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 20:54:51.309  INFO 6213 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:54:51.607  WARN 6213 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 20:54:51.720  INFO 6213 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 20:54:51.721  INFO 6213 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 20:54:51.722  INFO 6213 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 20:54:51.724  INFO 6213 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 20:54:51.992  INFO 6213 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 20:54:52.028  INFO 6213 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 20:54:52.085  INFO 6213 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 20:54:52.296  INFO 6213 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 20:54:52.316  INFO 6213 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 20:54:52.332  INFO 6213 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 20:54:52.342  INFO 6213 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 20:54:52.394  INFO 6213 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.56 seconds (JVM running for 8.729)
-2020-10-12 20:54:52.720  INFO 6213 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test11.sol
-2020-10-12 20:54:52.743  INFO 6213 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test11.sol /Users/jason/files/test/test12.sol
-2020-10-12 20:54:52.753  INFO 6213 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test11.sol /Users/jason/files/test/test12.sol /Users/jason/files/test/test13.sol
-2020-10-12 20:54:52.786  INFO 6213 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:55:38.005  INFO 6220 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6220 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 20:55:38.009 DEBUG 6220 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 20:55:38.012  INFO 6220 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 20:55:39.632  WARN 6220 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 20:55:41.898  INFO 6220 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 20:55:42.426  INFO 6220 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:55:42.724  WARN 6220 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 20:55:42.821  INFO 6220 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 20:55:42.823  INFO 6220 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 20:55:42.824  INFO 6220 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 20:55:42.827  INFO 6220 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 20:55:43.067  INFO 6220 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 20:55:43.096  INFO 6220 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 20:55:43.140  INFO 6220 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 20:55:43.336  INFO 6220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 20:55:43.355  INFO 6220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 20:55:43.372  INFO 6220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 20:55:43.375  INFO 6220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 20:55:43.419  INFO 6220 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.564 seconds (JVM running for 8.969)
-2020-10-12 20:55:43.686  INFO 6220 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test11.sol
-2020-10-12 20:55:43.707  INFO 6220 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test12.sol
-2020-10-12 20:55:43.716  INFO 6220 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test13.sol
-2020-10-12 20:55:43.744  INFO 6220 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:58:55.597  INFO 6235 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6235 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 20:58:55.601 DEBUG 6235 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 20:58:55.608  INFO 6235 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 20:58:57.383  WARN 6235 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 20:58:59.651  INFO 6235 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 20:59:00.173  INFO 6235 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 20:59:00.523  WARN 6235 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 20:59:00.632  INFO 6235 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 20:59:00.634  INFO 6235 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 20:59:00.636  INFO 6235 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 20:59:00.637  INFO 6235 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 20:59:00.875  INFO 6235 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 20:59:00.910  INFO 6235 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 20:59:00.948  INFO 6235 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 20:59:01.161  INFO 6235 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 20:59:01.182  INFO 6235 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 20:59:01.203  INFO 6235 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 20:59:01.207  INFO 6235 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 20:59:01.263  INFO 6235 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.648 seconds (JVM running for 8.71)
-2020-10-12 20:59:01.757  INFO 6235 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test11.sol
-2020-10-12 20:59:01.798  INFO 6235 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test12.sol
-2020-10-12 20:59:01.809  INFO 6235 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test13.sol
-2020-10-12 20:59:01.845  INFO 6235 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:01:12.636  INFO 6264 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6264 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 21:01:12.638 DEBUG 6264 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 21:01:12.639  INFO 6264 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 21:01:14.500  WARN 6264 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 21:01:16.870  INFO 6264 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 21:01:17.482  INFO 6264 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:01:17.894  WARN 6264 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 21:01:18.033  INFO 6264 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 21:01:18.036  INFO 6264 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 21:01:18.038  INFO 6264 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 21:01:18.038  INFO 6264 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 21:01:18.392  INFO 6264 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 21:01:18.433  INFO 6264 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 21:01:18.484  INFO 6264 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 21:01:18.698  INFO 6264 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 21:01:18.713  INFO 6264 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 21:01:18.729  INFO 6264 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 21:01:18.733  INFO 6264 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 21:01:18.801  INFO 6264 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.271 seconds (JVM running for 9.648)
-2020-10-12 21:01:19.217  INFO 6264 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test11.sol
-2020-10-12 21:01:19.246  INFO 6264 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test11.sol /Users/jason/files/test/test12.sol
-2020-10-12 21:01:19.255  INFO 6264 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test11.sol /Users/jason/files/test/test12.sol /Users/jason/files/test/test13.sol
-2020-10-12 21:01:19.289  INFO 6264 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:04:18.505  INFO 6282 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6282 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 21:04:18.511 DEBUG 6282 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 21:04:18.512  INFO 6282 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 21:04:20.494  WARN 6282 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 21:04:22.928  INFO 6282 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 21:04:23.551  INFO 6282 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:04:23.878  WARN 6282 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 21:04:24.011  INFO 6282 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 21:04:24.013  INFO 6282 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 21:04:24.014  INFO 6282 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 21:04:24.015  INFO 6282 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 21:04:24.303  INFO 6282 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 21:04:24.344  INFO 6282 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 21:04:24.397  INFO 6282 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 21:04:24.612  INFO 6282 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 21:04:24.632  INFO 6282 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 21:04:24.648  INFO 6282 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 21:04:24.658  INFO 6282 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 21:04:24.708  INFO 6282 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.332 seconds (JVM running for 9.463)
-2020-10-12 21:04:25.078  INFO 6282 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test11.sol
-2020-10-12 21:04:25.105  INFO 6282 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test12.sol
-2020-10-12 21:04:25.113  INFO 6282 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : ls /Users/jason/files/test/test13.sol
-2020-10-12 21:04:25.145  INFO 6282 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:14:51.623  INFO 6481 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6481 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 21:14:51.626 DEBUG 6481 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 21:14:51.628  INFO 6481 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 21:14:53.596  WARN 6481 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 21:14:55.950  INFO 6481 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 21:14:56.666  INFO 6481 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:14:56.983  WARN 6481 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 21:14:57.100  INFO 6481 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 21:14:57.102  INFO 6481 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 21:14:57.103  INFO 6481 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 21:14:57.104  INFO 6481 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 21:14:57.384  INFO 6481 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 21:14:57.419  INFO 6481 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 21:14:57.478  INFO 6481 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 21:14:57.692  INFO 6481 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 21:14:57.712  INFO 6481 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 21:14:57.731  INFO 6481 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 21:14:57.735  INFO 6481 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 21:14:57.800  INFO 6481 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.262 seconds (JVM running for 9.286)
-2020-10-12 21:14:58.152  INFO 6481 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test11.sol
-2020-10-12 21:15:00.407  INFO 6481 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test12.sol
-2020-10-12 21:15:01.403  INFO 6481 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test13.sol
-2020-10-12 21:15:02.776  INFO 6481 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:16:50.490  INFO 6538 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6538 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 21:16:50.491 DEBUG 6538 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 21:16:50.493  INFO 6538 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 21:16:52.037  WARN 6538 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 21:16:54.598  INFO 6538 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 21:16:55.210  INFO 6538 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:16:55.520  WARN 6538 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 21:16:55.641  INFO 6538 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 21:16:55.643  INFO 6538 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 21:16:55.644  INFO 6538 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 21:16:55.645  INFO 6538 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 21:16:55.940  INFO 6538 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 21:16:55.971  INFO 6538 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 21:16:56.043  INFO 6538 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 21:16:56.269  INFO 6538 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 21:16:56.285  INFO 6538 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 21:16:56.305  INFO 6538 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 21:16:56.335  INFO 6538 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 21:16:56.374  INFO 6538 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.043 seconds (JVM running for 9.33)
-2020-10-12 21:16:56.693  INFO 6538 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test11.sol
-2020-10-12 21:16:58.725  INFO 6538 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test12.sol
-2020-10-12 21:16:59.626  INFO 6538 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/reentrancy.sol
-2020-10-12 21:17:00.593  INFO 6538 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:29:01.423  INFO 6577 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6577 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 21:29:01.425 DEBUG 6577 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 21:29:01.426  INFO 6577 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 21:29:03.471  WARN 6577 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 21:29:05.881  INFO 6577 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 21:29:06.574  INFO 6577 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:29:06.877  WARN 6577 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 21:29:06.972  INFO 6577 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 21:29:06.974  INFO 6577 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 21:29:06.975  INFO 6577 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 21:29:06.975  INFO 6577 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 21:29:07.243  INFO 6577 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 21:29:07.275  INFO 6577 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 21:29:07.321  INFO 6577 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 21:29:07.518  INFO 6577 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 21:29:07.537  INFO 6577 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 21:29:07.565  INFO 6577 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 21:29:07.568  INFO 6577 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 21:29:07.624  INFO 6577 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.3 seconds (JVM running for 10.643)
-2020-10-12 21:29:07.964  INFO 6577 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test11.sol
-2020-10-12 21:29:10.052  INFO 6577 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test12.sol
-2020-10-12 21:29:10.971  INFO 6577 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/reentrancy.sol
-2020-10-12 21:29:11.927  INFO 6577 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:30:56.842  INFO 6616 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6616 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 21:30:56.845 DEBUG 6616 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 21:30:56.847  INFO 6616 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 21:30:58.829  WARN 6616 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 21:31:01.248  INFO 6616 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 21:31:01.794  INFO 6616 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:31:02.112  WARN 6616 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 21:31:02.226  INFO 6616 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 21:31:02.229  INFO 6616 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 21:31:02.230  INFO 6616 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 21:31:02.235  INFO 6616 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 21:31:02.478  INFO 6616 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 21:31:02.516  INFO 6616 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 21:31:02.563  INFO 6616 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 21:31:02.778  INFO 6616 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 21:31:02.804  INFO 6616 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 21:31:02.822  INFO 6616 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 21:31:02.826  INFO 6616 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 21:31:02.878  INFO 6616 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.252 seconds (JVM running for 9.978)
-2020-10-12 21:31:06.769  INFO 6616 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:31:50.042  INFO 6629 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6629 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 21:31:50.044 DEBUG 6629 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 21:31:50.046  INFO 6629 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 21:31:51.490  WARN 6629 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 21:31:54.007  INFO 6629 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 21:31:54.582  INFO 6629 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:31:54.881  WARN 6629 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 21:31:54.995  INFO 6629 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 21:31:54.997  INFO 6629 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 21:31:54.998  INFO 6629 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 21:31:54.999  INFO 6629 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 21:31:55.348  INFO 6629 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 21:31:55.422  INFO 6629 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 21:31:55.466  INFO 6629 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 21:31:55.681  INFO 6629 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 21:31:55.704  INFO 6629 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 21:31:55.724  INFO 6629 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 21:31:55.730  INFO 6629 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 21:31:55.779  INFO 6629 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.98 seconds (JVM running for 9.333)
-2020-10-12 21:32:00.208  INFO 6629 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:32:47.560  INFO 6653 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6653 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 21:32:47.562 DEBUG 6653 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 21:32:47.563  INFO 6653 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 21:32:49.345  WARN 6653 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 21:32:51.851  INFO 6653 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 21:32:52.526  INFO 6653 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:32:52.875  WARN 6653 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 21:32:52.966  INFO 6653 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 21:32:52.968  INFO 6653 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 21:32:52.969  INFO 6653 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 21:32:52.969  INFO 6653 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 21:32:53.252  INFO 6653 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 21:32:53.283  INFO 6653 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 21:32:53.333  INFO 6653 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 21:32:53.579  INFO 6653 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 21:32:53.611  INFO 6653 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 21:32:53.630  INFO 6653 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 21:32:53.634  INFO 6653 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 21:32:53.700  INFO 6653 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.108 seconds (JVM running for 9.677)
-2020-10-12 21:32:54.042  INFO 6653 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test11.sol
-2020-10-12 21:32:56.111  INFO 6653 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test12.sol
-2020-10-12 21:32:57.304  INFO 6653 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/reentrancy.sol
-2020-10-12 21:32:58.354  INFO 6653 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:33:33.833  INFO 6674 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6674 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-12 21:33:33.938 DEBUG 6674 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-12 21:33:33.939  INFO 6674 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-12 21:33:35.793  WARN 6674 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-12 21:33:38.195  INFO 6674 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-12 21:33:38.816  INFO 6674 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 21:33:39.102  WARN 6674 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-12 21:33:39.203  INFO 6674 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-12 21:33:39.205  INFO 6674 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-12 21:33:39.206  INFO 6674 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-12 21:33:39.206  INFO 6674 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-12 21:33:39.453  INFO 6674 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 21:33:39.485  INFO 6674 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 21:33:39.534  INFO 6674 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 21:33:39.742  INFO 6674 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: analyseUsingPOST_1
-2020-10-12 21:33:39.759  INFO 6674 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadUsingGET_1
-2020-10-12 21:33:39.777  INFO 6674 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-12 21:33:39.782  INFO 6674 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-12 21:33:39.828  INFO 6674 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.965 seconds (JVM running for 8.975)
-2020-10-12 21:33:40.161  INFO 6674 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/reentrancy.sol
-2020-10-12 21:33:41.552  INFO 6674 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 16:39:19.783  INFO 6757 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6757 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-13 16:39:19.814 DEBUG 6757 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-13 16:39:19.816  INFO 6757 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-13 16:39:21.597  WARN 6757 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-13 16:39:23.593  INFO 6757 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-13 16:39:24.220  INFO 6757 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 16:39:24.560  WARN 6757 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-13 16:39:24.686  INFO 6757 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-13 16:39:24.689  INFO 6757 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-13 16:39:24.690  INFO 6757 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-13 16:39:24.691  INFO 6757 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-13 16:39:24.979  INFO 6757 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-13 16:39:25.021  INFO 6757 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-13 16:39:25.070  INFO 6757 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-13 16:39:25.314  INFO 6757 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-13 16:39:25.321  INFO 6757 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-13 16:39:25.367  INFO 6757 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.712 seconds (JVM running for 8.869)
+2020-10-13 16:39:25.746  INFO 6757 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/reentrancy.sol
+2020-10-13 16:39:27.218  INFO 6757 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 16:41:29.248  INFO 6822 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6822 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-13 16:41:29.250 DEBUG 6822 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-13 16:41:29.256  INFO 6822 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-13 16:41:31.046  WARN 6822 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-13 16:41:33.193  INFO 6822 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-13 16:41:33.741  INFO 6822 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 16:41:34.105  WARN 6822 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-13 16:41:34.230  INFO 6822 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-13 16:41:34.231  INFO 6822 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-13 16:41:34.232  INFO 6822 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-13 16:41:34.233  INFO 6822 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-13 16:41:34.523  INFO 6822 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-13 16:41:34.564  INFO 6822 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-13 16:41:34.630  INFO 6822 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-13 16:41:34.890  INFO 6822 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-13 16:41:34.896  INFO 6822 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-13 16:41:34.954  INFO 6822 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.731 seconds (JVM running for 8.502)
+2020-10-13 16:41:35.420  INFO 6822 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test12.sol
+2020-10-13 16:41:36.677  INFO 6822 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 16:44:32.337  INFO 6881 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6881 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-13 16:44:32.340 DEBUG 6881 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-13 16:44:32.341  INFO 6881 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-13 16:44:34.093  WARN 6881 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-13 16:44:37.039  INFO 6881 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-13 16:44:37.686  INFO 6881 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 16:44:37.967  WARN 6881 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-13 16:44:38.060  INFO 6881 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-13 16:44:38.061  INFO 6881 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-13 16:44:38.062  INFO 6881 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-13 16:44:38.063  INFO 6881 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-13 16:44:38.323  INFO 6881 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-13 16:44:38.354  INFO 6881 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-13 16:44:38.396  INFO 6881 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-13 16:44:38.584  INFO 6881 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-13 16:44:38.587  INFO 6881 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-13 16:44:38.630  INFO 6881 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.461 seconds (JVM running for 10.005)
+2020-10-13 16:44:38.919  INFO 6881 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test12.sol
+2020-10-13 16:44:40.258  INFO 6881 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 16:44:58.393  INFO 6897 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6897 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-13 16:44:58.395 DEBUG 6897 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-13 16:44:58.396  INFO 6897 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-13 16:44:59.776  WARN 6897 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-13 16:45:02.022  INFO 6897 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-13 16:45:02.673  INFO 6897 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 16:45:02.930  WARN 6897 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-13 16:45:03.010  INFO 6897 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-13 16:45:03.011  INFO 6897 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-13 16:45:03.013  INFO 6897 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-13 16:45:03.014  INFO 6897 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-13 16:45:03.209  INFO 6897 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-13 16:45:03.243  INFO 6897 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-13 16:45:03.286  INFO 6897 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-13 16:45:03.477  INFO 6897 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-13 16:45:03.480  INFO 6897 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-13 16:45:03.517  INFO 6897 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 5.989 seconds (JVM running for 7.876)
+2020-10-13 16:45:03.795  INFO 6897 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test11.sol
+2020-10-13 16:45:05.566  INFO 6897 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 17:14:14.643  INFO 7534 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 7534 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-13 17:14:14.645 DEBUG 7534 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-13 17:14:14.646  INFO 7534 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-13 17:14:16.462  WARN 7534 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-13 17:14:18.676  INFO 7534 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-13 17:14:19.328  INFO 7534 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 17:14:19.634  WARN 7534 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-13 17:14:19.722  INFO 7534 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-13 17:14:19.723  INFO 7534 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-13 17:14:19.725  INFO 7534 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-13 17:14:19.725  INFO 7534 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-13 17:14:19.941  INFO 7534 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-13 17:14:19.973  INFO 7534 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-13 17:14:20.012  INFO 7534 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-13 17:14:20.223  INFO 7534 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-13 17:14:20.227  INFO 7534 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-13 17:14:20.277  INFO 7534 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.505 seconds (JVM running for 8.783)
+2020-10-13 17:14:20.573  INFO 7534 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test11.sol
+2020-10-13 17:14:22.500  INFO 7534 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 17:14:43.444  INFO 7550 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 7550 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-13 17:14:43.446 DEBUG 7550 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-13 17:14:43.448  INFO 7550 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-13 17:14:44.992  WARN 7550 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-13 17:14:47.527  INFO 7550 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-13 17:14:48.013  INFO 7550 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 17:14:48.294  WARN 7550 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-13 17:14:48.382  INFO 7550 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-13 17:14:48.384  INFO 7550 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-13 17:14:48.384  INFO 7550 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-13 17:14:48.385  INFO 7550 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-13 17:14:48.601  INFO 7550 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-13 17:14:48.628  INFO 7550 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-13 17:14:48.661  INFO 7550 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-13 17:14:48.841  INFO 7550 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-13 17:14:48.845  INFO 7550 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-13 17:14:48.885  INFO 7550 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.34 seconds (JVM running for 8.1)
+2020-10-13 17:14:49.160  INFO 7550 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test12.sol
+2020-10-13 17:14:50.242  INFO 7550 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

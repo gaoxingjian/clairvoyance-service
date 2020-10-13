@@ -1,0 +1,53 @@
+Start Contract SafeMath
+	To analyze：SafeMath.safeAdd(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.safeSub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.safeMul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.safeDiv(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Interface
+Start Contract ApproveAndCallFallBack
+Start Contract Owned
+	To analyze：Owned.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Owned.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Owned.acceptOwnership()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract NEXToken
+	To analyze：NEXToken.safeAdd(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.safeSub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.safeMul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.safeDiv(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.acceptOwnership()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.approveAndCall(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.transferAnyERC20Token(address,uint256)
+		cfg分析安全，所以开始ICFG的分析

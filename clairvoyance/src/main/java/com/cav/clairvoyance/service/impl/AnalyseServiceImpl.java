@@ -1,5 +1,6 @@
 package com.cav.clairvoyance.service.impl;
 
+import com.cav.clairvoyance.domain.ExecuteResult;
 import com.cav.clairvoyance.service.AnalyseService;
 import com.cav.clairvoyance.utils.LocalCommandExecutor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +27,11 @@ public class AnalyseServiceImpl implements AnalyseService {
 
     @Override
     public String analyseFile(String filePath) throws IOException, InterruptedException {
-        // 拼接检测命令
-       return localCommandExecutor.executeCommand(cmdStr + " " + filePath, timeout).getExecuteOut();
+        ExecuteResult executeResult = localCommandExecutor.executeCommand(cmdStr + " " + filePath, timeout);
+        if (executeResult.getExitCode() == 0) {
+            return executeResult.getExecuteOut();
+        }
+        return "Process finished with exit code " + executeResult.getExitCode()+"\nCompilation failure or other problems, please check the code.";
 
 //        StringBuffer sb = new StringBuffer();
 //        Process process = Runtime.getRuntime().exec(cmdStr + " " + filePath);

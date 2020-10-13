@@ -31,6 +31,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="/css/nprogress_style.css">
     <script src="https://unpkg.com/codemirror@5.40.0/lib/codemirror.js"></script>
     <script src="https://unpkg.com/codemirror@5.40.0/mode/javascript/javascript.js"></script>
+    <script src="https://unpkg.com/codemirror@5.40.0/mode/clike/clike.js"></script>
     <!-- color CSS you can use different color css from css/colors folder -->
     <!-- We have chosen the skin-blue (blue.css) for this starter
           page. However, you can choose any other skin from folder css / colors .
@@ -131,9 +132,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </div>
             <div class="row bg-title">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <button type="button" class="btn btn-primary" onclick="analyse()">go</button>
+                    <button type="button" class="btn btn-primary" onclick="analyse()">Go</button>
                 </div>
                 <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                    <button type="button" class="btn btn-primary" onclick="reset()">Reset</button>
 <!--                    <a href="#" class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Upgrade to Pro</a>-->
                     <ol class="breadcrumb">
 <!--                        <li><a href="#"><b>下载检测报告</b></a></li>-->
@@ -166,9 +168,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
         theme: 'material'
     });
 
-    editor.on('change', () => {
-        console.log(editor.getValue());
-    });
+    // editor.on('change', () => {
+    //     console.log(editor.getValue());
+    // });
     function getEditorValue() {
         return editor.getValue();
     }
@@ -191,6 +193,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 document.getElementById("result").innerHTML = json.data;
             }
         }
+    }
+
+    function reset() {
+        setEditorValue("");
     }
 </script>
 

@@ -23,8 +23,9 @@ public class AnalyseServiceTest {
     @Test
     public void analyseFile() throws IOException, InterruptedException {
         // String result = analyseService.analyseFile("/Users/jason/develop/clairvoyance-service/files/6b79c44d37394dc3b6967fe4d977753120201012153629/test/test13.sol");
-        String result = analyseService.analyseFile("/Users/jason/files/reentrancy.sol");
+        String result = analyseService.analyseFile("/Users/jason/files/test/test12.sol");
         System.out.println("result:"+result);
+        //System.out.println("isEmpty?:"+result.isEmpty());
     }
 
     @Test
