@@ -51,8 +51,11 @@ file:
                 mac: /Users/jason/files/
                 linux: /home/mingliang/files
 cmd:
+    # 检测命令
     str: slither --detect ICfgReentrancy
     #str: ls
+    # 执行timeout
     timeout: 3000
 swagger2:
+    # 接口文档开关
     enable: true
