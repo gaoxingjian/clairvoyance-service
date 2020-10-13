@@ -714,3 +714,32 @@ Start Contract NEXToken
 2020-10-13 17:31:22.580  INFO 6241 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-10-13 17:31:22.594  INFO 6241 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-10-13 17:31:22.601  INFO 6241 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-10-13 19:15:04.390  INFO 6241 --- [Thread-58] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 19:15:04.765  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MBP with PID 6241 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
+2020-10-13 19:15:04.765 DEBUG 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-13 19:15:04.766  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
+2020-10-13 19:15:05.443  WARN 6241 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-13 19:15:05.542  INFO 6241 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-13 19:15:05.543  INFO 6241 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-13 19:15:05.544  INFO 6241 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-13 19:15:05.554  INFO 6241 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-13 19:15:05.554  INFO 6241 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 782 ms
+2020-10-13 19:15:06.077  INFO 6241 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-13 19:15:06.170  INFO 6241 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 19:15:06.204  INFO 6241 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-13 19:15:06.278  WARN 6241 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-13 19:15:06.335  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-13 19:15:06.335  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-13 19:15:06.335  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-13 19:15:06.340  INFO 6241 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-13 19:15:06.499  INFO 6241 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 19:15:06.500  INFO 6241 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-13 19:15:06.501  INFO 6241 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-13 19:15:06.515  INFO 6241 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-13 19:15:06.583  INFO 6241 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-13 19:15:06.585  INFO 6241 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-13 19:15:06.614  INFO 6241 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Started ClairvoyanceApplication in 1.902 seconds (JVM running for 10802.924)
+2020-10-13 19:15:06.621  INFO 6241 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-10-13 19:15:11.035  INFO 6241 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 19:15:11.037  INFO 6241 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-13 19:15:11.043  INFO 6241 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms

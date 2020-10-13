@@ -23,12 +23,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link href="/css/animate.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/codemirror@5.40.0/lib/codemirror.css">
     <!--codemirror主题样式css-->
+    <link rel="stylesheet" href="https://unpkg.com/codemirror@5.40.0/lib/codemirror.css">
     <link rel="stylesheet" href="https://unpkg.com/codemirror@5.40.0/theme/material.css">
     <!--NProgress CSS -->
     <link rel="stylesheet" href="/css/nprogress.css">
     <link rel="stylesheet" href="/css/nprogress_style.css">
+    <!--codemirror js-->
     <script src="https://unpkg.com/codemirror@5.40.0/lib/codemirror.js"></script>
     <script src="https://unpkg.com/codemirror@5.40.0/mode/javascript/javascript.js"></script>
     <script src="https://unpkg.com/codemirror@5.40.0/mode/clike/clike.js"></script>
@@ -164,7 +165,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     //创建一个java编辑器
     var editor = CodeMirror.fromTextArea(myTextArea, {
         lineNumbers: true,
-        mode: 'java',
+        mode: 'text/x-java',
         theme: 'material'
     });
 
