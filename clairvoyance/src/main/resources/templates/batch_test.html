@@ -26,12 +26,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="https://unpkg.com/codemirror@5.40.0/lib/codemirror.css">
     <!--codemirror主题样式css-->
     <link rel="stylesheet" href="https://unpkg.com/codemirror@5.40.0/theme/material.css">
+    <!--NProgress CSS -->
+    <link rel="stylesheet" href="/css/nprogress.css">
+    <link rel="stylesheet" href="/css/nprogress_style.css">
+
     <script src="https://unpkg.com/codemirror@5.40.0/lib/codemirror.js"></script>
     <script src="https://unpkg.com/codemirror@5.40.0/mode/javascript/javascript.js"></script>
     <!-- color CSS you can use different color css from css/colors folder -->
     <!-- We have chosen the skin-blue (blue.css) for this starter
-          page. However, you can choose any other skin from folder css / colors .
--->
+          page. However, you can choose any other skin from folder css / colors .-->
+
     <link href="/css/colors/blue-dark.css" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -83,10 +87,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Page Content -->
     <div id="page-wrapper">
         <div class="container-fluid">
-            <div style="margin-bottom:10px">
+            <div style="margin-bottom:20px">
                 <form id="uploadForm" enctype="multipart/form-data">
-                    <input type="file" name="file" value="选择文件(.sol || .zip)"/>
-                    <button id="upload" type="button">上传文件</button>
+                    <br>
+                    <input type="file"  name="file" value="选择文件(.sol || .zip)"/>
+                    <br>
+                    <button id="upload" class="btn btn-primary" type="button">上传文件</button>
                 </form>
             </div>
             <div class="row bg-title" style="margin-top:10px">
@@ -120,11 +126,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="/js/jquery.slimscroll.js"></script>
 <!--Wave Effects -->
 <script src="/js/waves.js"></script>
+<!--Nprogress -->
+<script src="/js/nprogress.js" rel='stylesheet'></script>
 <!-- Custom Theme JavaScript -->
 <script src="/js/custom.min.js"></script>
 <script>
     $("#upload").click(function () {
-
+        NProgress.start();
         $.ajax({
             url: '/file/upload',
             type: 'POST',
@@ -134,9 +142,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
             contentType: false,
             success: function (res) {
                 if(res.code == 0) {
+                    NProgress.done();
                     $("#anlyse_btn").attr('data-id',res.data);
+                } else{
+                    alert(res.msg);
                 }
-                alert(res.msg);
             }
 
         })
@@ -150,13 +160,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
             alert("请上先传待测文件");
             return;
         }
+        NProgress.start();
         $.ajax({
             url: '/batchAnalyse/'+id,
             type: 'POST',
             dataType: "json",
             success: function (res) {
+                NProgress.done();
                 if(res.code==0) {
-                    alert("检测完毕，请点击'下载检测报告按钮'");
+                    //alert("检测完毕，请点击'下载检测报告按钮'");
                     $("#download").attr('data-id',res.data);
                     document.getElementById("download").setAttribute("style", "visibility: visible");
                 }
