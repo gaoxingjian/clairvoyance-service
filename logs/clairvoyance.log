@@ -743,3 +743,2543 @@ Start Contract NEXToken
 2020-10-13 19:15:11.035  INFO 6241 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-10-13 19:15:11.037  INFO 6241 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-10-13 19:15:11.043  INFO 6241 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-10-13 19:33:31.198  INFO 6241 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-10-13 19:33:31.199  WARN 6241 --- [http-nio-8080-exec-5] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-10-13 19:33:31.215  INFO 6241 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-10-13 19:33:31.223  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/66275f636bb14d6cb358d43d6d946d8220201013193327/test/test13.sol
+2020-10-13 19:33:33.649  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.controller.AnalyseController       : Start Contract owned
+	To analyze：owned.owned()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：owned.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract tokenRecipient
+Start Contract NecashTokenBase
+	To analyze：NecashTokenBase.NecashTokenBase()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashTokenBase._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashTokenBase.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashTokenBase.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashTokenBase.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashTokenBase.approveAndCall(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract NecashToken
+	To analyze：NecashToken.NecashTokenBase()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken.approveAndCall(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken.owned()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken.NecashToken()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NecashToken.freezeAccount(address,bool)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Pausable
+	To analyze：Pausable.owned()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.unpause()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract NeCashTokenSale
+	To analyze：NeCashTokenSale.owned()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.NeCashTokenSale()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.buyTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.changeMaxGasprice(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.changeTokenPrice(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.endSale()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.isValidPurchase()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.forwardFunds(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.calculateTokenAmount(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.calculatePriceForTokens(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NeCashTokenSale.finalizeSale()
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 19:33:33.663  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/66275f636bb14d6cb358d43d6d946d8220201013193327/test/test12.sol
+2020-10-13 19:33:34.595  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.controller.AnalyseController       : Process finished with exit code 255
+Compilation failure or other problems, please check the code.
+2020-10-13 19:33:34.602  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/66275f636bb14d6cb358d43d6d946d8220201013193327/test/test11.sol
+2020-10-13 19:33:36.201  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.controller.AnalyseController       : Start Contract ERC721
+Start Contract CryptoCelebrity
+	To analyze：CryptoCelebrity.CryptoCelebrity()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.createPromoPerson(address,string,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.createContractPerson(string)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.getPerson(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.implementsERC721()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.name()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.ownerOf(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.payout(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.withdrawAmountTo(uint256,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.purchase(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.changePrice(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.priceOf(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.setCEO(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.setCOO(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.symbol()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.takeOwnership(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.tokensOfOwner(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._addressNotNull(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._approved(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._createPerson(string,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._owns(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._payout(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CryptoCelebrity._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 19:33:36.208  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/66275f636bb14d6cb358d43d6d946d8220201013193327/test/test15.sol
+2020-10-13 19:33:37.291  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.controller.AnalyseController       : Start Contract Calculator
+Start Contract Ownable
+	To analyze：Ownable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Basic
+Start Contract ERC20
+Start Contract Sale
+	To analyze：Sale.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Sale.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Sale.Sale(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Sale.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Sale.buyTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Sale.setTokenSeller(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Sale.setCalculatorAddress(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Sale.setMinimalTokens(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Sale.withdraw(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 19:33:37.297  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/66275f636bb14d6cb358d43d6d946d8220201013193327/test/test14.sol
+2020-10-13 19:33:38.724  INFO 6241 --- [http-nio-8080-exec-5] c.c.c.controller.AnalyseController       : Start Contract SafeMath
+	To analyze：SafeMath.safeAdd(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.safeSub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.safeMul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.safeDiv(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Interface
+Start Contract ApproveAndCallFallBack
+Start Contract Owned
+	To analyze：Owned.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Owned.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Owned.acceptOwnership()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract NEXToken
+	To analyze：NEXToken.safeAdd(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.safeSub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.safeMul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.safeDiv(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.acceptOwnership()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.approveAndCall(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：NEXToken.transferAnyERC20Token(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 20:50:43.635  INFO 6241 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 20:50:43.637  INFO 6241 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2020-10-13 20:50:43.641  INFO 6241 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2020-10-13 21:42:33.619  INFO 10559 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MBP with PID 10559 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
+2020-10-13 21:42:33.623 DEBUG 10559 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-13 21:42:33.624  INFO 10559 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
+2020-10-13 21:42:33.763  INFO 10559 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-13 21:42:33.764  INFO 10559 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-13 21:42:35.718  WARN 10559 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-13 21:42:36.907  INFO 10559 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-13 21:42:36.923  INFO 10559 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-13 21:42:36.923  INFO 10559 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-13 21:42:37.045  INFO 10559 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-13 21:42:37.051  INFO 10559 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3287 ms
+2020-10-13 21:42:38.208  INFO 10559 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-13 21:42:38.320  INFO 10559 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 21:42:38.377  INFO 10559 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-13 21:42:38.495  WARN 10559 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-13 21:42:38.520  INFO 10559 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-13 21:42:38.521  INFO 10559 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-13 21:42:38.522  INFO 10559 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-13 21:42:38.523  INFO 10559 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-13 21:42:38.725  INFO 10559 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 21:42:38.735  INFO 10559 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-13 21:42:38.766  INFO 10559 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-13 21:42:38.808  INFO 10559 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-13 21:42:38.962  INFO 10559 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-13 21:42:38.966  INFO 10559 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-13 21:42:39.014  INFO 10559 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Started ClairvoyanceApplication in 6.777 seconds (JVM running for 8.329)
+2020-10-13 21:42:51.045  INFO 10559 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 21:42:51.047  INFO 10559 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-13 21:42:51.063  INFO 10559 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-10-13 21:43:41.098  INFO 10559 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-13 21:43:41.101  WARN 10559 --- [http-nio-8080-exec-5] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-10-13 21:43:41.403  INFO 10559 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-13 21:43:41.471  INFO 10559 --- [http-nio-8080-exec-5] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/e633ed4b8b93417d952b5b992807e59220201013214341/e633ed4b8b93417d952b5b992807e59220201013214341.sol
+2020-10-13 21:54:22.619 ERROR 10559 --- [http-nio-8080-exec-8] c.c.c.e.handler.RestExceptionHandler     : Exception, exception: {}
+
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.cav.clairvoyance.utils.DataResult com.cav.clairvoyance.controller.AnalyseController.analyse(java.lang.String) throws java.io.IOException,java.lang.InterruptedException
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:161) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) [tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_261]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_261]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_261]
+
+2020-10-13 21:54:22.622  WARN 10559 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.cav.clairvoyance.utils.DataResult com.cav.clairvoyance.controller.AnalyseController.analyse(java.lang.String) throws java.io.IOException,java.lang.InterruptedException]
+2020-10-13 22:30:27.887  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test10.sol
+2020-10-13 22:30:30.701  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Ownable
+	To analyze：Ownable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Basic
+Start Contract ERC20
+Start Contract BasicToken
+	To analyze：BasicToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract StandardToken
+	To analyze：StandardToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract MintableToken
+	To analyze：MintableToken.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.finishMinting()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract UNTToken
+	To analyze：UNTToken.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UNTToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UNTToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UNTToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UNTToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UNTToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UNTToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UNTToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UNTToken.mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UNTToken.finishMinting()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UNTToken.UNTToken()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UNTToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UNTToken.lockToken(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UNTToken.unlockToken(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UNTToken.hasAddress(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UNTToken.freezeToken()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UNTToken.unfreezeToken()
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:30:30.717  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test29.sol
+2020-10-13 22:30:35.258  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract Roles
+	To analyze：Roles.add(Roles.Role,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Roles.remove(Roles.Role,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Roles.has(Roles.Role,address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract MinterRole
+	To analyze：MinterRole.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MinterRole.isMinter(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MinterRole.addMinter(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MinterRole.renounceMinter()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MinterRole._addMinter(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MinterRole._removeMinter(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract PauserRole
+	To analyze：PauserRole.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PauserRole.isPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PauserRole.addPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PauserRole.renouncePauser()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PauserRole._addPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PauserRole._removePauser(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract IERC20
+Start Contract ERC20Detailed
+	To analyze：ERC20Detailed.constructor(string,string,uint8)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Detailed.name()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Detailed.symbol()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Detailed.decimals()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.mod(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20
+	To analyze：ERC20.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20.increaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20.decreaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20._mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20._burn(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20._burnFrom(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Pausable
+	To analyze：Pausable.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.isPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.addPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.renouncePauser()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable._addPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable._removePauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.paused()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.unpause()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Pausable
+	To analyze：ERC20Pausable.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.isPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.addPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.renouncePauser()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable._addPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable._removePauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.paused()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.increaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.decreaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable._mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable._burn(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable._burnFrom(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.increaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Pausable.decreaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Mintable
+	To analyze：ERC20Mintable.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.isPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.addPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.renouncePauser()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable._addPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable._removePauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.paused()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.increaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.decreaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable._mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable._burn(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable._burnFrom(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.increaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.decreaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.isMinter(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.addMinter(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.renounceMinter()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable._addMinter(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable._removeMinter(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Mintable.MinterFunc(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Capped
+	To analyze：ERC20Capped.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.isPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.addPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.renouncePauser()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped._addPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped._removePauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.paused()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.increaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.decreaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped._mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped._burn(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped._burnFrom(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.increaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.decreaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.isMinter(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.addMinter(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.renounceMinter()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped._addMinter(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped._removeMinter(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.MinterFunc(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.constructor(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.cap()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.Mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Capped.MinterFunction(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Burnable
+	To analyze：ERC20Burnable.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.isPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.addPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.renouncePauser()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable._addPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable._removePauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.paused()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.increaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.decreaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable._mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable._burn(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable._burnFrom(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.increaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.decreaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.burn(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Burnable.burnFrom(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Ownable
+	To analyze：Ownable.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable.owner()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable.isOwner()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable.renounceOwnership()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable._transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ReentrancyGuard
+	To analyze：ReentrancyGuard.constructor()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract DncToken
+	To analyze：DncToken.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.owner()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.isOwner()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.renounceOwnership()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken._transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.isPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.addPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.renouncePauser()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken._addPauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken._removePauser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.paused()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.increaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.decreaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken._mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken._burn(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken._burnFrom(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.increaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.decreaseAllowance(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.burn(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.burnFrom(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.isMinter(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.addMinter(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.renounceMinter()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken._addMinter(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken._removeMinter(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.MinterFunc(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.constructor(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.cap()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.Mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.MinterFunction(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.constructor(string,string,uint8)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.name()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.symbol()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.decimals()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.constructor(string,string,uint8,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.ChangeRate(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken._getTokenAmount(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.weiRaised()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken.buyTokens(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken._preValidatePurchase(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken._processPurchase(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken._deliverTokens(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DncToken._forwardFunds()
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:30:35.281  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test28.sol
+2020-10-13 22:31:00.243  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract ERC223Receiver
+Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Ownable
+	To analyze：Ownable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Claimable
+	To analyze：Claimable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Claimable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Claimable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Claimable.claimOwnership()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Basic
+Start Contract BasicToken
+	To analyze：BasicToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BasicToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BasicToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20
+Start Contract StandardToken
+	To analyze：StandardToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC223Token
+	To analyze：ERC223Token.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.claimOwnership()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.setERC223Activated(bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.setWhiteListContract(address,bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.setUserWhiteListContract(address,bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.checkAndInvokeReceiver(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.transfer(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC223Token.transferFrom(address,address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract BurnableToken
+	To analyze：BurnableToken.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.claimOwnership()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.setERC223Activated(bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.setWhiteListContract(address,bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.setUserWhiteListContract(address,bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.checkAndInvokeReceiver(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.transfer(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.transferFrom(address,address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BurnableToken.burnTokenBurn(uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract HoldersToken
+	To analyze：HoldersToken.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.claimOwnership()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.setERC223Activated(bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.setWhiteListContract(address,bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.setUserWhiteListContract(address,bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.checkAndInvokeReceiver(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.transfer(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.transferFrom(address,address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.burnTokenBurn(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.addHolder(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.transfer(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：HoldersToken.transferFrom(address,address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract MigrationAgent
+Start Contract MigratoryToken
+	To analyze：MigratoryToken.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.claimOwnership()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.setERC223Activated(bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.setWhiteListContract(address,bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.setUserWhiteListContract(address,bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.checkAndInvokeReceiver(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.transfer(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.transferFrom(address,address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.burnTokenBurn(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.addHolder(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.transfer(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.transferFrom(address,address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.setMigrationAgent(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.migrate()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MigratoryToken.migrateHolders(uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract FollowCoin
+	To analyze：FollowCoin.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.claimOwnership()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.setERC223Activated(bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.setWhiteListContract(address,bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.setUserWhiteListContract(address,bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.checkAndInvokeReceiver(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.transfer(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.transferFrom(address,address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.burnTokenBurn(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.addHolder(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.transfer(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.transferFrom(address,address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.setMigrationAgent(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.migrate()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.migrateHolders(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.FollowCoin()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.setMigrationGate(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.transferMulti(address[],uint256[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：FollowCoin.fallback()
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:31:00.254  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test16.sol
+2020-10-13 22:31:02.147  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract ERC20Basic
+Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract BasicToken
+	To analyze：BasicToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BasicToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BasicToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20
+Start Contract StandardToken
+	To analyze：StandardToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Token
+	To analyze：Token.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.Token(string,string,uint8,uint256)
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:31:02.157  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test17.sol
+2020-10-13 22:31:03.377  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract Token
+	To analyze：Token.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract StandardToken
+	To analyze：StandardToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract GodOfWealth
+	To analyze：GodOfWealth.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：GodOfWealth.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：GodOfWealth.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：GodOfWealth.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：GodOfWealth.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：GodOfWealth.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：GodOfWealth.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：GodOfWealth.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：GodOfWealth.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：GodOfWealth.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：GodOfWealth.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：GodOfWealth.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：GodOfWealth.GodOfWealth(uint256,string,uint8,string)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：GodOfWealth.approveAndCall(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:31:03.386  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test1.sol
+2020-10-13 22:31:27.970  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Process finished with exit code 255
+Compilation failure or other problems, please check the code.
+2020-10-13 22:31:27.977  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test3.sol
+2020-10-13 22:31:29.221  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract InfraCoin
+	To analyze：InfraCoin.InfraCoin()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：InfraCoin.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：InfraCoin.fallback()
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:31:29.227  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test2.sol
+2020-10-13 22:31:31.304  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract SOCGEN_301201
+	To analyze：SOCGEN_301201.SimpleERC20Token()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SOCGEN_301201.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SOCGEN_301201.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SOCGEN_301201.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:31:31.317  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test6.sol
+2020-10-13 22:31:32.947  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Ownable
+	To analyze：Ownable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract smartContract
+Start Contract Basic
+	To analyze：Basic.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Basic.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Basic.Basic(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Basic._recalculateAvailable(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Basic.addRecipient(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Basic.withdraw()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Basic._withdraw(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Basic.triggerWithdraw(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Basic.withdrawToOwner(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Basic._updateCurrentPeriod()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Partners
+	To analyze：Partners.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Partners.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Partners.Basic(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Partners._recalculateAvailable(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Partners.addRecipient(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Partners.withdraw()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Partners._withdraw(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Partners.triggerWithdraw(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Partners.withdrawToOwner(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Partners._updateCurrentPeriod()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Partners.Partners(address)
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:31:32.955  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test7.sol
+2020-10-13 22:31:34.229  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract Token
+	To analyze：Token.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract StandardToken
+	To analyze：StandardToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Rafatar
+	To analyze：Rafatar.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Rafatar.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Rafatar.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Rafatar.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Rafatar.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Rafatar.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Rafatar.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Rafatar.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Rafatar.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Rafatar.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Rafatar.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Rafatar.Rafatar()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Rafatar.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Rafatar.approveAndCall(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:31:34.239  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test5.sol
+2020-10-13 22:31:35.287  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Process finished with exit code 255
+Compilation failure or other problems, please check the code.
+2020-10-13 22:31:35.293  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test4.sol
+2020-10-13 22:31:36.324  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract Storage
+	To analyze：Storage.Storage()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Storage.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Storage.storeEth()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Storage.getEth()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Storage.sendEthTo(address)
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:31:36.332  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test9.sol
+2020-10-13 22:31:37.738  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract ABTokenBase
+Start Contract ABStandardToken
+	To analyze：ABStandardToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ABStandardToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ABStandardToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ABStandardToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ABStandardToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ABToken
+	To analyze：ABToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ABToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ABToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ABToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ABToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ABToken.ABToken()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ABToken.approveAndCall(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:31:37.746  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test8.sol
+2020-10-13 22:31:40.127  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Basic
+Start Contract ERC20
+Start Contract BasicToken
+	To analyze：BasicToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BasicToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract StandardToken
+	To analyze：StandardToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Ownable
+	To analyze：Ownable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Pausable
+	To analyze：Pausable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.unpause()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract SalePausable
+	To analyze：SalePausable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SalePausable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SalePausable.salePause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SalePausable.saleUnpause()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract PriceUpdate
+	To analyze：PriceUpdate.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PriceUpdate.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PriceUpdate.PriceUpdate()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PriceUpdate.newPrice(uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract BLTToken
+	To analyze：BLTToken.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.salePause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.saleUnpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.PriceUpdate()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.newPrice(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTToken.BLTToken()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract BLTTokenSale
+	To analyze：BLTTokenSale.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.salePause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.saleUnpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.PriceUpdate()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.newPrice(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.BLTToken()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.createTokens(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BLTTokenSale.forwardFunds()
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:31:40.143  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test26.sol
+2020-10-13 22:31:41.167  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Process finished with exit code 255
+Compilation failure or other problems, please check the code.
+2020-10-13 22:31:41.175  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test27.sol
+2020-10-13 22:31:48.706  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract IDRCWalletMgrParams
+Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Ownable
+	To analyze：Ownable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Withdrawable
+	To analyze：Withdrawable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Withdrawable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Withdrawable.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Withdrawable.withdraw(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Withdrawable.withdrawToken(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract TokenDestructible
+	To analyze：TokenDestructible.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TokenDestructible.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TokenDestructible.TokenDestructible()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TokenDestructible.destroy(address[])
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Claimable
+	To analyze：Claimable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Claimable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Claimable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Claimable.claimOwnership()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract DepositWithdraw
+	To analyze：DepositWithdraw.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.withdraw(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.withdrawToken(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.claimOwnership()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.constructor(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.setWithdrawWallet(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.bytesToBytes32(bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.receiveApproval(address,uint256,address,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.recordWithdraw(uint256,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.checkWithdrawAmount(address,uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.withdrawToken(address,address,uint256,address,uint256,uint256,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.withdrawTokenToDefault(address,address,uint256,uint256,uint256,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.getDepositNum()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.getOneDepositRec(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.getWithdrawNum()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DepositWithdraw.getOneWithdrawRec(uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract OwnerContract
+	To analyze：OwnerContract.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：OwnerContract.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：OwnerContract.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：OwnerContract.claimOwnership()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：OwnerContract.bindContract(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：OwnerContract.transferOwnershipBack()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：OwnerContract.changeOwnershipto(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract DRCWalletManager
+	To analyze：DRCWalletManager.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.TokenDestructible()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.destroy(address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.withdraw(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.withdrawToken(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.claimOwnership()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.bindContract(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.transferOwnershipBack()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.changeOwnershipto(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.bindToken(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.createDepositContract(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.getDepositInfo(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.getDepositWithdrawCount(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.getDepositWithdrawList(address,uint256[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.changeDefaultWithdraw(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.freezeTokens(address,bool,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.withdrawWithFee(address,uint256,uint256,bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.checkWithdrawAddress(address,bytes32,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.withdrawFromThis(DepositWithdraw,uint256,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：DRCWalletManager.withdrawWithFee(address,uint256,bytes32,address,uint256,bool)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Basic
+Start Contract ERC20
+
+2020-10-13 22:31:48.714  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test25.sol
+2020-10-13 22:32:18.724 ERROR 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : The command [slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test25.sol] timed out.
+
+java.util.concurrent.TimeoutException: null
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205) ~[na:1.8.0_261]
+	at com.cav.clairvoyance.utils.impl.LocalCommandExecutorImpl.executeCommand(LocalCommandExecutorImpl.java:67) ~[classes/:na]
+	at com.cav.clairvoyance.service.impl.AnalyseServiceImpl.analyseFile(AnalyseServiceImpl.java:30) [classes/:na]
+	at com.cav.clairvoyance.controller.AnalyseController.batchAnalyse(AnalyseController.java:100) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_261]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_261]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_261]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_261]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) [tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_261]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_261]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_261]
+
+2020-10-13 22:32:18.728  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Process finished with exit code -1
+Compilation failure or other problems, please check the code.
+2020-10-13 22:32:18.749  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test19.sol
+2020-10-13 22:32:20.822  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract ScamStampToken
+	To analyze：ScamStampToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ScamStampToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ScamStampToken.transferBack(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ScamStampToken.ScamStampToken()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ScamStamp
+	To analyze：ScamStamp.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ScamStamp.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ScamStamp.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ScamStamp.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ScamStamp.ScamStamp()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ScamStamp.markAsScam(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ScamStamp.forgiveIt(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ScamStamp.updateFlagCount(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ScamStamp.addAddressToIndex(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ScamStamp.forgiveMe()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ScamStamp.forgiveMeOnBehalfOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ScamStamp.forgiveThis(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ScamStamp.donate()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ScamStamp.fallback()
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:32:20.828  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test18.sol
+2020-10-13 22:32:50.838 ERROR 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : The command [slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test18.sol] timed out.
+
+java.util.concurrent.TimeoutException: null
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205) ~[na:1.8.0_261]
+	at com.cav.clairvoyance.utils.impl.LocalCommandExecutorImpl.executeCommand(LocalCommandExecutorImpl.java:67) ~[classes/:na]
+	at com.cav.clairvoyance.service.impl.AnalyseServiceImpl.analyseFile(AnalyseServiceImpl.java:30) [classes/:na]
+	at com.cav.clairvoyance.controller.AnalyseController.batchAnalyse(AnalyseController.java:100) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_261]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_261]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_261]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_261]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) [tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_261]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_261]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_261]
+
+2020-10-13 22:32:50.839  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Process finished with exit code -1
+Compilation failure or other problems, please check the code.
+2020-10-13 22:32:50.846  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test24.sol
+2020-10-13 22:32:55.428  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Ownable
+	To analyze：Ownable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Interface
+Start Contract ERC827
+Start Contract TEFoodsToken
+	To analyze：TEFoodsToken.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsToken.TEFoodsToken()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsToken.allocateTokens(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsToken.allocateVestedTokens(address,uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsToken.releaseVestedTokens(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsToken.enableTransfers()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsToken.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsToken.vestedBalanceOf(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract TEFoods827Token
+	To analyze：TEFoods827Token.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.TEFoodsToken()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.allocateTokens(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.allocateVestedTokens(address,uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.releaseVestedTokens(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.enableTransfers()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.vestedBalanceOf(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.approve(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.transfer(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoods827Token.transferFrom(address,address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract TEFoodsCrowdsale
+	To analyze：TEFoodsCrowdsale.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsCrowdsale.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsCrowdsale.TEFoodsCrowdsale()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsCrowdsale.allocatePresaleTokens(address,uint256,uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsCrowdsale.allocateMarketingTokens(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsCrowdsale.whitelistUsers(address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsCrowdsale.revokeUsers(address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsCrowdsale.setMaxGasPrice(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsCrowdsale.checkWhitelisted(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsCrowdsale.isOpen()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsCrowdsale.getRemainingEthAvailable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsCrowdsale._applyBonus(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsCrowdsale._allocateTokens(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsCrowdsale.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsCrowdsale.closeCrowdsale()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TEFoodsCrowdsale.enableTokenTransfers()
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:32:55.436  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test30.sol
+2020-10-13 22:32:57.743  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Token
+Start Contract PrayerCoinToken
+	To analyze：PrayerCoinToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PrayerCoinToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PrayerCoinToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PrayerCoinToken.getBalance(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PrayerCoinToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PrayerCoinToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Standard
+Start Contract PrayerCoin
+	To analyze：PrayerCoin.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PrayerCoin.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PrayerCoin.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PrayerCoin.getBalance(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PrayerCoin.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PrayerCoin.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PrayerCoin.PrayerCoin()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PrayerCoin.approveAndCall(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PrayerCoin.startDonations()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PrayerCoin.endDonations()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PrayerCoin.fiatSend(address,uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PrayerCoin.fallback()
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:32:57.753  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test20.sol
+2020-10-13 22:33:00.431  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract Manager
+	To analyze：Manager.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Manager.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Manager.transferManager(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Manager.acceptOwnership()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Manager.acceptManager()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.mod(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Interface
+Start Contract ReentrancyGuard
+Start Contract tokenRecipient
+Start Contract ERC20Base
+	To analyze：ERC20Base.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Base.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Base.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Base.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Base.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Base._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Base.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Base.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Base.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Base.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Base.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ERC20Base.approveAndCall(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ManualToken
+	To analyze：ManualToken.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.approveAndCall(address,uint256,bytes)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.transferManager(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.acceptOwnership()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.acceptManager()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.constructor()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.setLockToken(bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.setUseFreeze(bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.freezeAmount(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken.isFrozen(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：ManualToken._transfer(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:33:00.443  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test21.sol
+2020-10-13 22:33:05.097  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Ownable
+	To analyze：Ownable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Pausable
+	To analyze：Pausable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.emergencyStop()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.release()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20
+Start Contract MigrationAgent
+Start Contract WhiteList
+	To analyze：WhiteList.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：WhiteList.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Vesting
+	To analyze：Vesting.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Vesting.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Vesting.setToken(Token)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Vesting.setProductCompletionDate()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Vesting.transferTeamTokens(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Vesting.transferCompanyTokens(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract CrowdSale
+	To analyze：CrowdSale.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.setToken(Token)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.setProductCompletionDate()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.transferTeamTokens(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.transferCompanyTokens(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.emergencyStop()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.release()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.CrowdSale(WhiteList,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.numberOfBackers()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.setPresaleTwo()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.setMainSale(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.returnWebsiteData()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.fundContract(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.start()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.adjustDuration(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.contribute(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.finalizeSale()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.updateContributorAddress(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.claimTokensForUser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.claimTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.adminClaimTokenForUser(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.refund()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.refundNonCompliant(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.drain()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdSale.tokenDrain()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Token
+	To analyze：Token.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.Token(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.unlock()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.lock()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.setAuthorized(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.migrate(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.setMigrationAgent(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.setMigrationMaster(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Token.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:33:05.109  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test23.sol
+2020-10-13 22:33:06.199  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Process finished with exit code 255
+Compilation failure or other problems, please check the code.
+2020-10-13 22:33:06.205  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/50613f587bc54cbb9221617b49654e8d20201013223026/test2/test22.sol
+2020-10-13 22:33:07.936  INFO 10559 --- [http-nio-8080-exec-8] c.c.c.controller.AnalyseController       : Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Ownable
+	To analyze：Ownable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Basic
+Start Contract BasicToken
+	To analyze：BasicToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BasicToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20
+Start Contract StandardToken
+	To analyze：StandardToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract MintableToken
+	To analyze：MintableToken.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.finishMinting()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract EDash
+	To analyze：EDash.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：EDash.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：EDash.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：EDash.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：EDash.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：EDash.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：EDash.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：EDash.mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：EDash.finishMinting()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：EDash.EDash(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：EDash.setUnlockTimeStamp(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：EDash.airdrop(address[],uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：EDash.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：EDash.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：EDash.setLockByPass(address[],bool)
+		cfg分析安全，所以开始ICFG的分析
+
+2020-10-13 22:40:40.602  INFO 10559 --- [http-nio-8080-exec-4] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/develop/clairvoyance-service/files/5189acd37c8c43728e7498992655a2d320201013224040/5189acd37c8c43728e7498992655a2d320201013224040.sol
+2020-10-13 22:43:51.245  INFO 10559 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 22:43:51.248  INFO 10559 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-13 22:43:51.251  INFO 10559 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

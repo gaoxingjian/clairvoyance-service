@@ -10,8 +10,7 @@ import com.cav.clairvoyance.utils.DataResult;
 import com.cav.clairvoyance.utils.FileUtil;
 import com.cav.clairvoyance.utils.SHA1;
 import io.swagger.annotations.Api;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,7 +22,6 @@ import java.util.*;
 @RestController
 public class AnalyseController {
 
-    static final Logger logger = LoggerFactory.getLogger(AnalyseController.class);
 
     @Autowired
     private AnalyseService analyseService;
@@ -72,12 +70,12 @@ public class AnalyseController {
 
     @PostMapping("/batchAnalyse/{id}")
     public DataResult batchAnalyse(@PathVariable("id") String id) throws IOException, InterruptedException {
-        if(id.isEmpty() || id ==null) throw new BusinessException(BaseResponseCode.OPERATION_ERRO);
+        if (id.isEmpty() || id == null) throw new BusinessException(BaseResponseCode.OPERATION_ERRO);
         String dirPath = new File("files").getAbsolutePath();
         String specialDir = dirPath + File.separator + id;
         // 删除mac快照文件
-        FileUtil.deleteFile(specialDir+File.separator+"__MACOSX");
-        String reportsPath =  specialDir + File.separator + "detection_report_" + id;
+        FileUtil.deleteFile(specialDir + File.separator + "__MACOSX");
+        String reportsPath = specialDir + File.separator + "detection_report_" + id;
         FileUtil.deleteFile(reportsPath);
         FileUtil.makeDir(reportsPath);
         File file = new File(dirPath, id);
@@ -98,7 +96,6 @@ public class AnalyseController {
 
             if (recordList.isEmpty()) {
                 detectResult = analyseService.analyseFile(solFile.getAbsolutePath());
-                logger.info(detectResult);
                 // 将结果存入数据库
                 Record record = new Record();
                 record.setHash(hash);
@@ -110,7 +107,7 @@ public class AnalyseController {
             }
             // 将检测结果写入文件
             uuid = UUID.randomUUID().toString().replace("-", "").toLowerCase();
-            FileUtil.writeStringToFile(detectResult,reportsPath + File.separator + solFile.getName() + "_report_" + uuid + new SimpleDateFormat("YYYYMMddHHmmss").format(new Date()) + ".txt");
+            FileUtil.writeStringToFile(detectResult, reportsPath + File.separator + solFile.getName() + "_report_" + uuid + new SimpleDateFormat("YYYYMMddHHmmss").format(new Date()) + ".txt");
         }
         return DataResult.success(id);
     }

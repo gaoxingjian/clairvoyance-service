@@ -1,2 +1,0 @@
-Process finished with exit code 255
-Compilation failure or other problems, please check the code.

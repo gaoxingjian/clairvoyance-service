@@ -55,7 +55,7 @@ cmd:
     str: slither --detect ICfgReentrancy
     #str: ls
     # 执行timeout
-    timeout: 30000
+    timeout: 300000
 swagger2:
     # 接口文档开关
     enable: true

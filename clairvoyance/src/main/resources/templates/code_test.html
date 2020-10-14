@@ -180,6 +180,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     }
 
     function analyse() {
+        editorValue = getEditorValue()
         NProgress.start();
         let httpRequest = new XMLHttpRequest();//第一步：创建需要的对象
         httpRequest.open('POST', '/analyse', true); //第二步：打开连接

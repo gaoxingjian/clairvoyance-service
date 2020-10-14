@@ -1,114 +1,1005 @@
-2020-10-13 16:39:19.783  INFO 6757 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6757 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-13 16:39:19.814 DEBUG 6757 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-13 16:39:19.816  INFO 6757 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-13 16:39:21.597  WARN 6757 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-13 16:39:23.593  INFO 6757 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-13 16:39:24.220  INFO 6757 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-13 16:39:24.560  WARN 6757 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-13 16:39:24.686  INFO 6757 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-13 16:39:24.689  INFO 6757 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-13 16:39:24.690  INFO 6757 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-13 16:39:24.691  INFO 6757 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-13 16:39:24.979  INFO 6757 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-13 16:39:25.021  INFO 6757 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-13 16:39:25.070  INFO 6757 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-13 16:39:25.314  INFO 6757 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-13 16:39:25.321  INFO 6757 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-13 16:39:25.367  INFO 6757 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.712 seconds (JVM running for 8.869)
-2020-10-13 16:39:25.746  INFO 6757 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/reentrancy.sol
-2020-10-13 16:39:27.218  INFO 6757 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-13 16:41:29.248  INFO 6822 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6822 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-13 16:41:29.250 DEBUG 6822 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-13 16:41:29.256  INFO 6822 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-13 16:41:31.046  WARN 6822 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-13 16:41:33.193  INFO 6822 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-13 16:41:33.741  INFO 6822 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-13 16:41:34.105  WARN 6822 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-13 16:41:34.230  INFO 6822 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-13 16:41:34.231  INFO 6822 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-13 16:41:34.232  INFO 6822 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-13 16:41:34.233  INFO 6822 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-13 16:41:34.523  INFO 6822 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-13 16:41:34.564  INFO 6822 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-13 16:41:34.630  INFO 6822 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-13 16:41:34.890  INFO 6822 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-13 16:41:34.896  INFO 6822 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-13 16:41:34.954  INFO 6822 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.731 seconds (JVM running for 8.502)
-2020-10-13 16:41:35.420  INFO 6822 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test12.sol
-2020-10-13 16:41:36.677  INFO 6822 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-13 16:44:32.337  INFO 6881 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6881 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-13 16:44:32.340 DEBUG 6881 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-13 16:44:32.341  INFO 6881 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-13 16:44:34.093  WARN 6881 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-13 16:44:37.039  INFO 6881 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-13 16:44:37.686  INFO 6881 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-13 16:44:37.967  WARN 6881 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-13 16:44:38.060  INFO 6881 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-13 16:44:38.061  INFO 6881 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-13 16:44:38.062  INFO 6881 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-13 16:44:38.063  INFO 6881 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-13 16:44:38.323  INFO 6881 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-13 16:44:38.354  INFO 6881 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-13 16:44:38.396  INFO 6881 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-13 16:44:38.584  INFO 6881 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-13 16:44:38.587  INFO 6881 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-13 16:44:38.630  INFO 6881 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.461 seconds (JVM running for 10.005)
-2020-10-13 16:44:38.919  INFO 6881 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test12.sol
-2020-10-13 16:44:40.258  INFO 6881 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-13 16:44:58.393  INFO 6897 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 6897 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-13 16:44:58.395 DEBUG 6897 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-13 16:44:58.396  INFO 6897 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-13 16:44:59.776  WARN 6897 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-13 16:45:02.022  INFO 6897 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-13 16:45:02.673  INFO 6897 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-13 16:45:02.930  WARN 6897 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-13 16:45:03.010  INFO 6897 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-13 16:45:03.011  INFO 6897 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-13 16:45:03.013  INFO 6897 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-13 16:45:03.014  INFO 6897 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-13 16:45:03.209  INFO 6897 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-13 16:45:03.243  INFO 6897 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-13 16:45:03.286  INFO 6897 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-13 16:45:03.477  INFO 6897 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-13 16:45:03.480  INFO 6897 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-13 16:45:03.517  INFO 6897 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 5.989 seconds (JVM running for 7.876)
-2020-10-13 16:45:03.795  INFO 6897 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test11.sol
-2020-10-13 16:45:05.566  INFO 6897 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-13 17:14:14.643  INFO 7534 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 7534 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-13 17:14:14.645 DEBUG 7534 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-13 17:14:14.646  INFO 7534 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-13 17:14:16.462  WARN 7534 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-13 17:14:18.676  INFO 7534 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-13 17:14:19.328  INFO 7534 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-13 17:14:19.634  WARN 7534 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-13 17:14:19.722  INFO 7534 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-13 17:14:19.723  INFO 7534 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-13 17:14:19.725  INFO 7534 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-13 17:14:19.725  INFO 7534 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-13 17:14:19.941  INFO 7534 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-13 17:14:19.973  INFO 7534 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-13 17:14:20.012  INFO 7534 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-13 17:14:20.223  INFO 7534 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-13 17:14:20.227  INFO 7534 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-13 17:14:20.277  INFO 7534 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.505 seconds (JVM running for 8.783)
-2020-10-13 17:14:20.573  INFO 7534 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test11.sol
-2020-10-13 17:14:22.500  INFO 7534 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-13 17:14:43.444  INFO 7550 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 7550 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
-2020-10-13 17:14:43.446 DEBUG 7550 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-10-13 17:14:43.448  INFO 7550 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
-2020-10-13 17:14:44.992  WARN 7550 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-10-13 17:14:47.527  INFO 7550 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-13 17:14:48.013  INFO 7550 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-13 17:14:48.294  WARN 7550 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-10-13 17:14:48.382  INFO 7550 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-10-13 17:14:48.384  INFO 7550 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-10-13 17:14:48.384  INFO 7550 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-10-13 17:14:48.385  INFO 7550 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-10-13 17:14:48.601  INFO 7550 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-13 17:14:48.628  INFO 7550 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-13 17:14:48.661  INFO 7550 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-13 17:14:48.841  INFO 7550 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-10-13 17:14:48.845  INFO 7550 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-10-13 17:14:48.885  INFO 7550 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.34 seconds (JVM running for 8.1)
-2020-10-13 17:14:49.160  INFO 7550 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test/test12.sol
-2020-10-13 17:14:50.242  INFO 7550 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 15:08:09.830  INFO 73819 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 73819 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-14 15:08:09.856 DEBUG 73819 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-14 15:08:09.857  INFO 73819 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-14 15:08:11.665  WARN 73819 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-14 15:08:14.082  INFO 73819 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-14 15:08:14.695  INFO 73819 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 15:08:15.025  WARN 73819 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-14 15:08:15.135  INFO 73819 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-14 15:08:15.137  INFO 73819 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-14 15:08:15.140  INFO 73819 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-14 15:08:15.141  INFO 73819 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-14 15:08:15.437  INFO 73819 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-14 15:08:15.497  INFO 73819 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-14 15:08:15.542  INFO 73819 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-14 15:08:15.763  INFO 73819 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-14 15:08:15.766  INFO 73819 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-14 15:08:15.814  INFO 73819 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.022 seconds (JVM running for 10.133)
+2020-10-14 15:08:16.218  INFO 73819 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test2/test1.sol
+2020-10-14 15:08:35.309  INFO 73819 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 15:10:24.630  INFO 73841 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 73841 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-14 15:10:24.632 DEBUG 73841 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-14 15:10:24.634  INFO 73841 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-14 15:10:26.621  WARN 73841 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-14 15:10:29.069  INFO 73841 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-14 15:10:29.670  INFO 73841 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 15:10:30.020  WARN 73841 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-14 15:10:30.122  INFO 73841 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-14 15:10:30.123  INFO 73841 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-14 15:10:30.124  INFO 73841 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-14 15:10:30.125  INFO 73841 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-14 15:10:30.403  INFO 73841 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-14 15:10:30.437  INFO 73841 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-14 15:10:30.479  INFO 73841 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-14 15:10:30.684  INFO 73841 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-14 15:10:30.688  INFO 73841 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-14 15:10:30.747  INFO 73841 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.272 seconds (JVM running for 9.568)
+2020-10-14 15:10:31.116  INFO 73841 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test2/test1.sol
+2020-10-14 15:10:49.605  INFO 73841 --- [main] c.c.c.service.impl.AnalyseServiceImpl    : ExecuteResult(exitCode=255, executeOut=Start Contract Ownable
+	To analyze：Ownable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Pausable
+	To analyze：Pausable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.unpause()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Basic
+Start Contract ERC20
+Start Contract SafeERC20
+	To analyze：SafeERC20.safeTransfer(ERC20Basic,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeERC20.safeTransferFrom(ERC20,address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeERC20.safeApprove(ERC20,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract CanReclaimToken
+	To analyze：CanReclaimToken.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CanReclaimToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CanReclaimToken.reclaimToken(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract KYCBase
+	To analyze：KYCBase.KYCBase(address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：KYCBase.senderAllowedFor(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：KYCBase.buyTokensFor(address,uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：KYCBase.buyTokens(uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：KYCBase.buyImplementation(address,uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：KYCBase.fallback()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ICOEngineInterface
+Start Contract CrowdsaleBase
+	To analyze：CrowdsaleBase.KYCBase(address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.senderAllowedFor(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.buyTokensFor(address,uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.buyTokens(uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.buyImplementation(address,uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.reclaimToken(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.CrowdsaleBase(uint256,uint256,uint256,address,address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.started()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.ended()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.startTime()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.endTime()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.totalTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.remainingTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.senderAllowedFor(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.releaseTokensTo(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.forwardFunds(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.validPurchase()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract TokenVesting
+	To analyze：TokenVesting.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TokenVesting.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TokenVesting.TokenVesting(address,uint256,uint256,uint256,bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TokenVesting.release(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TokenVesting.revoke(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TokenVesting.releasableAmount(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TokenVesting.vestedAmount(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract BasicToken
+	To analyze：BasicToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BasicToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BasicToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract StandardToken
+	To analyze：StandardToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract MintableToken
+	To analyze：MintableToken.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.finishMinting()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract PausableToken
+	To analyze：PausableToken.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract UacToken
+	To analyze：UacToken.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.finishMinting()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.reclaimToken(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.UacToken()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract UbiatarPlayVault
+	To analyze：UbiatarPlayVault.UbiatarPlayVault(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UbiatarPlayVault.release()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UbiatarPlayVault.releasableAmount()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UbiatarPlayVault.vestedAmount()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract PresaleTokenVault
+	To analyze：PresaleTokenVault.init(address[],uint256[],uint256,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PresaleTokenVault.release(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PresaleTokenVault.release()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PresaleTokenVault.releasableAmount(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PresaleTokenVault.vestedAmount(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract UacCrowdsale
+	To analyze：UacCrowdsale.KYCBase(address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.senderAllowedFor(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.buyTokensFor(address,uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.buyTokens(uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.buyImplementation(address,uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.reclaimToken(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.CrowdsaleBase(uint256,uint256,uint256,address,address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.started()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.ended()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.startTime()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.endTime()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.totalTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.remainingTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.senderAllowedFor(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.releaseTokensTo(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.forwardFunds(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.validPurchase()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.UacCrowdsale(address,address,address,address,address,address,address,address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.mintPreAllocatedTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.initPresaleTokenVault(address[],uint256[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.price()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.mintReservationTokens(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.mintTokens(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.closeCrowdsale()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.finalise()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Reservation
+	To analyze：Reservation.KYCBase(address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.senderAllowedFor(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.buyTokensFor(address,uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+		contract: Reservation | function: buyTokensFor(address,uint64,uint256,uint8,bytes32,bytes32) | private: False | 锁/钱提前更新：False
+			path: ['entryPoint', 'require(bool)(senderAllowedFor(buyerAddress))', 'None', 'buyImplementation(buyerAddress,buyerId,maxAmount,v,r,s)', 'entryPoint', 'hash = sha256()(Eidoo icoengine authorization,this,buyerAddress,buyerId,maxAmount)', 'signer = ecrecover(bytes32,uint8,bytes32,bytes32)(hash,v,r,s)', '! isKycSigner[signer]', 'totalPayed = alreadyPayed[buyerId].add(msg.value)', 'require(bool)(totalPayed <= maxAmount)', 'alreadyPayed[buyerId] = totalPayed', 'KycVerified(signer,buyerAddress,buyerId,maxAmount)', 'releaseTokensTo(buyerAddress)', 'entryPoint', 'require(bool)(validPurchase())', 'None', 'None', 'None', 'weiAmount = msg.value', 'tokenAmount = weiAmount.mul(price())', 'entryPoint', 'refundWeiAmount = overflowTokens.div(price())', 'None', 'weiAmount = weiAmount.sub(refundWeiAmount)', 'buyer.transfer(refundWeiAmount)', 'None', 'weiRaised = weiRaised.add(weiAmount)', 'tokensSold = tokensSold.add(tokenAmount)', 'availableTokens = availableTokens.sub(tokenAmount)', 'mintTokens(buyer,tokenAmount)', 'entryPoint', 'crowdsale.mintReservationTokens(to,amount)']
+			path: ['entryPoint', 'require(bool)(senderAllowedFor(buyerAddress))', 'None', 'buyImplementation(buyerAddress,buyerId,maxAmount,v,r,s)', 'entryPoint', 'hash = sha256()(Eidoo icoengine authorization,this,buyerAddress,buyerId,maxAmount)', 'signer = ecrecover(bytes32,uint8,bytes32,bytes32)(hash,v,r,s)', '! isKycSigner[signer]', 'totalPayed = alreadyPayed[buyerId].add(msg.value)', 'require(bool)(totalPayed <= maxAmount)', 'alreadyPayed[buyerId] = totalPayed', 'KycVerified(signer,buyerAddress,buyerId,maxAmount)', 'releaseTokensTo(buyerAddress)', 'entryPoint', 'require(bool)(validPurchase())', 'None', 'None', 'None', 'weiAmount = msg.value', 'tokenAmount = weiAmount.mul(price())', 'None', 'tokenAmount >= availableTokens', 'capReached = true', 'overflowTokens = tokenAmount.sub(availableTokens)', 'tokenAmount = tokenAmount.sub(overflowTokens)', 'refundWeiAmount = overflowTokens.div(price())', 'None', 'weiAmount = weiAmount.sub(refundWeiAmount)', 'buyer.transfer(refundWeiAmount)', 'None', 'weiRaised = weiRaised.add(weiAmount)', 'tokensSold = tokensSold.add(tokenAmount)', 'availableTokens = availableTokens.sub(tokenAmount)', 'mintTokens(buyer,tokenAmount)', 'entryPoint', 'crowdsale.mintReservationTokens(to,amount)']
+[icfg_Reentrancy in] contract: Reservation . function: buyTokensFor | ../../../files/test2/test1.sol#265-270
+	To analyze：Reservation.buyTokens(uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+		contract: Reservation | function: buyTokens(uint64,uint256,uint8,bytes32,bytes32) | private: False | 锁/钱提前更新：False
+			path: ['entryPoint', 'buyImplementation(msg.sender,buyerId,maxAmount,v,r,s)', 'entryPoint', 'hash = sha256()(Eidoo icoengine authorization,this,buyerAddress,buyerId,maxAmount)', 'signer = ecrecover(bytes32,uint8,bytes32,bytes32)(hash,v,r,s)', '! isKycSigner[signer]', 'totalPayed = alreadyPayed[buyerId].add(msg.value)', 'require(bool)(totalPayed <= maxAmount)', 'alreadyPayed[buyerId] = totalPayed', 'KycVerified(signer,buyerAddress,buyerId,maxAmount)', 'releaseTokensTo(buyerAddress)', 'entryPoint', 'require(bool)(validPurchase())', 'None', 'None', 'None', 'weiAmount = msg.value', 'tokenAmount = weiAmount.mul(price())', 'entryPoint', 'refundWeiAmount = overflowTokens.div(price())', 'None', 'weiAmount = weiAmount.sub(refundWeiAmount)', 'buyer.transfer(refundWeiAmount)', 'None', 'weiRaised = weiRaised.add(weiAmount)', 'tokensSold = tokensSold.add(tokenAmount)', 'availableTokens = availableTokens.sub(tokenAmount)', 'mintTokens(buyer,tokenAmount)', 'entryPoint', 'crowdsale.mintReservationTokens(to,amount)']
+			path: ['entryPoint', 'buyImplementation(msg.sender,buyerId,maxAmount,v,r,s)', 'entryPoint', 'hash = sha256()(Eidoo icoengine authorization,this,buyerAddress,buyerId,maxAmount)', 'signer = ecrecover(bytes32,uint8,bytes32,bytes32)(hash,v,r,s)', '! isKycSigner[signer]', 'totalPayed = alreadyPayed[buyerId].add(msg.value)', 'require(bool)(totalPayed <= maxAmount)', 'alreadyPayed[buyerId] = totalPayed', 'KycVerified(signer,buyerAddress,buyerId,maxAmount)', 'releaseTokensTo(buyerAddress)', 'entryPoint', 'require(bool)(validPurchase())', 'None', 'None', 'None', 'weiAmount = msg.value', 'tokenAmount = weiAmount.mul(price())', 'None', 'tokenAmount >= availableTokens', 'capReached = true', 'overflowTokens = tokenAmount.sub(availableTokens)', 'tokenAmount = tokenAmount.sub(overflowTokens)', 'refundWeiAmount = overflowTokens.div(price())', 'None', 'weiAmount = weiAmount.sub(refundWeiAmount)', 'buyer.transfer(refundWeiAmount)', 'None', 'weiRaised = weiRaised.add(weiAmount)', 'tokensSold = tokensSold.add(tokenAmount)', 'availableTokens = availableTokens.sub(tokenAmount)', 'mintTokens(buyer,tokenAmount)', 'entryPoint', 'crowdsale.mintReservationTokens(to,amount)']
+[icfg_Reentrancy in] contract: Reservation . function: buyTokens | ../../../files/test2/test1.sol#272-276
+	To analyze：Reservation.buyImplementation(address,uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+		contract: Reservation | function: buyImplementation(address,uint64,uint256,uint8,bytes32,bytes32) | private: True | publicCaller: True | 锁/钱提前更新：False
+			path: ['entryPoint', 'hash = sha256()(Eidoo icoengine authorization,this,buyerAddress,buyerId,maxAmount)', 'signer = ecrecover(bytes32,uint8,bytes32,bytes32)(hash,v,r,s)', '! isKycSigner[signer]', 'totalPayed = alreadyPayed[buyerId].add(msg.value)', 'require(bool)(totalPayed <= maxAmount)', 'alreadyPayed[buyerId] = totalPayed', 'KycVerified(signer,buyerAddress,buyerId,maxAmount)', 'releaseTokensTo(buyerAddress)', 'entryPoint', 'require(bool)(validPurchase())', 'None', 'None', 'None', 'weiAmount = msg.value', 'tokenAmount = weiAmount.mul(price())', 'entryPoint', 'refundWeiAmount = overflowTokens.div(price())', 'None', 'weiAmount = weiAmount.sub(refundWeiAmount)', 'buyer.transfer(refundWeiAmount)', 'None', 'weiRaised = weiRaised.add(weiAmount)', 'tokensSold = tokensSold.add(tokenAmount)', 'availableTokens = availableTokens.sub(tokenAmount)', 'mintTokens(buyer,tokenAmount)', 'entryPoint', 'crowdsale.mintReservationTokens(to,amount)']
+			path: ['entryPoint', 'hash = sha256()(Eidoo icoengine authorization,this,buyerAddress,buyerId,maxAmount)', 'signer = ecrecover(bytes32,uint8,bytes32,bytes32)(hash,v,r,s)', '! isKycSigner[signer]', 'totalPayed = alreadyPayed[buyerId].add(msg.value)', 'require(bool)(totalPayed <= maxAmount)', 'alreadyPayed[buyerId] = totalPayed', 'KycVerified(signer,buyerAddress,buyerId,maxAmount)', 'releaseTokensTo(buyerAddress)', 'entryPoint', 'require(bool)(validPurchase())', 'None', 'None', 'None', 'weiAmount = msg.value', 'tokenAmount = weiAmount.mul(price())', 'None', 'tokenAmount >= availableTokens', 'capReached = true', 'overflowTokens = tokenAmount.sub(availableTokens)', 'tokenAmount = tokenAmount.sub(overflowTokens)', 'refundWeiAmount = overflowTokens.div(price())', 'None', 'weiAmount = weiAmount.sub(refundWeiAmount)', 'buyer.transfer(refundWeiAmount)', 'None', 'weiRaised = weiRaised.add(weiAmount)', 'tokensSold = tokensSold.add(tokenAmount)', 'availableTokens = availableTokens.sub(tokenAmount)', 'mintTokens(buyer,tokenAmount)', 'entryPoint', 'crowdsale.mintReservationTokens(to,amount)']
+[icfg_Reentrancy in] contract: Reservation . function: buyImplementation | ../../../files/test2/test1.sol#278-294
+	To analyze：Reservation.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.reclaimToken(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.CrowdsaleBase(uint256,uint256,uint256,address,address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.started()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.ended()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.startTime()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.endTime()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.totalTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.remainingTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.senderAllowedFor(address)
+		cfg分析安全，所以开始ICFG的分析
+		contract: Reservation | function: senderAllowedFor(address) | private: False | 锁/钱提前更新：False
+			path: ['entryPoint', 'require(bool)(senderAllowedFor(buyerAddress))', 'None', 'buyImplementation(buyerAddress,buyerId,maxAmount,v,r,s)', 'entryPoint', 'hash = sha256()(Eidoo icoengine authorization,this,buyerAddress,buyerId,maxAmount)', 'signer = ecrecover(bytes32,uint8,bytes32,bytes32)(hash,v,r,s)', '! isKycSigner[signer]', 'totalPayed = alreadyPayed[buyerId].add(msg.value)', 'require(bool)(totalPayed <= maxAmount)', 'alreadyPayed[buyerId] = totalPayed', 'KycVerified(signer,buyerAddress,buyerId,maxAmount)', 'releaseTokensTo(buyerAddress)', 'entryPoint', 'require(bool)(validPurchase())', 'None', 'None', 'None', 'weiAmount = msg.value', 'tokenAmount = weiAmount.mul(price())', 'entryPoint', 'refundWeiAmount = overflowTokens.div(price())', 'None', 'weiAmount = weiAmount.sub(refundWeiAmount)', 'buyer.transfer(refundWeiAmount)', 'None', 'weiRaised = weiRaised.add(weiAmount)', 'tokensSold = tokensSold.add(tokenAmount)', 'availableTokens = availableTokens.sub(tokenAmount)', 'mintTokens(buyer,tokenAmount)', 'entryPoint', 'crowdsale.mintReservationTokens(to,amount)']
+			path: ['entryPoint', 'require(bool)(senderAllowedFor(buyerAddress))', 'None', 'buyImplementation(buyerAddress,buyerId,maxAmount,v,r,s)', 'entryPoint', 'hash = sha256()(Eidoo icoengine authorization,this,buyerAddress,buyerId,maxAmount)', 'signer = ecrecover(bytes32,uint8,bytes32,bytes32)(hash,v,r,s)', '! isKycSigner[signer]', 'totalPayed = alreadyPayed[buyerId].add(msg.value)', 'require(bool)(totalPayed <= maxAmount)', 'alreadyPayed[buyerId] = totalPayed', 'KycVerified(signer,buyerAddress,buyerId,maxAmount)', 'releaseTokensTo(buyerAddress)', 'entryPoint', 'require(bool)(validPurchase())', 'None', 'None', 'None', 'weiAmount = msg.value', 'tokenAmount = weiAmount.mul(price())', 'None', 'tokenAmount >= availableTokens', 'capReached = true', 'overflowTokens = tokenAmount.sub(availableTokens)', 'tokenAmount = tokenAmount.sub(overflowTokens)', 'refundWeiAmount = overflowTokens.div(price())', 'None', 'weiAmount = weiAmount.sub(refundWeiAmount)', 'buyer.transfer(refundWeiAmount)', 'None', 'weiRaised = weiRaised.add(weiAmount)', 'tokensSold = tokensSold.add(tokenAmount)', 'availableTokens = availableTokens.sub(tokenAmount)', 'mintTokens(buyer,tokenAmount)', 'entryPoint', 'crowdsale.mintReservationTokens(to,amount)']
+[icfg_Reentrancy in] contract: Reservation . function: senderAllowedFor | ../../../files/test2/test1.sol#462-466
+	To analyze：Reservation.releaseTokensTo(address)
+		cfg分析安全，所以开始ICFG的分析
+)
+2020-10-14 15:10:49.643  INFO 73841 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 15:30:18.814  INFO 73917 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 73917 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-14 15:30:18.816 DEBUG 73917 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-14 15:30:18.818  INFO 73917 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-14 15:30:20.651  WARN 73917 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-14 15:30:23.290  INFO 73917 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-14 15:30:23.919  INFO 73917 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 15:30:24.265  WARN 73917 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-14 15:30:24.367  INFO 73917 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-14 15:30:24.368  INFO 73917 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-14 15:30:24.369  INFO 73917 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-14 15:30:24.372  INFO 73917 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-14 15:30:24.640  INFO 73917 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-14 15:30:24.705  INFO 73917 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-14 15:30:24.755  INFO 73917 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-14 15:30:24.965  INFO 73917 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-14 15:30:24.970  INFO 73917 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-14 15:30:25.026  INFO 73917 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.186 seconds (JVM running for 9.348)
+2020-10-14 15:30:25.426  INFO 73917 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test2/test1.sol
+2020-10-14 15:30:44.204  INFO 73917 --- [main] c.c.c.service.impl.AnalyseServiceImpl    : ExecuteResult(exitCode=255, executeOut=Start Contract Ownable
+	To analyze：Ownable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Ownable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Pausable
+	To analyze：Pausable.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Pausable.unpause()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ERC20Basic
+Start Contract ERC20
+Start Contract SafeERC20
+	To analyze：SafeERC20.safeTransfer(ERC20Basic,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeERC20.safeTransferFrom(ERC20,address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeERC20.safeApprove(ERC20,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract CanReclaimToken
+	To analyze：CanReclaimToken.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CanReclaimToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CanReclaimToken.reclaimToken(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract SafeMath
+	To analyze：SafeMath.mul(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.div(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.sub(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：SafeMath.add(uint256,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract KYCBase
+	To analyze：KYCBase.KYCBase(address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：KYCBase.senderAllowedFor(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：KYCBase.buyTokensFor(address,uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：KYCBase.buyTokens(uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：KYCBase.buyImplementation(address,uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：KYCBase.fallback()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract ICOEngineInterface
+Start Contract CrowdsaleBase
+	To analyze：CrowdsaleBase.KYCBase(address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.senderAllowedFor(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.buyTokensFor(address,uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.buyTokens(uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.buyImplementation(address,uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.reclaimToken(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.CrowdsaleBase(uint256,uint256,uint256,address,address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.started()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.ended()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.startTime()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.endTime()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.totalTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.remainingTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.senderAllowedFor(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.releaseTokensTo(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.forwardFunds(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：CrowdsaleBase.validPurchase()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract TokenVesting
+	To analyze：TokenVesting.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TokenVesting.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TokenVesting.TokenVesting(address,uint256,uint256,uint256,bool)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TokenVesting.release(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TokenVesting.revoke(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TokenVesting.releasableAmount(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：TokenVesting.vestedAmount(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract BasicToken
+	To analyze：BasicToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BasicToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：BasicToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract StandardToken
+	To analyze：StandardToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：StandardToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract MintableToken
+	To analyze：MintableToken.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：MintableToken.finishMinting()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract PausableToken
+	To analyze：PausableToken.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PausableToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract UacToken
+	To analyze：UacToken.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.totalSupply()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.balanceOf(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.allowance(address,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.transfer(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.transferFrom(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.approve(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.increaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.decreaseApproval(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.mint(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.finishMinting()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.reclaimToken(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacToken.UacToken()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract UbiatarPlayVault
+	To analyze：UbiatarPlayVault.UbiatarPlayVault(address,address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UbiatarPlayVault.release()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UbiatarPlayVault.releasableAmount()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UbiatarPlayVault.vestedAmount()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract PresaleTokenVault
+	To analyze：PresaleTokenVault.init(address[],uint256[],uint256,address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PresaleTokenVault.release(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PresaleTokenVault.release()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PresaleTokenVault.releasableAmount(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：PresaleTokenVault.vestedAmount(address)
+		cfg分析安全，所以开始ICFG的分析
+Start Contract UacCrowdsale
+	To analyze：UacCrowdsale.KYCBase(address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.senderAllowedFor(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.buyTokensFor(address,uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.buyTokens(uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.buyImplementation(address,uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.reclaimToken(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.CrowdsaleBase(uint256,uint256,uint256,address,address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.started()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.ended()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.startTime()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.endTime()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.totalTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.remainingTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.senderAllowedFor(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.releaseTokensTo(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.forwardFunds(uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.validPurchase()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.UacCrowdsale(address,address,address,address,address,address,address,address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.mintPreAllocatedTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.initPresaleTokenVault(address[],uint256[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.price()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.mintReservationTokens(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.mintTokens(address,uint256)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.closeCrowdsale()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：UacCrowdsale.finalise()
+		cfg分析安全，所以开始ICFG的分析
+Start Contract Reservation
+	To analyze：Reservation.KYCBase(address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.senderAllowedFor(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.buyTokensFor(address,uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+		contract: Reservation | function: buyTokensFor(address,uint64,uint256,uint8,bytes32,bytes32) | private: False | 锁/钱提前更新：False
+			path: ['entryPoint', 'require(bool)(senderAllowedFor(buyerAddress))', 'None', 'buyImplementation(buyerAddress,buyerId,maxAmount,v,r,s)', 'entryPoint', 'hash = sha256()(Eidoo icoengine authorization,this,buyerAddress,buyerId,maxAmount)', 'signer = ecrecover(bytes32,uint8,bytes32,bytes32)(hash,v,r,s)', '! isKycSigner[signer]', 'totalPayed = alreadyPayed[buyerId].add(msg.value)', 'require(bool)(totalPayed <= maxAmount)', 'alreadyPayed[buyerId] = totalPayed', 'KycVerified(signer,buyerAddress,buyerId,maxAmount)', 'releaseTokensTo(buyerAddress)', 'entryPoint', 'require(bool)(validPurchase())', 'None', 'None', 'None', 'weiAmount = msg.value', 'tokenAmount = weiAmount.mul(price())', 'entryPoint', 'refundWeiAmount = overflowTokens.div(price())', 'None', 'weiAmount = weiAmount.sub(refundWeiAmount)', 'buyer.transfer(refundWeiAmount)', 'None', 'weiRaised = weiRaised.add(weiAmount)', 'tokensSold = tokensSold.add(tokenAmount)', 'availableTokens = availableTokens.sub(tokenAmount)', 'mintTokens(buyer,tokenAmount)', 'entryPoint', 'crowdsale.mintReservationTokens(to,amount)']
+			path: ['entryPoint', 'require(bool)(senderAllowedFor(buyerAddress))', 'None', 'buyImplementation(buyerAddress,buyerId,maxAmount,v,r,s)', 'entryPoint', 'hash = sha256()(Eidoo icoengine authorization,this,buyerAddress,buyerId,maxAmount)', 'signer = ecrecover(bytes32,uint8,bytes32,bytes32)(hash,v,r,s)', '! isKycSigner[signer]', 'totalPayed = alreadyPayed[buyerId].add(msg.value)', 'require(bool)(totalPayed <= maxAmount)', 'alreadyPayed[buyerId] = totalPayed', 'KycVerified(signer,buyerAddress,buyerId,maxAmount)', 'releaseTokensTo(buyerAddress)', 'entryPoint', 'require(bool)(validPurchase())', 'None', 'None', 'None', 'weiAmount = msg.value', 'tokenAmount = weiAmount.mul(price())', 'None', 'tokenAmount >= availableTokens', 'capReached = true', 'overflowTokens = tokenAmount.sub(availableTokens)', 'tokenAmount = tokenAmount.sub(overflowTokens)', 'refundWeiAmount = overflowTokens.div(price())', 'None', 'weiAmount = weiAmount.sub(refundWeiAmount)', 'buyer.transfer(refundWeiAmount)', 'None', 'weiRaised = weiRaised.add(weiAmount)', 'tokensSold = tokensSold.add(tokenAmount)', 'availableTokens = availableTokens.sub(tokenAmount)', 'mintTokens(buyer,tokenAmount)', 'entryPoint', 'crowdsale.mintReservationTokens(to,amount)']
+[icfg_Reentrancy in] contract: Reservation . function: buyTokensFor | ../../../files/test2/test1.sol#265-270
+	To analyze：Reservation.buyTokens(uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+		contract: Reservation | function: buyTokens(uint64,uint256,uint8,bytes32,bytes32) | private: False | 锁/钱提前更新：False
+			path: ['entryPoint', 'buyImplementation(msg.sender,buyerId,maxAmount,v,r,s)', 'entryPoint', 'hash = sha256()(Eidoo icoengine authorization,this,buyerAddress,buyerId,maxAmount)', 'signer = ecrecover(bytes32,uint8,bytes32,bytes32)(hash,v,r,s)', '! isKycSigner[signer]', 'totalPayed = alreadyPayed[buyerId].add(msg.value)', 'require(bool)(totalPayed <= maxAmount)', 'alreadyPayed[buyerId] = totalPayed', 'KycVerified(signer,buyerAddress,buyerId,maxAmount)', 'releaseTokensTo(buyerAddress)', 'entryPoint', 'require(bool)(validPurchase())', 'None', 'None', 'None', 'weiAmount = msg.value', 'tokenAmount = weiAmount.mul(price())', 'entryPoint', 'refundWeiAmount = overflowTokens.div(price())', 'None', 'weiAmount = weiAmount.sub(refundWeiAmount)', 'buyer.transfer(refundWeiAmount)', 'None', 'weiRaised = weiRaised.add(weiAmount)', 'tokensSold = tokensSold.add(tokenAmount)', 'availableTokens = availableTokens.sub(tokenAmount)', 'mintTokens(buyer,tokenAmount)', 'entryPoint', 'crowdsale.mintReservationTokens(to,amount)']
+			path: ['entryPoint', 'buyImplementation(msg.sender,buyerId,maxAmount,v,r,s)', 'entryPoint', 'hash = sha256()(Eidoo icoengine authorization,this,buyerAddress,buyerId,maxAmount)', 'signer = ecrecover(bytes32,uint8,bytes32,bytes32)(hash,v,r,s)', '! isKycSigner[signer]', 'totalPayed = alreadyPayed[buyerId].add(msg.value)', 'require(bool)(totalPayed <= maxAmount)', 'alreadyPayed[buyerId] = totalPayed', 'KycVerified(signer,buyerAddress,buyerId,maxAmount)', 'releaseTokensTo(buyerAddress)', 'entryPoint', 'require(bool)(validPurchase())', 'None', 'None', 'None', 'weiAmount = msg.value', 'tokenAmount = weiAmount.mul(price())', 'None', 'tokenAmount >= availableTokens', 'capReached = true', 'overflowTokens = tokenAmount.sub(availableTokens)', 'tokenAmount = tokenAmount.sub(overflowTokens)', 'refundWeiAmount = overflowTokens.div(price())', 'None', 'weiAmount = weiAmount.sub(refundWeiAmount)', 'buyer.transfer(refundWeiAmount)', 'None', 'weiRaised = weiRaised.add(weiAmount)', 'tokensSold = tokensSold.add(tokenAmount)', 'availableTokens = availableTokens.sub(tokenAmount)', 'mintTokens(buyer,tokenAmount)', 'entryPoint', 'crowdsale.mintReservationTokens(to,amount)']
+[icfg_Reentrancy in] contract: Reservation . function: buyTokens | ../../../files/test2/test1.sol#272-276
+	To analyze：Reservation.buyImplementation(address,uint64,uint256,uint8,bytes32,bytes32)
+		cfg分析安全，所以开始ICFG的分析
+		contract: Reservation | function: buyImplementation(address,uint64,uint256,uint8,bytes32,bytes32) | private: True | publicCaller: True | 锁/钱提前更新：False
+			path: ['entryPoint', 'hash = sha256()(Eidoo icoengine authorization,this,buyerAddress,buyerId,maxAmount)', 'signer = ecrecover(bytes32,uint8,bytes32,bytes32)(hash,v,r,s)', '! isKycSigner[signer]', 'totalPayed = alreadyPayed[buyerId].add(msg.value)', 'require(bool)(totalPayed <= maxAmount)', 'alreadyPayed[buyerId] = totalPayed', 'KycVerified(signer,buyerAddress,buyerId,maxAmount)', 'releaseTokensTo(buyerAddress)', 'entryPoint', 'require(bool)(validPurchase())', 'None', 'None', 'None', 'weiAmount = msg.value', 'tokenAmount = weiAmount.mul(price())', 'entryPoint', 'refundWeiAmount = overflowTokens.div(price())', 'None', 'weiAmount = weiAmount.sub(refundWeiAmount)', 'buyer.transfer(refundWeiAmount)', 'None', 'weiRaised = weiRaised.add(weiAmount)', 'tokensSold = tokensSold.add(tokenAmount)', 'availableTokens = availableTokens.sub(tokenAmount)', 'mintTokens(buyer,tokenAmount)', 'entryPoint', 'crowdsale.mintReservationTokens(to,amount)']
+			path: ['entryPoint', 'hash = sha256()(Eidoo icoengine authorization,this,buyerAddress,buyerId,maxAmount)', 'signer = ecrecover(bytes32,uint8,bytes32,bytes32)(hash,v,r,s)', '! isKycSigner[signer]', 'totalPayed = alreadyPayed[buyerId].add(msg.value)', 'require(bool)(totalPayed <= maxAmount)', 'alreadyPayed[buyerId] = totalPayed', 'KycVerified(signer,buyerAddress,buyerId,maxAmount)', 'releaseTokensTo(buyerAddress)', 'entryPoint', 'require(bool)(validPurchase())', 'None', 'None', 'None', 'weiAmount = msg.value', 'tokenAmount = weiAmount.mul(price())', 'None', 'tokenAmount >= availableTokens', 'capReached = true', 'overflowTokens = tokenAmount.sub(availableTokens)', 'tokenAmount = tokenAmount.sub(overflowTokens)', 'refundWeiAmount = overflowTokens.div(price())', 'None', 'weiAmount = weiAmount.sub(refundWeiAmount)', 'buyer.transfer(refundWeiAmount)', 'None', 'weiRaised = weiRaised.add(weiAmount)', 'tokensSold = tokensSold.add(tokenAmount)', 'availableTokens = availableTokens.sub(tokenAmount)', 'mintTokens(buyer,tokenAmount)', 'entryPoint', 'crowdsale.mintReservationTokens(to,amount)']
+[icfg_Reentrancy in] contract: Reservation . function: buyImplementation | ../../../files/test2/test1.sol#278-294
+	To analyze：Reservation.fallback()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.Ownable()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.transferOwnership(address)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.reclaimToken(ERC20Basic)
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.pause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.unpause()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.CrowdsaleBase(uint256,uint256,uint256,address,address[])
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.started()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.ended()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.startTime()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.endTime()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.totalTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.remainingTokens()
+		cfg分析安全，所以开始ICFG的分析
+	To analyze：Reservation.senderAllowedFor(address)
+		cfg分析安全，所以开始ICFG的分析
+		contract: Reservation | function: senderAllowedFor(address) | private: False | 锁/钱提前更新：False
+			path: ['entryPoint', 'require(bool)(senderAllowedFor(buyerAddress))', 'None', 'buyImplementation(buyerAddress,buyerId,maxAmount,v,r,s)', 'entryPoint', 'hash = sha256()(Eidoo icoengine authorization,this,buyerAddress,buyerId,maxAmount)', 'signer = ecrecover(bytes32,uint8,bytes32,bytes32)(hash,v,r,s)', '! isKycSigner[signer]', 'totalPayed = alreadyPayed[buyerId].add(msg.value)', 'require(bool)(totalPayed <= maxAmount)', 'alreadyPayed[buyerId] = totalPayed', 'KycVerified(signer,buyerAddress,buyerId,maxAmount)', 'releaseTokensTo(buyerAddress)', 'entryPoint', 'require(bool)(validPurchase())', 'None', 'None', 'None', 'weiAmount = msg.value', 'tokenAmount = weiAmount.mul(price())', 'entryPoint', 'refundWeiAmount = overflowTokens.div(price())', 'None', 'weiAmount = weiAmount.sub(refundWeiAmount)', 'buyer.transfer(refundWeiAmount)', 'None', 'weiRaised = weiRaised.add(weiAmount)', 'tokensSold = tokensSold.add(tokenAmount)', 'availableTokens = availableTokens.sub(tokenAmount)', 'mintTokens(buyer,tokenAmount)', 'entryPoint', 'crowdsale.mintReservationTokens(to,amount)']
+			path: ['entryPoint', 'require(bool)(senderAllowedFor(buyerAddress))', 'None', 'buyImplementation(buyerAddress,buyerId,maxAmount,v,r,s)', 'entryPoint', 'hash = sha256()(Eidoo icoengine authorization,this,buyerAddress,buyerId,maxAmount)', 'signer = ecrecover(bytes32,uint8,bytes32,bytes32)(hash,v,r,s)', '! isKycSigner[signer]', 'totalPayed = alreadyPayed[buyerId].add(msg.value)', 'require(bool)(totalPayed <= maxAmount)', 'alreadyPayed[buyerId] = totalPayed', 'KycVerified(signer,buyerAddress,buyerId,maxAmount)', 'releaseTokensTo(buyerAddress)', 'entryPoint', 'require(bool)(validPurchase())', 'None', 'None', 'None', 'weiAmount = msg.value', 'tokenAmount = weiAmount.mul(price())', 'None', 'tokenAmount >= availableTokens', 'capReached = true', 'overflowTokens = tokenAmount.sub(availableTokens)', 'tokenAmount = tokenAmount.sub(overflowTokens)', 'refundWeiAmount = overflowTokens.div(price())', 'None', 'weiAmount = weiAmount.sub(refundWeiAmount)', 'buyer.transfer(refundWeiAmount)', 'None', 'weiRaised = weiRaised.add(weiAmount)', 'tokensSold = tokensSold.add(tokenAmount)', 'availableTokens = availableTokens.sub(tokenAmount)', 'mintTokens(buyer,tokenAmount)', 'entryPoint', 'crowdsale.mintReservationTokens(to,amount)']
+[icfg_Reentrancy in] contract: Reservation . function: senderAllowedFor | ../../../files/test2/test1.sol#462-466
+	To analyze：Reservation.releaseTokensTo(address)
+		cfg分析安全，所以开始ICFG的分析
+)
+2020-10-14 15:30:44.247  INFO 73917 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 15:32:32.241  INFO 73930 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 73930 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-14 15:32:32.244 DEBUG 73930 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-14 15:32:32.244  INFO 73930 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-14 15:32:33.985  WARN 73930 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-14 15:32:36.193  INFO 73930 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-14 15:32:36.703  INFO 73930 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 15:32:36.984  WARN 73930 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-14 15:32:37.076  INFO 73930 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-14 15:32:37.078  INFO 73930 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-14 15:32:37.079  INFO 73930 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-14 15:32:37.079  INFO 73930 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-14 15:32:37.291  INFO 73930 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-14 15:32:37.331  INFO 73930 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-14 15:32:37.369  INFO 73930 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-14 15:32:37.600  INFO 73930 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-14 15:32:37.606  INFO 73930 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-14 15:32:37.670  INFO 73930 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.33 seconds (JVM running for 8.764)
+2020-10-14 15:32:37.999  INFO 73930 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test2/test1.sol
+2020-10-14 15:32:56.135  INFO 73930 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:13:08.393  INFO 74263 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 74263 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-14 16:13:08.396 DEBUG 74263 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-14 16:13:08.397  INFO 74263 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-14 16:13:11.245  WARN 74263 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-14 16:13:13.831  INFO 74263 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-14 16:13:14.502  INFO 74263 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:13:14.898  WARN 74263 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-14 16:13:15.015  INFO 74263 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-14 16:13:15.016  INFO 74263 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-14 16:13:15.017  INFO 74263 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-14 16:13:15.018  INFO 74263 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-14 16:13:15.276  INFO 74263 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-14 16:13:15.316  INFO 74263 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-14 16:13:15.362  INFO 74263 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-14 16:13:15.575  INFO 74263 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-14 16:13:15.578  INFO 74263 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-14 16:13:15.619  INFO 74263 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.987 seconds (JVM running for 9.97)
+2020-10-14 16:13:16.085  INFO 74263 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy "/Users/jason/files/test2/test5 0.sol"
+2020-10-14 16:13:17.424  INFO 74263 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:14:07.184  INFO 74280 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 74280 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-14 16:14:07.192 DEBUG 74280 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-14 16:14:07.195  INFO 74280 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-14 16:14:08.853  WARN 74280 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-14 16:14:11.603  INFO 74280 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-14 16:14:12.145  INFO 74280 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:14:12.420  WARN 74280 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-14 16:14:12.520  INFO 74280 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-14 16:14:12.521  INFO 74280 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-14 16:14:12.522  INFO 74280 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-14 16:14:12.523  INFO 74280 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-14 16:14:12.793  INFO 74280 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-14 16:14:12.825  INFO 74280 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-14 16:14:12.896  INFO 74280 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-14 16:14:13.171  INFO 74280 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-14 16:14:13.175  INFO 74280 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-14 16:14:13.224  INFO 74280 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.216 seconds (JVM running for 9.317)
+2020-10-14 16:14:13.552  INFO 74280 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy "/Users/jason/files/test2/test6 0.sol"
+2020-10-14 16:14:15.147  INFO 74280 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:15:31.605  INFO 74306 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 74306 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-14 16:15:31.606 DEBUG 74306 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-14 16:15:31.608  INFO 74306 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-14 16:15:33.514  WARN 74306 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-14 16:15:35.755  INFO 74306 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-14 16:15:36.288  INFO 74306 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:15:36.578  WARN 74306 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-14 16:15:36.689  INFO 74306 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-14 16:15:36.690  INFO 74306 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-14 16:15:36.692  INFO 74306 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-14 16:15:36.693  INFO 74306 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-14 16:15:36.928  INFO 74306 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-14 16:15:36.962  INFO 74306 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-14 16:15:37.001  INFO 74306 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-14 16:15:37.234  INFO 74306 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-14 16:15:37.238  INFO 74306 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-14 16:15:37.322  INFO 74306 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.695 seconds (JVM running for 8.59)
+2020-10-14 16:15:37.636  INFO 74306 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy "/Users/jason/files/test2/test6.sol"
+2020-10-14 16:15:38.974  INFO 74306 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:17:52.451  INFO 74340 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 74340 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-14 16:17:52.453 DEBUG 74340 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-14 16:17:52.455  INFO 74340 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-14 16:17:54.238  WARN 74340 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-14 16:17:56.580  INFO 74340 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-14 16:17:57.157  INFO 74340 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:17:57.464  WARN 74340 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-14 16:17:57.563  INFO 74340 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-14 16:17:57.565  INFO 74340 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-14 16:17:57.566  INFO 74340 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-14 16:17:57.568  INFO 74340 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-14 16:17:57.820  INFO 74340 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-14 16:17:57.852  INFO 74340 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-14 16:17:57.896  INFO 74340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-14 16:17:58.144  INFO 74340 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-14 16:17:58.147  INFO 74340 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-14 16:17:58.192  INFO 74340 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.887 seconds (JVM running for 9.219)
+2020-10-14 16:17:58.581  INFO 74340 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy "/Users/jason/files/test2/test6.sol"
+2020-10-14 16:17:59.970  INFO 74340 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:19:01.207  INFO 74352 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 74352 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-14 16:19:01.208 DEBUG 74352 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-14 16:19:01.209  INFO 74352 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-14 16:19:02.962  WARN 74352 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-14 16:19:05.014  INFO 74352 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-14 16:19:05.503  INFO 74352 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:19:05.783  WARN 74352 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-14 16:19:05.882  INFO 74352 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-14 16:19:05.884  INFO 74352 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-14 16:19:05.885  INFO 74352 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-14 16:19:05.885  INFO 74352 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-14 16:19:06.182  INFO 74352 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-14 16:19:06.228  INFO 74352 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-14 16:19:06.265  INFO 74352 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-14 16:19:06.477  INFO 74352 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-14 16:19:06.481  INFO 74352 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-14 16:19:06.523  INFO 74352 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.493 seconds (JVM running for 9.186)
+2020-10-14 16:19:06.808  INFO 74352 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy "/Users/jason/files/test2/test16.sol"
+2020-10-14 16:19:08.104  INFO 74352 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:20:03.607  INFO 74367 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 74367 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-14 16:20:03.610 DEBUG 74367 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-14 16:20:03.611  INFO 74367 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-14 16:20:05.570  WARN 74367 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-14 16:20:07.782  INFO 74367 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-14 16:20:08.320  INFO 74367 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:20:08.628  WARN 74367 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-14 16:20:08.733  INFO 74367 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-14 16:20:08.734  INFO 74367 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-14 16:20:08.735  INFO 74367 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-14 16:20:08.739  INFO 74367 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-14 16:20:08.998  INFO 74367 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-14 16:20:09.029  INFO 74367 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-14 16:20:09.069  INFO 74367 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-14 16:20:09.293  INFO 74367 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-14 16:20:09.296  INFO 74367 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-14 16:20:09.339  INFO 74367 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.898 seconds (JVM running for 9.01)
+2020-10-14 16:20:09.640  INFO 74367 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy '/Users/jason/files/test2/test16.sol'
+2020-10-14 16:20:10.907  INFO 74367 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:20:40.405  INFO 74374 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 74374 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-14 16:20:40.408 DEBUG 74374 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-14 16:20:40.409  INFO 74374 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-14 16:20:42.769  WARN 74374 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-14 16:20:45.045  INFO 74374 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-14 16:20:45.581  INFO 74374 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:20:45.875  WARN 74374 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-14 16:20:45.965  INFO 74374 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-14 16:20:45.967  INFO 74374 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-14 16:20:45.968  INFO 74374 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-14 16:20:45.969  INFO 74374 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-14 16:20:46.223  INFO 74374 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-14 16:20:46.254  INFO 74374 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-14 16:20:46.301  INFO 74374 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-14 16:20:46.494  INFO 74374 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-14 16:20:46.498  INFO 74374 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-14 16:20:46.542  INFO 74374 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 7.132 seconds (JVM running for 9.7)
+2020-10-14 16:20:46.909  INFO 74374 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test2/test16.sol
+2020-10-14 16:20:48.903  INFO 74374 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:35:02.337  INFO 74633 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 74633 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-14 16:35:02.341 DEBUG 74633 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-14 16:35:02.342  INFO 74633 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-14 16:35:04.289  WARN 74633 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-14 16:35:06.563  INFO 74633 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-14 16:35:07.104  INFO 74633 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:35:07.401  WARN 74633 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-14 16:35:07.499  INFO 74633 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-14 16:35:07.500  INFO 74633 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-14 16:35:07.501  INFO 74633 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-14 16:35:07.502  INFO 74633 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-14 16:35:07.761  INFO 74633 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-14 16:35:07.799  INFO 74633 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-14 16:35:07.840  INFO 74633 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-14 16:35:08.071  INFO 74633 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-14 16:35:08.074  INFO 74633 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-14 16:35:08.119  INFO 74633 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.832 seconds (JVM running for 8.887)
+2020-10-14 16:35:08.492  INFO 74633 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test2/test1.sol
+2020-10-14 16:35:26.460  INFO 74633 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:36:22.304  INFO 74646 --- [main] c.c.c.service.AnalyseServiceTest         : Starting AnalyseServiceTest on JasonGaos-MBP with PID 74646 (started by jason in /Users/jason/develop/clairvoyance-service/clairvoyance)
+2020-10-14 16:36:22.306 DEBUG 74646 --- [main] c.c.c.service.AnalyseServiceTest         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-14 16:36:22.308  INFO 74646 --- [main] c.c.c.service.AnalyseServiceTest         : No active profile set, falling back to default profiles: default
+2020-10-14 16:36:23.968  WARN 74646 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-10-14 16:36:26.129  INFO 74646 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-14 16:36:26.641  INFO 74646 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 16:36:26.935  WARN 74646 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-14 16:36:27.046  INFO 74646 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-10-14 16:36:27.048  INFO 74646 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-10-14 16:36:27.049  INFO 74646 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-10-14 16:36:27.050  INFO 74646 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-10-14 16:36:27.351  INFO 74646 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-14 16:36:27.386  INFO 74646 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-14 16:36:27.430  INFO 74646 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-14 16:36:27.651  INFO 74646 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-10-14 16:36:27.655  INFO 74646 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-10-14 16:36:27.707  INFO 74646 --- [main] c.c.c.service.AnalyseServiceTest         : Started AnalyseServiceTest in 6.344 seconds (JVM running for 8.727)
+2020-10-14 16:36:27.997  INFO 74646 --- [main] c.c.c.u.impl.LocalCommandExecutorImpl    : slither --detect ICfgReentrancy /Users/jason/files/test2/test2.sol
+2020-10-14 16:36:29.574  INFO 74646 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
