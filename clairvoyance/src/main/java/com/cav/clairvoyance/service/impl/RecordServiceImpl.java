@@ -32,6 +32,8 @@ public class RecordServiceImpl implements RecordService {
     public int saveRecord(Record record) {
         return recordMapper.insertSelective(record);
     }
+
+
     @Transactional
     @Override
     public int deleteById(Long id) {

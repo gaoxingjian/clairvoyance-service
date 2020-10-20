@@ -5,6 +5,7 @@ import com.cav.clairvoyance.exception.code.BaseResponseCode;
 import com.cav.clairvoyance.service.FileService;
 import com.cav.clairvoyance.utils.DataResult;
 import com.cav.clairvoyance.utils.FileUtil;
+import com.cav.clairvoyance.utils.UUIDUtil;
 import com.cav.clairvoyance.utils.ZipUtil;
 import io.swagger.annotations.Api;
 import org.apache.commons.io.IOUtils;
@@ -31,16 +32,17 @@ public class FileController {
 
     @Autowired
     private FileService fileService;
-    private static String fileUploadRootDir = null;
+    private static String fileRootDir = null;
+    private static String tempDir = null;
 
-    @Value("${file.upload.root.dir.windows}")
-    String fileUploadRootDirWindows;
+    @Value("${file.root.dir.windows}")
+    String fileRootDirWindows;
 
-    @Value("${file.upload.root.dir.mac}")
-    String fileUploadRootDirMac;
+    @Value("${file.root.dir.mac}")
+    String fileRootDirMac;
 
-    @Value("${file.upload.root.dir.linux}")
-    String fileUploadRootDirLinux;
+    @Value("${file.root.dir.linux}")
+    String fileRootDirLinux;
 
 
     @PostConstruct
@@ -51,15 +53,16 @@ public class FileController {
 
         if (osName.startsWith("Mac OS")) {
 
-            fileUploadRootDir = fileUploadRootDirMac;
+            fileRootDir = fileRootDirMac;
         } else if (osName.startsWith("Windows")) {
 
-            fileUploadRootDir = fileUploadRootDirWindows;
+            fileRootDir = fileRootDirWindows;
         } else {
 
-            fileUploadRootDir = fileUploadRootDirLinux;
+            fileRootDir = fileRootDirLinux;
         }
-        FileUtil.makeDir(fileUploadRootDir);
+        tempDir = fileRootDir + File.separator + "temp";
+        FileUtil.makeDir(tempDir);
     }
 
 
@@ -68,17 +71,16 @@ public class FileController {
     public DataResult fileUpload(@RequestParam("file") MultipartFile file, HttpServletRequest request) throws Exception {
         DataResult result = DataResult.success();
         // String uploadPath = request.getSession().getServletContext().getRealPath("/files");
-        String uploadPath = new File("files").getAbsolutePath();
-        System.out.println(uploadPath);
-        result.setData(fileService.singleUpload(file, uploadPath));
+        // String uploadPath = new File("files").getAbsolutePath();
+        // System.out.println(uploadPath);
+        result.setData(fileService.singleUpload(file));
         return result;
     }
 
     @GetMapping(value = "/download/{id}")
     public void download(@PathVariable("id") String id, HttpServletRequest request, HttpServletResponse response) throws IOException {
         // String basePath = request.getSession().getServletContext().getRealPath("/files");
-        String basePath = new File("files").getAbsolutePath();
-        String reportsPath = basePath + File.separator + id + File.separator + "detection_report_" + id;
+        String reportsPath = tempDir + File.separator + UUIDUtil.getTimeFromUUID(id) + File.separator + id + File.separator + "detection_reports_" + id;
         File reports = new File(reportsPath);
 
         if (!reports.exists() || reports.listFiles().length == 0)
@@ -91,7 +93,7 @@ public class FileController {
         // 读取文件内容
         FileInputStream is = new FileInputStream(zipFile);
         response.setContentType("application/zip");
-        response.setHeader("Content-Disposition", "attachment;filename=" + URLEncoder.encode(zipFile.getName(),"UTF-8"));
+        response.setHeader("Content-Disposition", "attachment;filename=" + URLEncoder.encode(zipFile.getName(), "UTF-8"));
         ServletOutputStream os = response.getOutputStream();
         IOUtils.copy(is, os);
         IOUtils.closeQuietly(is);

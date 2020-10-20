@@ -28,6 +28,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="/css/nprogress.css">
     <link rel="stylesheet" href="/css/nprogress_style.css">
 
+    <!--Font -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- color CSS you can use different color css from css/colors folder -->
     <!-- We have chosen the skin-blue (blue.css) for this starter
@@ -53,12 +55,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-static-top m-b-0">
         <div class="navbar-header">
-            <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse">
+            <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse"
+               data-target=".navbar-collapse">
                 <i class="fa fa-bars"></i>
             </a>
             <div class="top-left-part">
                 <a class="logo" href="/index">
-                    <b><img src="/images/eye-logo.png" alt="home" /></b>
+                    <b><img src="/images/eye-logo.png" alt="home" style="width: 69px;margin-top: -8px;"/></b>
                     <b>Clairvoyance</b>
                 </a>
             </div>
@@ -68,14 +71,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav navbar-collapse slimscrollsidebar">
             <ul class="nav" id="side-menu">
-                <li style="padding: 10px 0 0;">
-                    <a href="https://toolman-demo.readthedocs.io/en/latest/index.html." class="waves-effect"><i class="fa fa-globe fa-fw" aria-hidden="true"></i><span class="hide-menu">Tool Website</span></a>
+                <li>
+                    <a href="/code" class="waves-effect"><i class="fa fa-code fa-fw" aria-hidden="true"></i><span
+                            class="hide-menu">Code Test</span></a>
                 </li>
                 <li>
-                    <a href="/code" class="waves-effect"><i class="fa fa-columns fa-fw" aria-hidden="true"></i><span class="hide-menu">Code Test</span></a>
+                    <a href="/batch" class="waves-effect"><i class="fa fa-file-archive-o fa-fw" aria-hidden="true"></i><span
+                            class="hide-menu">Batch test</span></a>
                 </li>
                 <li>
-                    <a href="/batch" class="waves-effect"><i class="fa fa-columns fa-fw" aria-hidden="true"></i><span class="hide-menu">Batch test</span></a>
+                    <a href="https://toolman-demo.readthedocs.io/en/latest/index.html." class="waves-effect"><i
+                            class="fa fa-globe fa-fw" aria-hidden="true"></i><span class="hide-menu">Tool Website</span></a>
                 </li>
             </ul>
         </div>
@@ -87,7 +93,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div style="margin-bottom:20px">
                 <form id="uploadForm" enctype="multipart/form-data">
                     <br>
-                    <input type="file"  name="file" value="选择文件(.sol || .zip)"/>
+                    <input type="file" name="file" value="选择文件(.sol || .zip)"/>
                     <br>
                     <button id="upload" class="btn btn-primary" type="button">上传文件</button>
                 </form>
@@ -99,7 +105,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
 
                     <ol class="breadcrumb">
-                       <li><button  type="button" class="btn btn-primary" style="visibility: hidden" id="download" data-id="">下载检测报告</button></li>
+                        <li>
+                            <button type="button" class="btn btn-primary" style="visibility: hidden" id="download"
+                                    data-id="">下载检测报告
+                            </button>
+                        </li>
                     </ol>
                 </div>
             </div>
@@ -108,8 +118,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <footer class="footer text-center"> &copy; Copyright 2020, USTC</footer>
     </div>
 </div>
-
-
 
 
 <!-- /#wrapper -->
@@ -138,10 +146,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
             processData: false,
             contentType: false,
             success: function (res) {
-                if(res.code == 0) {
+                if (res.code == 0) {
                     NProgress.done();
-                    $("#anlyse_btn").attr('data-id',res.data);
-                } else{
+                    $("#anlyse_btn").attr('data-id', res.data);
+                } else {
                     alert(res.msg);
                 }
             }
@@ -159,14 +167,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
         }
         NProgress.start();
         $.ajax({
-            url: '/batchAnalyse/'+id,
+            url: '/batchAnalyse/' + id,
             type: 'POST',
             dataType: "json",
             success: function (res) {
                 NProgress.done();
-                if(res.code==0) {
+                if (res.code == 0) {
                     //alert("检测完毕，请点击'下载检测报告按钮'");
-                    $("#download").attr('data-id',res.data);
+                    $("#download").attr('data-id', res.data);
                     document.getElementById("download").setAttribute("style", "visibility: visible");
                 }
             }
@@ -181,14 +189,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
         if (id == "") {
             return;
         }
-        var url = '/file/download/'+id;
+        var url = '/file/download/' + id;
         var a = document.createElement('a');
         a.href = url;
         $("body").append(a);    // 修复firefox中无法触发click
         a.click();
         $(a).remove();
 
-  })
+    })
 
     // function batchAnalyse() {
     //     var httpRequest = new XMLHttpRequest();//第一步：创建需要的对象

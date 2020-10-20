@@ -10,14 +10,14 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  * Utility class for calculating SHA1 sums of files as strings.
- * @author evan
  *
+ * @author evan
  */
 public class SHA1 {
 
     private static final String SHA1_STR = "SHA-1";
 
-    private static char[] hexChars = {'0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'};
+    private static char[] hexChars = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
 
     private static MessageDigest md = null;
 
@@ -25,6 +25,7 @@ public class SHA1 {
 
     /**
      * Given a byte, return its representation as a 2-char hex string.
+     *
      * @param b
      * @return
      */
@@ -54,7 +55,7 @@ public class SHA1 {
 
     }
 
-    public static synchronized byte[] getSHA1(InputStream is)  {
+    public static synchronized byte[] getSHA1(InputStream is) {
         try {
             md = MessageDigest.getInstance(SHA1_STR);
         } catch (NoSuchAlgorithmException ne) {
@@ -74,7 +75,7 @@ public class SHA1 {
 
             digest = md.digest();
         } catch (IOException ie) {
-            throw new RuntimeException("IO Exception: "+ie.getLocalizedMessage(),ie);
+            throw new RuntimeException("IO Exception: " + ie.getLocalizedMessage(), ie);
         }
 
         return digest;
@@ -127,9 +128,9 @@ public class SHA1 {
 
         try {
             String digest = SHA1.getSHA1String(f);
-            System.out.println(digest+"\t"+f.getAbsolutePath());
+            System.out.println(digest + "\t" + f.getAbsolutePath());
         } catch (FileNotFoundException fn) {
-            throw new RuntimeException("Error opening file "+f.getAbsolutePath(), fn);
+            throw new RuntimeException("Error opening file " + f.getAbsolutePath(), fn);
         }
     }
 

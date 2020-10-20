@@ -9,10 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import java.io.BufferedReader;
+
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+
 
 @Service
 public class AnalyseServiceImpl implements AnalyseService {
@@ -33,25 +32,13 @@ public class AnalyseServiceImpl implements AnalyseService {
         ExecuteResult executeResult = localCommandExecutor.executeCommand(cmdStr + " " + filePath, timeout);
         // logger.info(executeResult.toString());
         String result = executeResult.getExecuteOut();
+        if (result == null) {
+            result = "Timeout or other problems, please check the code.";
+        }
         if (result.isEmpty()) {
             result = "Compilation failure or other problems, please check the code.";
         }
         return "Process finished with exit code " + executeResult.getExitCode() + "\n" + result;
 
-
-//        StringBuffer sb = new StringBuffer();
-//        Process process = Runtime.getRuntime().exec(cmdStr + " " + filePath);
-//        InputStream is = process.getInputStream();
-//        InputStreamReader isr = new InputStreamReader(is, "UTF-8");
-//        BufferedReader br = new BufferedReader(isr);
-//        String content = br.readLine();
-//        while (content != null) {
-//            sb.append(content + "\n");
-//            //System.out.println(content);
-//            content = br.readLine();
-//        }
-//        br.close();
-//        process.waitFor();
-//        return sb.toString();
     }
 }

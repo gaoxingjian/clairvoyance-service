@@ -44,18 +44,26 @@ logging:
     level:
         com.cav.clairvoyance: debug
 file:
-    upload:
-        root:
-            dir:
-                windows: e:\\reentrancy.sol
-                mac: /Users/jason/files/
-                linux: /home/mingliang/files
+    root:
+        dir:
+            # 合约根目录
+            windows: e:\\contract-repository
+            mac: /Users/jason/files/contract-repository
+            linux: /home/mingliang/files/contract-repository
+    # 文件扩展名
+    extension:
+        contract: sol
+        report: txt
+    # overwrite开关, 若为true,则覆盖之前已有的报告; 若为false, 则不覆盖
+    overwrite: true
+    # delete, 若为true,则根据上传的文件, 从仓库里删除对应的报告; 若为false, 则不删除;
+    # 注: 此功能打开时, analyse功能将禁用
+    delete: false
 cmd:
     # 检测命令
     str: slither --detect ICfgReentrancy
-    #str: ls
-    # 执行timeout
-    timeout: 300000
+    # 执行timeout 单位ms
+    timeout: 1800000
 swagger2:
     # 接口文档开关
     enable: true
