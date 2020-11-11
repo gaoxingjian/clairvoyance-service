@@ -34,14 +34,8 @@ Clairvoyance是一个智能合约重入代码检测平台。
 - Register http://localhost:8080/register
 
 #### 演示
-
- <iframe src="//player.bilibili.com/player.html?aid=245005350&bvid=BV16v411k7Sx&cid=248834631&page=1&high_quality=1&danmaku=0"
-                    width="100%" height="800"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-
-#### 目录描述
-<video id="video" controls="" preload="none" poster="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.jpg">
-      <source id="mp4" src="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.mp4" type="video/mp4">
-      </video>
+[观看演示视频](http://localhost:8080/register) 
+#### 目录描述     
 ```
 ├── README.md	// help
 ├── clairvoyance	// 应用
