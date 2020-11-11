@@ -11,9 +11,9 @@ Clairvoyance是一个智能合约重入代码检测平台。
 - 核心框架：Spring Boot 2.3.3
 - 持久层框架：Mybatis 2.1.3
 - 数据库：MySQL 5.7.30
+- 缓存框架：Redis 6.0.9
 - 安全框架：Shiro 1.4.0
 - 无状态 JWT
-- 缓存框架：Redis 6.0.9
 - 日志框架：Logback
 - 接口文档：Swagger 2.9.2
 - 前端模板：Thymeleaf + Bootstrap
@@ -39,7 +39,9 @@ Clairvoyance是一个智能合约重入代码检测平台。
                     width="100%" height="800"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 #### 目录描述
-
+<video id="video" controls="" preload="none" poster="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.jpg">
+      <source id="mp4" src="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.mp4" type="video/mp4">
+      </video>
 ```
 ├── README.md	// help
 ├── clairvoyance	// 应用
