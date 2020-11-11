@@ -14,6 +14,10 @@ public class UUIDUtil {
         return UUID.randomUUID().toString().replace("-", "") + new SimpleDateFormat(pattern).format(new Date());
     }
 
+    public static String getUUID() {
+        return UUID.randomUUID().toString();
+    }
+
 
     /**
      * 从UUID中获取时间 YYYY-MM-dd
