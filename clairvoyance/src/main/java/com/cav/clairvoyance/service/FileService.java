@@ -11,6 +11,8 @@ public interface FileService {
 
     public String getTempDir();
 
+    public void clearTempDir();
+
     public String getContractDir();
 
     public String getReportDir();

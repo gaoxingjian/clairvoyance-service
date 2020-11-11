@@ -16,15 +16,19 @@ public class User implements Serializable {
 
     private String username;
 
-    private String salt;
-
     private String password;
+
+    private String salt;
 
     private String email;
 
     private Date createTime;
 
     private Date updateTime;
+
+    private Integer status;
+
+    private Integer deleted;
 
     private static final long serialVersionUID = 1L;
 

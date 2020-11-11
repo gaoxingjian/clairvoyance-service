@@ -8,6 +8,7 @@ import com.cav.clairvoyance.service.FileService;
 import com.cav.clairvoyance.utils.FileUtil;
 import com.cav.clairvoyance.utils.UUIDUtil;
 import com.cav.clairvoyance.utils.ZipUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -18,7 +19,7 @@ import java.io.File;
 
 import java.io.IOException;
 
-
+@Slf4j
 @Service
 public class FileServiceImpl implements FileService {
 
@@ -47,6 +48,13 @@ public class FileServiceImpl implements FileService {
     @Override
     public String getTempDir() {
         return tempDir;
+    }
+
+    @Override
+    public void clearTempDir() {
+        FileUtil.deleteFile(tempDir);
+        FileUtil.makeDir(tempDir);
+        log.info("Clear temp.");
     }
 
     @Override

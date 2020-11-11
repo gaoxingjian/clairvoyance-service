@@ -13,14 +13,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
     <title>Clairvoyance</title>
     <!-- Bootstrap Core CSS -->
-    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->
-    <link href="bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <link href="/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
     <!-- Animation CSS -->
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
     <!-- Custom CSS -->
     <!-- <link href="css/style.css" rel="stylesheet"> -->
     <!--codemirror主题样式css-->
@@ -31,11 +31,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="/css/nprogress_style.css">
 
     <!-- button CSS -->
-    <link href="css/button.css" rel="stylesheet">
+    <link href="/css/button.css" rel="stylesheet">
 
-    <link href="css/stylenew.css" rel="stylesheet">
-    <link href="css/style-responsive.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="/css/stylenew.css" rel="stylesheet">
+    <link href="/css/style-responsive.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet"/>
     <!--codemirror js-->
     <script src="https://unpkg.com/codemirror@5.40.0/lib/codemirror.js"></script>
     <script src="https://unpkg.com/codemirror@5.40.0/mode/javascript/javascript.js"></script>
@@ -47,7 +47,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- We have chosen the skin-blue (blue.css) for this starter
           page. However, you can choose any other skin from folder css / colors .
 -->
-    <link href="css/colors/blue-dark.css" id="theme" rel="stylesheet">
+    <link href="/css/colors/blue-dark.css" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -57,105 +57,135 @@ scratch. This page gets rid of all links and provides the needed markup only.
 </head>
 
 <body>
-    <section id="container" >
-        <!-- **********************************************************************************************************************************************************
-        TOP BAR CONTENT & NOTIFICATIONS
-        *********************************************************************************************************************************************************** -->
-        <!--header start-->
-        <header class="header black-bg ">
-                <div class="sidebar-toggle-box">
-                    <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
-                </div>
-              <!--logo start-->
-              <a href="#" class="logo"><b>CLAIRVOYANCE</b></a>
-              <!--logo end-->
-  
-              <div class="top-menu">
-                  <ul class="nav pull-right top-menu">
-                      <li><a class="logout" href="login.html">Login</a></li>
-                  </ul>
-              </div>
-          </header>
-  
-        <aside>
-            <div id="sidebar"  class="nav-collapse ">
-                <!-- sidebar menu start-->
-                <ul class="sidebar-menu" id="nav-accordion">
-                
-                      <p class="centered"><a href="#"><img src="images/eye-logo.png" class="img-circle" width="60"></a></p>
-                      <h5 class="centered">CLAIRVOYANCE</h5>
-                          
-                    <li> 
-                        <a href="code_test.html" class="waves-effec active">
-                            <i class="fa fa-code fa-fw"></i>
-                            <span>Code Test</span>
-                        </a>
-                    </li>
-                    <li>
-                      <a href="batch_test.html" class="waves-effect">
-                          <i class="fa fa-file-archive-o fa-fw" aria-hidden="true"></i>
-                          <span>Batch test</span></a>
-                  </li>
-                  <li>
-                      <a href="https://toolman-demo.readthedocs.io/en/latest/index.html." class="waves-effect">
-                          <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
-                          <span>Tool Website</span></a>
-                  </li>
-                  <li> 
-                    <a href="guidance.html" class="waves-effec">
+<section id="container">
+    <!-- **********************************************************************************************************************************************************
+    TOP BAR CONTENT & NOTIFICATIONS
+    *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg ">
+        <div class="sidebar-toggle-box">
+            <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+        </div>
+        <!--logo start-->
+        <a href="/" class="logo"><b>CLAIRVOYANCE</b></a>
+        <!--logo end-->
+
+        <div class="top-menu">
+            <ul class="nav pull-right top-menu">
+                <li><a id="top" class="logout" href="/login"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+
+                <p class="centered"><a href="/"><img src="images/eye-logo.png" class="img-circle" width="60"></a></p>
+                <h5 class="centered">CLAIRVOYANCE</h5>
+
+                <li>
+                    <a href="/code" class="waves-effec active">
+                        <i class="fa fa-code fa-fw"></i>
+                        <span>Code Test</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/batch" class="waves-effect">
+                        <i class="fa fa-file-archive-o fa-fw" aria-hidden="true"></i>
+                        <span>Batch test</span></a>
+                </li>
+                <li>
+                    <a href="https://toolman-demo.readthedocs.io/en/latest/index.html." class="waves-effect">
+                        <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                        <span>Tool Website</span></a>
+                </li>
+                <li>
+                    <a href="/guidance" class="waves-effec">
                         <i class="fa fa-desktop fa-fw"></i>
                         <span>Guidance</span>
                     </a>
                 </li>
-                </ul>
-                <!-- sidebar menu end-->
-            </div>
-        </aside>
-        <!--sidebar end-->
-      <!-- Page Content -->
+            </ul>
+            <!-- sidebar menu end-->
+        </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- Page Content -->
     <!-- Page Content -->
     <section id="main-content">
         <section class="wrapper">
-    <div id="page-wrapper">
-        <div class="container-fluid">
+            <div id="page-wrapper">
+                <div class="container-fluid">
 
-            <div class="row">
-                <h5><b>代码编辑区域</b></h5>
-                <textarea id="codeArea" name="codeArea" rows="0" style="height:100px"></textarea>
-                <!--<div class="col-md-12">-->
-                <!--                        <div class="white-box">-->
-                <!--                            <h3 class="box-title">代码编辑区</h3>-->
-                <!--                        </div>-->
-                <!--                    </div>-->
+                    <div class="row">
+                        <h5><b>代码编辑区域</b></h5>
+                        <textarea id="codeArea" name="codeArea" rows="0" style="height:100px"></textarea>
+                        <!--<div class="col-md-12">-->
+                        <!--                        <div class="white-box">-->
+                        <!--                            <h3 class="box-title">代码编辑区</h3>-->
+                        <!--                        </div>-->
+                        <!--                    </div>-->
 
-            </div>
-            <br>
-            <div class="row bg-title">
-                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <button type="button" class="myButtonnew1" onclick="analyse()">Go</button>
-                </div>
-                <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-                    <button type="button" class="myButtonnew1" onclick="reset()">Reset</button>
-                </div>
-            </div>
-            <div>
-                <h5><b>检测结果</b></h5>
-                <textarea id="result" rows="0" style="height:300px; width: 1000px">
+                    </div>
+                    <br>
+                    <div class="row bg-title">
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                            <button type="button" class="myButtonnew1" onclick="analyse()">Go</button>
+                        </div>
+                        <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                            <button type="button" class="myButtonnew1" onclick="reset()">Reset</button>
+                        </div>
+                    </div>
+                    <div>
+                        <h5><b>检测结果</b></h5>
+                        <textarea class="form-control" id="result" rows="0" style="height:300px; width: 1000px">
 
                 </textarea>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
             </div>
-        </div>
-        <!-- /.container-fluid -->
-    </div>
-</section>
-</section>
-<footer class="footer text-center"> &copy; Copyright 2020, USTC</footer>
+        </section>
+    </section>
+    <footer class="footer text-center"> &copy; Copyright 2020, USTC</footer>
 </section>
 
-    <!-- /#page-wrapper -->
+<!-- /#page-wrapper -->
 </div>
 
+
+<!-- /#wrapper -->
+<!-- jQuery -->
+
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="/js/jquery.sparkline.js"></script>
+<script src="/js/common-scripts.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Menu Plugin JavaScript -->
+<script src="/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+<!--slimscroll JavaScript -->
+<script src="/js/jquery.slimscroll.js"></script>
+<!--Wave Effects -->
+<script src="/js/waves.js"></script>
+<!--Nprogress -->
+<script src="/js/nprogress.js" rel='stylesheet'></script>
+<!-- Custom Theme JavaScript -->
+<script src="/js/custom.min.js"></script>
+
+<script src="/layui/layui.all.js"></script>
+<script src="/js/core.util.js"></script>
+
 <script>
+
+    let layer = layui.layer;
+
+    CoreUtil.load();
+
     var myTextArea = document.getElementById('codeArea');
     //创建一个java编辑器
     var editor = CodeMirror.fromTextArea(myTextArea, {
@@ -163,6 +193,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         mode: 'text/x-java',
         theme: 'material'
     });
+
 
     // editor.on('change', () => {
     //     console.log(editor.getValue());
@@ -175,9 +206,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
         editor.setValue(value);
     }
 
+
     function analyse() {
         var editorValue = getEditorValue();
-        if (editorValue == "") return;
+        if (editorValue == "") {
+            layer.msg("请填入代码")
+            return;
+        }
         NProgress.start();
         let httpRequest = new XMLHttpRequest();//第一步：创建需要的对象
         httpRequest.open('POST', '/analyse', true); //第二步：打开连接
@@ -197,32 +232,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     function reset() {
         setEditorValue("");
     }
-</script>
-
-
-<!-- /#wrapper -->
-<!-- jQuery -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- Menu Plugin JavaScript -->
-<script src="bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
-<!--slimscroll JavaScript -->
-<script src="js/jquery.slimscroll.js"></script>
-<!--Wave Effects -->
-<script src="js/waves.js"></script>
-<!--Nprogress -->
-<script src="js/nprogress.js"  rel='stylesheet'></script>
-<!-- Custom Theme JavaScript -->
-<script src="js/custom.min.js"></script>
-<script src="js/common-scripts.js"></script>
-
-<script>
-    //custom select box
-
-    $(function(){
-        $('select.styled').customSelect();
-    });
 
 </script>
 </body>

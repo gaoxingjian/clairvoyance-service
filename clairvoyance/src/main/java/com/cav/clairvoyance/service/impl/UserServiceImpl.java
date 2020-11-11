@@ -41,12 +41,17 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public String register(RegisterReqVO vo) {
+        User registerUser = new User();
+        registerUser.setEmail(vo.getEmail());
+        List<User> userList = userMapper.select(registerUser);
+        if (!userList.isEmpty()) throw new BusinessException(BaseResponseCode.HAS_ACCOUNT);
+
         User user = new User();
         BeanUtils.copyProperties(vo, user);
         user.setSalt(PasswordUtils.getSalt());
         String encode = PasswordUtils.encode(vo.getPassword(), user.getSalt());
         user.setPassword(encode);
-        user.setId(UUIDUtil.getUUIDEndWithTime());
+        user.setId(UUIDUtil.getUUID());
         user.setCreateTime(new Date());
         int i = userMapper.insertSelective(user);
         if (i != 1) throw new BusinessException(BaseResponseCode.OPERATION_ERRO);
@@ -56,7 +61,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public LoginRespVO login(LoginReqVO vo) {
         User loginUser = new User();
-        loginUser.setUsername(vo.getUsername());
+        loginUser.setEmail(vo.getEmail());
         List<User> userList = userMapper.select(loginUser);
         if (null == userList) throw new BusinessException(BaseResponseCode.NOT_ACCOUNT);
         User user = userList.get(0);
@@ -76,19 +81,52 @@ public class UserServiceImpl implements UserService {
     @Override
     public void logout(String accessToken, String refreshToken) {
 
-        if(StringUtils.isEmpty(accessToken) || StringUtils.isEmpty(refreshToken)) {
+        if (StringUtils.isEmpty(accessToken) || StringUtils.isEmpty(refreshToken)) {
             throw new BusinessException(BaseResponseCode.DATA_ERROR);
         }
         Subject subject = SecurityUtils.getSubject();
-        log.info("subject.getPrincipals()={}",subject.getPrincipals());
+        log.info("subject.getPrincipals()={}", subject.getPrincipals());
         if (subject.isAuthenticated()) {
             subject.logout();
         }
         String userId = JwtTokenUtil.getUserId(accessToken);
-        //redisService.set(Constant.JWT_REFRESH_TOKEN_BLACKLIST+accessToken,userId,JwtTokenUtil.getRemainingTime(accessToken), TimeUnit.MILLISECONDS);
-        //redisService.set(Constant.JWT_REFRESH_TOKEN_BLACKLIST+refreshToken,userId,JwtTokenUtil.getRemainingTime(refreshToken), TimeUnit.MILLISECONDS);
-        //redisService.delete(Constant.IDENTIFY_CACHE_KEY+userId);
+        redisService.set(Constant.JWT_REFRESH_TOKEN_BLACKLIST + accessToken, userId, JwtTokenUtil.getRemainingTime(accessToken), TimeUnit.MILLISECONDS);
+        redisService.set(Constant.JWT_REFRESH_TOKEN_BLACKLIST + refreshToken, userId, JwtTokenUtil.getRemainingTime(refreshToken), TimeUnit.MILLISECONDS);
+        redisService.delete(Constant.IDENTIFY_CACHE_KEY + userId);
     }
 
+    @Override
+    public User detailInfo(String userId) {
+        return userMapper.selectByPrimaryKey(userId);
+    }
 
+    @Override
+    public String refreshToken(String refreshToken, String accessToken) {
+
+        if (redisService.hasKey(Constant.JWT_ACCESS_TOKEN_BLACKLIST + refreshToken) || !JwtTokenUtil.validateToken(refreshToken)) {
+            throw new BusinessException(BaseResponseCode.TOKEN_ERROR);
+        }
+        String userId = JwtTokenUtil.getUserId(refreshToken);
+        log.info("userId={}", userId);
+        User user = userMapper.selectByPrimaryKey(userId);
+        if (null == user) {
+            throw new BusinessException(BaseResponseCode.TOKEN_PARSE_ERROR);
+        }
+        Map<String, Object> claims = null;
+
+        if (redisService.hasKey(Constant.JWT_REFRESH_KEY + userId)) {
+            claims = new HashMap<>();
+            claims.put(Constant.JWT_USER_NAME, user.getUsername());
+        }
+        String newAccessToken = JwtTokenUtil.refreshToken(refreshToken, claims);
+
+        redisService.setifAbsen(Constant.JWT_REFRESH_STATUS + accessToken, userId, 1, TimeUnit.MINUTES);
+
+
+        if (redisService.hasKey(Constant.JWT_REFRESH_KEY + userId)) {
+            redisService.set(Constant.JWT_REFRESH_IDENTIFICATION + newAccessToken, userId, redisService.getExpire(Constant.JWT_REFRESH_KEY + userId, TimeUnit.MILLISECONDS), TimeUnit.MILLISECONDS);
+        }
+        return newAccessToken;
+
+    }
 }

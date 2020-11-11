@@ -9,24 +9,34 @@ Clairvoyance是一个智能合约重入代码检测平台。
 平台架构说明
 
 - 核心框架：Spring Boot 2.3.3
-
-- 持久层框架：Mybatis
-
--  数据库：MySQL 5.7.30
-
+- 持久层框架：Mybatis 2.1.3
+- 数据库：MySQL 5.7.30
+- 安全框架：Shiro 1.4.0
+- 无状态 JWT
+- 缓存框架：Redis 6.0.9
+- 日志框架：Logback
 - 接口文档：Swagger 2.9.2
-
 - 前端模板：Thymeleaf + Bootstrap
 
 #### **部署**
 
 - 创建clairvoyance数据库
 - 导入clairvoyance.sql
+- 启动redis
+- 修改application.yml中mysql、redis、合约仓库路径、检测超时时间、检测模式、检测指令等配置信息
 - 启动项目
+- 项目访问地址http://localhost:8080
 - 接口文档访问 http://localhost:8080/swagger-ui.html
-
 - Code Test http://localhost:8080/code
 - Batch Test http://localhost:8080/batch
+- Guidance http://localhost:8080/guidance
+- Login http://localhost:8080/login
+- Register http://localhost:8080/register
+
+#### 演示
+
+ <iframe src="//player.bilibili.com/player.html?aid=245005350&bvid=BV16v411k7Sx&cid=248834631&page=1&high_quality=1&danmaku=0"
+                    width="100%" height="800"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 #### 目录描述
 

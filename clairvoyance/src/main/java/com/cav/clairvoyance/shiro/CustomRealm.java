@@ -3,6 +3,7 @@ package com.cav.clairvoyance.shiro;
 
 import com.cav.clairvoyance.constants.Constant;
 import com.cav.clairvoyance.service.RedisService;
+import com.cav.clairvoyance.service.RoleService;
 import com.cav.clairvoyance.utils.JwtTokenUtil;
 import io.jsonwebtoken.Claims;
 import lombok.extern.slf4j.Slf4j;
@@ -33,15 +34,15 @@ import java.util.concurrent.TimeUnit;
  */
 @Slf4j
 public class CustomRealm extends AuthorizingRealm {
-    @Autowired
-    @Lazy
-    private RedisService redisService;
-    @Autowired
-    @Lazy
-    private PermissionService permissionService;
-    @Autowired
-    @Lazy
-    private RoleService roleService;
+    //@Autowired
+    //@Lazy
+    //private RedisService redisService;
+    //@Autowired
+    //@Lazy
+    //private PermissionService permissionService;
+    //@Autowired
+    //@Lazy
+    //private RoleService roleService;
 
     @Override
     public boolean supports(AuthenticationToken token) {
@@ -49,34 +50,40 @@ public class CustomRealm extends AuthorizingRealm {
     }
 
     @Override
-    protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
-        SimpleAuthorizationInfo authorizationInfo=new SimpleAuthorizationInfo();
-        String accessToken= (String) SecurityUtils.getSubject().getPrincipal();
-        String userId= JwtTokenUtil.getUserId(accessToken);
-        log.info("userId={}",userId);
-        if(redisService.hasKey(Constant.JWT_REFRESH_KEY+userId)&&redisService.getExpire(Constant.JWT_REFRESH_KEY+userId, TimeUnit.MILLISECONDS)>JwtTokenUtil.getRemainingTime(accessToken)){
-            List<String> roleNames=roleService.getRoleNames(userId);
-            if(roleNames!=null&&!roleNames.isEmpty()){
-                authorizationInfo.addRoles(roleService.getRoleNames(userId));
-            }
-            authorizationInfo.setStringPermissions(permissionService.getPermissionsByUserId(userId));
-        }else {
-            Claims claimsFromToken = JwtTokenUtil.getClaimsFromToken(accessToken);
-            if(claimsFromToken.get(Constant.JWT_ROLES_KEY)!=null){
-                authorizationInfo.addRoles((Collection<String>) claimsFromToken.get(Constant.JWT_ROLES_KEY));
-            }
-            if(claimsFromToken.get(Constant.JWT_PERMISSIONS_KEY)!=null){
-                authorizationInfo.addStringPermissions((Collection<String>) claimsFromToken.get(Constant.JWT_PERMISSIONS_KEY));
-            }
-
-        }
-        return authorizationInfo;
+    protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
+        CustomPasswordToken token = (CustomPasswordToken) authenticationToken;
+        SimpleAuthenticationInfo simpleAuthenticationInfo = new SimpleAuthenticationInfo(token.getPrincipal(), token.getPrincipal(), getName());
+        return simpleAuthenticationInfo;
     }
 
     @Override
-    protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
-        CustomPasswordToken token= (CustomPasswordToken) authenticationToken;
-        SimpleAuthenticationInfo simpleAuthenticationInfo=new SimpleAuthenticationInfo(token.getPrincipal(),token.getPrincipal(),getName());
-        return simpleAuthenticationInfo;
+    protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
+        return new SimpleAuthorizationInfo();
     }
+
+//    @Override
+//    protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
+//        SimpleAuthorizationInfo authorizationInfo = new SimpleAuthorizationInfo();
+//        String accessToken = (String) SecurityUtils.getSubject().getPrincipal();
+//        String userId = JwtTokenUtil.getUserId(accessToken);
+//        log.info("userId={}", userId);
+//        if (redisService.hasKey(Constant.JWT_REFRESH_KEY + userId) && redisService.getExpire(Constant.JWT_REFRESH_KEY + userId, TimeUnit.MILLISECONDS) > JwtTokenUtil.getRemainingTime(accessToken)) {
+//            List<String> roleNames = roleService.getRoleNames(userId);
+//            if (roleNames != null && !roleNames.isEmpty()) {
+//                authorizationInfo.addRoles(roleService.getRoleNames(userId));
+//            }
+//            authorizationInfo.setStringPermissions(permissionService.getPermissionsByUserId(userId));
+//        } else {
+//            Claims claimsFromToken = JwtTokenUtil.getClaimsFromToken(accessToken);
+//            if (claimsFromToken.get(Constant.JWT_ROLES_KEY) != null) {
+//                authorizationInfo.addRoles((Collection<String>) claimsFromToken.get(Constant.JWT_ROLES_KEY));
+//            }
+//            if (claimsFromToken.get(Constant.JWT_PERMISSIONS_KEY) != null) {
+//                authorizationInfo.addStringPermissions((Collection<String>) claimsFromToken.get(Constant.JWT_PERMISSIONS_KEY));
+//            }
+//        }
+//        return authorizationInfo;
+//    }
+
+
 }

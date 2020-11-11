@@ -13,25 +13,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
     <title>Clairvoyance</title>
     <!-- Bootstrap Core CSS -->
-    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->
-    <link href="bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <link href="/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
     <!-- Animation CSS -->
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
     <!-- Custom CSS -->
     <!-- <link href="css/style.css" rel="stylesheet"> -->
     <!-- button CSS -->
-    <link href="css/button.css" rel="stylesheet">
+    <link href="/css/button.css" rel="stylesheet">
     <!--NProgress CSS -->
-    <link rel="stylesheet" href="css/nprogress.css">
-    <link rel="stylesheet" href="css/nprogress_style.css">
+    <link rel="stylesheet" href="/css/nprogress.css">
+    <link rel="stylesheet" href="/css/nprogress_style.css">
 
-    <link href="css/stylenew.css" rel="stylesheet">
-    <link href="css/style-responsive.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="/css/stylenew.css" rel="stylesheet">
+    <link href="/css/style-responsive.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet"/>
     <!--Font -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -39,7 +39,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- We have chosen the skin-blue (blue.css) for this starter
           page. However, you can choose any other skin from folder css / colors .-->
 
-    <link href="css/colors/blue-dark.css" id="theme" rel="stylesheet">
+    <link href="/css/colors/blue-dark.css" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -50,73 +50,75 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <body>
 
-    <section id="container" >
-        <!-- **********************************************************************************************************************************************************
-        TOP BAR CONTENT & NOTIFICATIONS
-        *********************************************************************************************************************************************************** -->
-        <!--header start-->
-        <header class="header black-bg ">
-                <div class="sidebar-toggle-box">
-                    <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
-                </div>
-              <!--logo start-->
-              <a href="#" class="logo"><b>CLAIRVOYANCE</b></a>
-              <!--logo end-->
-  
-              <div class="top-menu">
-                  <ul class="nav pull-right top-menu">
-                      <li><a class="logout" href="login.html">Login</a></li>
-                  </ul>
-              </div>
-          </header>
-  
-        <aside>
-            <div id="sidebar"  class="nav-collapse ">
-                <!-- sidebar menu start-->
-                <ul class="sidebar-menu" id="nav-accordion">
-                
-                      <p class="centered"><a href="#"><img src="images/eye-logo.png" class="img-circle" width="60"></a></p>
-                      <h5 class="centered">CLAIRVOYANCE</h5>
-                          
-                    <li>
-                        <a href="code_test.html" class="waves-effect">
-                            <i class="fa fa-code fa-fw"></i>
-                            <span>Code Test</span>
-                        </a>
-                    </li>
-                    <li >
-                      <a class="waves-effect active" href="batch_test.html" >
-                          <i class="fa fa-file-archive-o fa-fw" aria-hidden="true"></i>
-                          <span>Batch test</span></a>
-                  </li>
-                  <li>
-                      <a href="https://toolman-demo.readthedocs.io/en/latest/index.html." class="waves-effect">
-                          <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
-                          <span>Tool Website</span></a>
-                  </li>
-                  <li> 
-                    <a href="#" class="waves-effec">
+<section id="container">
+    <!-- **********************************************************************************************************************************************************
+    TOP BAR CONTENT & NOTIFICATIONS
+    *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg ">
+        <div class="sidebar-toggle-box">
+            <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+        </div>
+        <!--logo start-->
+        <a href="/" class="logo"><b>CLAIRVOYANCE</b></a>
+        <!--logo end-->
+
+        <div class="top-menu">
+            <ul class="nav pull-right top-menu">
+                <li><a id="top" class="logout" href="/login"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+
+                <p class="centered"><a href="/"><img src="images/eye-logo.png" class="img-circle" width="60"></a></p>
+                <h5 class="centered">CLAIRVOYANCE</h5>
+
+                <li>
+                    <a href="/code" class="waves-effect">
+                        <i class="fa fa-code fa-fw"></i>
+                        <span>Code Test</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/batch" class="waves-effect active" >
+                        <i class="fa fa-file-archive-o fa-fw" aria-hidden="true"></i>
+                        <span>Batch test</span></a>
+                </li>
+                <li>
+                    <a href="https://toolman-demo.readthedocs.io/en/latest/index.html." class="waves-effect">
+                        <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                        <span>Tool Website</span></a>
+                </li>
+                <li>
+                    <a href="/guidance" class="waves-effec">
                         <i class="fa fa-desktop fa-fw"></i>
                         <span>Guidance</span>
                     </a>
                 </li>
-                </ul>
-                <!-- sidebar menu end-->
-            </div>
-        </aside>
-        <!--sidebar end-->
-      <!-- Page Content -->
-      <section id="main-content">
-          <section class="wrapper">
+            </ul>
+            <!-- sidebar menu end-->
+        </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- Page Content -->
+    <section id="main-content">
+        <section class="wrapper">
             <div id="wrapper">
                 <div class="container-fluid">
                     <div style="margin-bottom:20px">
                         <form id="uploadForm" enctype="multipart/form-data">
                             <br>
-                            <input type="file" name="file" id="fileup" class="inputfile inputfile-1"  style="visibility: hidden" data-multiple-caption="{count} files selected" multiple onchange="filefujianChange(this);"/>
+                            <input type="file" name="file" id="fileup" class="inputfile inputfile-1"
+                                   style="visibility: hidden" data-multiple-caption="{count} files selected" multiple
+                                   onchange="filefujianChange(this);"/>
                             <label for="fileup">
                                 <span>选择文件</span></label>
-                            
+
                             <br>
                             <button id="upload" class="myButtonnew" type="button">上传文件</button>
                         </form>
@@ -126,7 +128,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <button id="anlyse_btn" type="button" class="myButtonnew" data-id="">开始检测该文件</button>
                         </div>
                         <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-        
+
                             <ol class="breadcrumb">
                                 <li>
                                     <button type="button" class="myButtonnew" style="visibility: hidden" id="download"
@@ -139,29 +141,42 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </div>
 
             </div>
-    
-          </section>
-      </section>
-      <footer class="footer text-center"> &copy; Copyright 2020, USTC</footer>
+
+        </section>
     </section>
-  
+    <footer class="footer text-center"> &copy; Copyright 2020, USTC</footer>
+</section>
+
 
 <!-- jQuery -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="/js/jquery.sparkline.js"></script>
+<script src="/js/common-scripts.js"></script>
 <!-- Bootstrap Core JavaScript -->
-<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- Menu Plugin JavaScript -->
-<script src="bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+<script src="/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
 <!--slimscroll JavaScript -->
-<script src="js/jquery.slimscroll.js"></script>
+<script src="/js/jquery.slimscroll.js"></script>
 <!--Wave Effects -->
-<script src="js/waves.js"></script>
+<script src="/js/waves.js"></script>
 <!--Nprogress -->
-<script src="js/nprogress.js" rel='stylesheet'></script>
+<script src="/js/nprogress.js" rel='stylesheet'></script>
 <!-- Custom Theme JavaScript -->
-<script src="js/custom.min.js"></script>
+<script src="/js/custom.min.js"></script>
+<script src="/layui/layui.all.js"></script>
+<script src="/js/core.util.js"></script>
 <script>
+    CoreUtil.load();
+    let layer = layui.layer;
     $("#upload").click(function () {
+
+        if($('#fileup').val()=="") {
+            layer.msg("请选择文件")
+            return
+        }
         NProgress.start();
         $.ajax({
             url: '/file/upload',
@@ -171,11 +186,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
             processData: false,
             contentType: false,
             success: function (res) {
+                NProgress.done();
                 if (res.code == 0) {
-                    NProgress.done();
+                    layer.msg("上传成功");
                     $("#anlyse_btn").attr('data-id', res.data);
                 } else {
-                    alert(res.msg);
+                    layer.msg(res.msg);
                 }
             }
 
@@ -184,10 +200,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     })
 
     $("#anlyse_btn").click(function () {
-        id = $("#anlyse_btn").attr('data-id');
-        console.log(id);
-        if (id == "") {
-            alert("请上先传待测文件");
+        let id = $("#anlyse_btn").attr('data-id');
+        if (id == "" || $('#fileup').val()=="") {
+            layer.msg("请上先传待测文件");
             return;
         }
         NProgress.start();
@@ -198,7 +213,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             success: function (res) {
                 NProgress.done();
                 if (res.code == 0) {
-                    //alert("检测完毕，请点击'下载检测报告按钮'");
+                    layer.msg("检测完毕");
                     $("#download").attr('data-id', res.data);
                     document.getElementById("download").setAttribute("style", "visibility: visible");
                 }
@@ -242,87 +257,80 @@ scratch. This page gets rid of all links and provides the needed markup only.
     //         }
     //     }
     // }
-
-</script>
-<!-- select file button show filename -->
-<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
-		<script>
-			
-'use strict';
-
-;( function ( document, window, index )
-{
-	var inputs = document.querySelectorAll( '.inputfile' );
-	Array.prototype.forEach.call( inputs, function( input )
-	{
-		var label	 = input.nextElementSibling,
-			labelVal = label.innerHTML;
-
-		input.addEventListener( 'change', function( e )
-		{
-			var fileName = '';
-			if( this.files && this.files.length > 1 )
-				fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
-			else
-				fileName = e.target.value.split( '\\' ).pop();
-
-			if( fileName )
-				label.querySelector( 'span' ).innerHTML = fileName;
-			else
-				label.innerHTML = labelVal;
-		});
-
-		// Firefox bug fix
-		input.addEventListener( 'focus', function(){ input.classList.add( 'has-focus' ); });
-		input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
-	});
-}( document, window, 0 ));
-        </script>
-        
+    </script>
 <!-- select file button show filename -->
 
-
-
-
-
-<!-- 对上传的文件进行验证，限制200M以下的文件且仅可以上传.sol和.zip格式的文件 -->
+    <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
 <script>
-    var isIE = /msie/i.test(navigator.userAgent) && !window.opera; 
+    'use strict';
 
-   function filefujianChange(target) {
-       var fileSize = 0;         
-       if (isIE && !target.files) {     
-         var filePath = target.value;     
-         var fileSystem = new ActiveXObject("Scripting.FileSystemObject");        
-         var file = fileSystem.GetFile (filePath);     
-         fileSize = file.Size;    
-       } else {    
-        fileSize = target.files[0].size;     
-        }   
-        var size = fileSize / 1024;    
-        if(size>200000){  
-         alert("上传的文件不能大于200M");
-         target.value="";
-         return
+    ;(function (document, window, index) {
+        var inputs = document.querySelectorAll('.inputfile');
+        Array.prototype.forEach.call(inputs, function (input) {
+            var label = input.nextElementSibling,
+                labelVal = label.innerHTML;
+
+            input.addEventListener('change', function (e) {
+                var fileName = '';
+                if (this.files && this.files.length > 1)
+                    fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+                else
+                    fileName = e.target.value.split('\\').pop();
+
+                if (fileName)
+                    label.querySelector('span').innerHTML = fileName;
+                else
+                    label.innerHTML = labelVal;
+            });
+
+            // Firefox bug fix
+            input.addEventListener('focus', function () {
+                input.classList.add('has-focus');
+            });
+            input.addEventListener('blur', function () {
+                input.classList.remove('has-focus');
+            });
+        });
+    }(document, window, 0));
+    <!-- select file button show filename -->
+    <!-- 对上传的文件进行验证，限制200M以下的文件且仅可以上传.sol和.zip格式的文件 -->
+
+    var isIE = /msie/i.test(navigator.userAgent) && !window.opera;
+
+    function filefujianChange(target) {
+        var fileSize = 0;
+        if (isIE && !target.files) {
+            var filePath = target.value;
+            var fileSystem = new ActiveXObject("Scripting.FileSystemObject");
+            var file = fileSystem.GetFile(filePath);
+            fileSize = file.Size;
+        } else {
+            fileSize = target.files[0].size;
         }
-        var name=target.value;
-        var fileName = name.substring(name.lastIndexOf(".")+1).toLowerCase();
-        if(fileName !="sol"&&fileName!="zip" ){
-          alert("请选择solidity格式或者zip文件上传!");
-            target.value="";
+        var size = fileSize / 1024;console.log(size);
+        if (size > 100000) {
+            layer.msg("上传的文件不能大于100M");
+            target.value = "";
+            return
+        } else if(size > 100) {
+            if(!CoreUtil.getData("access_token")) {
+                layer.msg("上传的文件大于100KB,请登录")
+                target.value = "";
+                setTimeout(function () {
+                    window.location.href = "/login"
+                },3000)
+                return
+            }
+        }
+        var name = target.value;
+        var fileName = name.substring(name.lastIndexOf(".") + 1).toLowerCase();
+        if (fileName != "sol" && fileName != "zip") {
+            layer.msg("请选择sol或者zip格式文件上传!");
+            target.value = "";
             return
         }
-      }
-</script>     
+    }
 
-<script src="js/common-scripts.js"></script>
-
-<script>
-    //custom select box
-
-    $(function(){
-        $('select.styled').customSelect();
-    });
 
 </script>
 

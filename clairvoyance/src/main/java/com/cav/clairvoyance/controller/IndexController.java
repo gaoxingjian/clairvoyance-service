@@ -2,17 +2,13 @@ package com.cav.clairvoyance.controller;
 
 import io.swagger.annotations.Api;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import javax.servlet.http.HttpServletRequest;
 
 @Api(tags = "视图")
 @Controller
 public class IndexController {
 
-    @GetMapping(value = {"/","/index","/code"})
+    @GetMapping(value = {"/", "/index", "/code"})
     public String codeTest() {
         return "code_test";
     }
@@ -20,6 +16,21 @@ public class IndexController {
     @GetMapping("/batch")
     public String batchTest() {
         return "batch_test";
+    }
+
+    @GetMapping("/guidance")
+    public String guidance() {
+        return "guidance";
+    }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
+
+    @GetMapping("/register")
+    public String register() {
+        return "register";
     }
 
     @GetMapping("/403")

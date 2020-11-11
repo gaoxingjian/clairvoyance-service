@@ -45,64 +45,65 @@ public class CustomAccessControlFilter extends AccessControlFilter {
     protected boolean isAccessAllowed(ServletRequest servletRequest, ServletResponse servletResponse, Object o) {
         return false;
     }
+
     @Override
     protected boolean onAccessDenied(ServletRequest servletRequest, ServletResponse servletResponse) throws IOException, ServletException {
-        HttpServletRequest request= (HttpServletRequest) servletRequest;
+        HttpServletRequest request = (HttpServletRequest) servletRequest;
         try {
-            Subject subject=getSubject(servletRequest,servletResponse);
-            System.out.println(subject.isAuthenticated()+"");
-
-            System.out.println(HttpContextUtils.isAjaxRequest(request));
+            Subject subject = getSubject(servletRequest, servletResponse);
+            log.info("isAuthenticated: {}",subject.isAuthenticated());
+            log.info("isAjaxRequest: {}",HttpContextUtils.isAjaxRequest(request));
             log.info(request.getMethod());
             log.info(request.getRequestURL().toString());
-            String token=request.getHeader(Constant.ACCESS_TOKEN);
-            if(StringUtils.isEmpty(token)){
+            String token = request.getHeader(Constant.ACCESS_TOKEN);
+            //log.info(token);
+            if (StringUtils.isEmpty(token)) {
                 throw new BusinessException(BaseResponseCode.TOKEN_ERROR);
             }
-            CustomPasswordToken customPasswordToken=new CustomPasswordToken(token);
+            CustomPasswordToken customPasswordToken = new CustomPasswordToken(token);
             getSubject(servletRequest, servletResponse).login(customPasswordToken);
-        }catch (BusinessException exception){
-            if(HttpContextUtils.isAjaxRequest(request)){
-                customRsponse(exception.getMessageCode(),exception.getDetailMessage(),servletResponse);
-            }else if(exception.getMessageCode()==BaseResponseCode.TOKEN_ERROR.getCode()){
-                servletRequest.getRequestDispatcher("/index/login").forward(servletRequest,servletResponse);
-            }else if(exception.getMessageCode()==BaseResponseCode.UNAUTHORIZED_ERROR.getCode()){
-                servletRequest.getRequestDispatcher("/index/403").forward(servletRequest,servletResponse);
-            }else {
-                servletRequest.getRequestDispatcher("/index/500").forward(servletRequest,servletResponse);
+        } catch (BusinessException exception) {
+            if (HttpContextUtils.isAjaxRequest(request)) {
+                customRsponse(exception.getMessageCode(), exception.getDetailMessage(), servletResponse);
+            } else if (exception.getMessageCode() == BaseResponseCode.TOKEN_ERROR.getCode()) {
+                servletRequest.getRequestDispatcher("/login").forward(servletRequest, servletResponse);
+            } else if (exception.getMessageCode() == BaseResponseCode.UNAUTHORIZED_ERROR.getCode()) {
+                servletRequest.getRequestDispatcher("/403").forward(servletRequest, servletResponse);
+            } else {
+                servletRequest.getRequestDispatcher("/500").forward(servletRequest, servletResponse);
             }
             return false;
-        } catch (AuthenticationException e){
-            if(HttpContextUtils.isAjaxRequest(request)){
-                if(e.getCause() instanceof BusinessException){
-                    BusinessException exception= (BusinessException) e.getCause();
-                    customRsponse(exception.getMessageCode(),exception.getDetailMessage(),servletResponse);
-                }else {
-                    customRsponse(BaseResponseCode.SYSTEM_BUSY.getCode(),BaseResponseCode.SYSTEM_BUSY.getMsg(),servletResponse);
+        } catch (AuthenticationException e) {
+            if (HttpContextUtils.isAjaxRequest(request)) {
+                if (e.getCause() instanceof BusinessException) {
+                    BusinessException exception = (BusinessException) e.getCause();
+                    customRsponse(exception.getMessageCode(), exception.getDetailMessage(), servletResponse);
+                } else {
+                    customRsponse(BaseResponseCode.SYSTEM_BUSY.getCode(), BaseResponseCode.SYSTEM_BUSY.getMsg(), servletResponse);
                 }
-            }else {
-                servletRequest.getRequestDispatcher("/index/403").forward(servletRequest,servletResponse);
+            } else {
+                servletRequest.getRequestDispatcher("/403").forward(servletRequest, servletResponse);
             }
             return false;
-        }catch (Exception e) {
-            if(HttpContextUtils.isAjaxRequest(request)){
-                if(e.getCause() instanceof BusinessException){
-                    BusinessException exception= (BusinessException) e.getCause();
-                    customRsponse(exception.getMessageCode(),exception.getDetailMessage(),servletResponse);
-                }else {
-                    customRsponse(BaseResponseCode.SYSTEM_BUSY.getCode(),BaseResponseCode.SYSTEM_BUSY.getMsg(),servletResponse);
+        } catch (Exception e) {
+            if (HttpContextUtils.isAjaxRequest(request)) {
+                if (e.getCause() instanceof BusinessException) {
+                    BusinessException exception = (BusinessException) e.getCause();
+                    customRsponse(exception.getMessageCode(), exception.getDetailMessage(), servletResponse);
+                } else {
+                    customRsponse(BaseResponseCode.SYSTEM_BUSY.getCode(), BaseResponseCode.SYSTEM_BUSY.getMsg(), servletResponse);
                 }
-            }else {
-                servletRequest.getRequestDispatcher("/index/500").forward(servletRequest,servletResponse);
+            } else {
+                servletRequest.getRequestDispatcher("/500").forward(servletRequest, servletResponse);
             }
             return false;
         }
         return true;
     }
 
-    private void customRsponse(int code,String msg,ServletResponse response){
+    private void customRsponse(int code, String msg, ServletResponse response) {
         try {
-            DataResult result = DataResult.getResult(code,msg);
+            DataResult result = DataResult.getResult(code, msg);
 
             response.setContentType("application/json; charset=utf-8");
             response.setCharacterEncoding("UTF-8");
@@ -112,7 +113,7 @@ public class CustomAccessControlFilter extends AccessControlFilter {
             out.write(userJson.getBytes("UTF-8"));
             out.flush();
         } catch (IOException e) {
-            log.error("eror={}",e);
+            log.error("eror={}", e);
         }
     }
 

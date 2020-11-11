@@ -1,178 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-   
 
-    <title>DASHGUM - Bootstrap Admin Template</title>
 
+    <title>Clairvoyance</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
-    <link href="css/font-awesome.css" rel="stylesheet" />
-        
+    <link href="/css/font-awesome.css" rel="stylesheet"/>
+
     <!-- Custom styles for this template -->
-    <link href="css/stylenew.css" rel="stylesheet">
-    <link href="css/style-responsive.css" rel="stylesheet">
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/register_form.css" />
-	<link rel="stylesheet" href="css/button.css">
-  </head>
+    <link href="/css/stylenew.css" rel="stylesheet">
+    <link href="/css/style-responsive.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/register_form.css"/>
+    <link rel="stylesheet" href="/css/button.css">
+    <link rel="stylesheet" href="/layui/css/layui.css">
+</head>
 
-  <body>
+<body>
 
 
-	  	<div class="container ">
-	  	
-		      <form class="form-register " action="register.html" id="registerform" method="POST">
-				<h2 class="form-register-heading">Create Your Account</h2>
-				<br>
-				<div class="item">
-					<label for="username" class="item-label">用户名:</label>
-					<input type="text" id="username" name="sname" class="item-text" placeholder="设置用户名"
-					autocomplete="off" tip="请输入用户名">
-				</div>
-				<div class="item">
-					<label for="password" class="item-label">密码:</label>
-					<input type="password" id="password" name="spass" class="item-text" 
-					placeholder="设置密码" tip="长度为6-16个字符">
-				</div>
-				<div class="item">
-					<label for="password" class="item-label">确认密码:</label>
-					<input type="password" name="spass2" class="item-text" placeholder="设置确认密码"  tip="请再次输入密码">
-				</div>
-				<div class="item">
-					<label for="semail" class="item-label">邮箱:</label>
-					<input type="text" id="semail" name="semail" class="item-text" placeholder="设置邮箱" 
-					autocomplete="off" tip="请输入邮箱">
-				</div>
-				<!-- <div class="item">
-					<label for="simage" class="item-label">头像:</label>
-					<input type="file" name="simage" class="item-file">
-				</div> -->
-				<!-- <button class="btn btn-block" href="index.html" type="submit"><i class="fa fa-angle-double-right"></i>&nbsp; &nbsp;&nbsp;&nbsp;   提 &nbsp;&nbsp; 交&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-left"></i></button> -->
-		         <div> 
-                <button class="btn btn-theme item-submit" href="code_test.html" type="submit"><i class="fa fa-angle-double-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;提 &nbsp;&nbsp; 交&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-left"></i></button>
-                </div>  
-                <br>
-                
-                <br>
-                <hr>
-                <div class="login-social-link centered ">
-		            <div class="registration">
-		                <a  href="login.html">
-		                  <u> 登&nbsp;&nbsp;&nbsp;录</u> 
-		                </a>
-                    </div>
-                    <br>
-		        </div>
-               
-		        <!-- <div class="login-wrap">
-		            <input type="text" class="form-control" placeholder="UserName" autofocus>
-					<br>
-					<input type="text" class="form-control" placeholder="UserName/Email" autofocus>
-					<br>
-					<input type="password" class="form-control" placeholder="Password">
-					<br>
-					<input type="password" class="form-control" placeholder="Password">
-					<br>
-		            
-		            <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i>LOGIN</button>
-		            <hr>
-		            
-		            <div class="login-social-link centered">
-		            <div class="registration">
-		                <a class="" href="#">
-		                    Create an account
-		                </a>
-		            </div>
-		
-		        </div> -->
-		
-		          
-		
-		      </form>	  	
-	  	
-	  	</div>
+<div class="container ">
 
-    <!-- js placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <form class="form-register"  id="registerform" action="#" method="POST">
+        <h2 class="form-register-heading">Create Your Account</h2>
+        <br>
+        <div class="item">
+            <label for="username" class="item-label">用户名:</label>
+            <input type="text" id="username" name="username" class="item-text" placeholder="设置用户名"
+                   autocomplete="off" tip="请输入用户名">
+        </div>
+        <div class="item">
+            <label for="password" class="item-label">密码:</label>
+            <input type="password" id="password" name="password" class="item-text"
+                   placeholder="设置密码" tip="长度为3-16个字符">
+        </div>
+        <div class="item">
+            <label for="password" class="item-label">确认密码:</label>
+            <input type="password" name="confirm_password" class="item-text" placeholder="设置确认密码" tip="请再次输入密码">
+        </div>
+        <div class="item">
+            <label for="semail" class="item-label">邮箱:</label>
+            <input type="text" id="semail" name="email" class="item-text" placeholder="设置邮箱"
+                   autocomplete="off" tip="请输入邮箱">
+        </div>
+        <!-- <div class="item">
+            <label for="simage" class="item-label">头像:</label>
+            <input type="file" name="simage" class="item-file">
+        </div> -->
+        <!-- <button class="btn btn-block" href="index.html" type="submit"><i class="fa fa-angle-double-right"></i>&nbsp; &nbsp;&nbsp;&nbsp;   提 &nbsp;&nbsp; 交&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-left"></i></button> -->
+        <div>
+            <button class="btn btn-theme item-submit"  ><i
+                    class="fa fa-angle-double-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;提 &nbsp;&nbsp; 交&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                    class="fa fa-angle-double-left"></i></button>
+        </div>
+        <br>
 
-    <!--BACKSTRETCH-->
-    <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
-    <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
-    <script>
-			$.backstretch(["images/bg.jpg"],{ duration: 3000, fade: 75 },{speed: 5000});     
-			
-    </script>
-    <!-- jquery validate js -->
-	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-    <script type="text/javascript" src="js/jquery.validate.js"></script>
-    <script type="text/javascript" src="js/additional-methods.js"></script>
-    <script type="text/javascript" src="js/jquery.validate.extend.js"></script>
-    <script type="text/javascript">
-        $(function(){
+        <br>
+        <hr>
+        <div class="login-social-link centered ">
+            <div class="registration">
+                <a href="/login">
+                    <u> 登&nbsp;&nbsp;&nbsp;录</u>
+                </a>
+            </div>
+            <br>
+        </div>
 
-            //让当前表单调用validate方法，实现表单验证功能
-            $("#registerform").validate({
-                debug:true, //调试模式，即使验证成功也不会跳转到目标页面
-                rules:{     //配置验证规则，key就是被验证的dom对象，value就是调用验证的方法(也是json格式)
-                    sname:{
-                        required:true,  //必填。如果验证方法不需要参数，则配置为true
-                        rangelength:[4,12],
-                        remote:{
-                            url:"ajax_check.action",
-                            type:"post"
-                        }
-                    },
-                    spass:{
-                        required:true,
-                        rangelength:[6,16]
-                    },
-                    spass2:{
-                        required:true,
-                        equalTo:'#password' //表示和id="spass"的值相同
-                    },
-                    semail:{
-                        required:true,
-                        email:true
-                    }
-                    // simage:{
-                    //     required:true,
-                    //     extension:'gif|jpe?g|png'
-                    // }
+        <!-- <div class="login-wrap">
+            <input type="text" class="form-control" placeholder="UserName" autofocus>
+            <br>
+            <input type="text" class="form-control" placeholder="UserName/Email" autofocus>
+            <br>
+            <input type="password" class="form-control" placeholder="Password">
+            <br>
+            <input type="password" class="form-control" placeholder="Password">
+            <br>
+
+            <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i>LOGIN</button>
+            <hr>
+
+            <div class="login-social-link centered">
+            <div class="registration">
+                <a class="" href="#">
+                    Create an account
+                </a>
+            </div>
+
+        </div> -->
+
+
+    </form>
+
+</div>
+
+<!-- js placed at the end of the document so the pages load faster -->
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<!--BACKSTRETCH-->
+<!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+
+
+<!-- jquery validate js -->
+<script type="text/javascript" src="/js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.js"></script>
+<script type="text/javascript" src="/js/additional-methods.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.extend.js"></script>
+<script type="text/javascript" src="/js/jquery.backstretch.min.js"></script>
+
+<script src="/layui/layui.all.js"></script>
+<script src="/js/core.util.js"></script>
+<script type="text/javascript">
+
+    $.backstretch(["images/bg.jpg"]);
+    let layer = layui.layer;
+    $(function () {
+        //让当前表单调用validate方法，实现表单验证功能
+        $("#registerform").validate({
+            submitHandler: function () {
+                let data = CoreUtil.formJson("registerform");
+                CoreUtil.sendAjax("/user/register", data, function (res) {
+                    layer.msg("注册成功，3秒后自动跳转到登录界面");
+                    setTimeout(function () {
+                        window.location.href = "/login";
+                    }, 3000)
+
+                })
+            },
+            //debug: true, //调试模式，即使验证成功也不会跳转到目标页面
+            rules: {     //配置验证规则，key就是被验证的dom对象，value就是调用验证的方法(也是json格式)
+                username: {
+                    required: true,  //必填。如果验证方法不需要参数，则配置为true
+                    rangelength: [4, 12],
                 },
-                messages:{
-                    sname:{
-                        required:"请输入用户名",
-                        rangelength:$.validator.format("用户名长度为{0}-{1}个字符"),
-                        remote:"该用户名已存在！"
-                    },
-                    spass:{
-                        required:"请输入密码",
-                        rangelength:$.validator.format("密码长度为{0}-{1}个字符")
-                    },
-                    spass2:{
-                        required:"请再次输入密码",
-                        equalTo:"两次密码必须一致" //表示和id="spass"的值相同
-                    },
-                    sphone:{
-                        required:"请输入手机号"
-                    },
-                    semail:{
-                        required:"请填写邮件",
-                        email:"邮箱格式不正确"
-                    }
-                    // simage:{
-                    //     required:"请选择要上传的头像",
-                    //     extension:"文件后缀名必须为jpg,jpeg,gif,png"
-                    // }
+                password: {
+                    required: true,
+                    rangelength: [3, 16]
+                },
+                confirm_password: {
+                    required: true,
+                    equalTo: '#password' //表示和id="spass"的值相同
+                },
+                email: {
+                    required: true,
+                    email: true
                 }
-            });
+            },
+            messages: {
+                username: {
+                    required: "请输入用户名",
+                    rangelength: $.validator.format("用户名长度为{0}-{1}个字符"),
+                    remote: "该用户名已存在！"
+                },
+                password: {
+                    required: "请输入密码",
+                    rangelength: $.validator.format("密码长度为{0}-{1}个字符")
+                },
+                confirm_password: {
+                    required: "请再次输入密码",
+                    equalTo: "两次密码必须一致" //表示和id="spass"的值相同
+                },
+                email: {
+                    required: "请填写邮件",
+                    email: "邮箱格式不正确"
+                }
+
+            }
         });
-    </script>
+    });
+
+</script>
 
 
-  </body>
+</body>
 </html>

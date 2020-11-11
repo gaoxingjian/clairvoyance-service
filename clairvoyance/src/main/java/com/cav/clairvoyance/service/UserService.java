@@ -1,5 +1,6 @@
 package com.cav.clairvoyance.service;
 
+import com.cav.clairvoyance.domain.User;
 import com.cav.clairvoyance.vo.req.LoginReqVO;
 import com.cav.clairvoyance.vo.req.RegisterReqVO;
 import com.cav.clairvoyance.vo.resp.LoginRespVO;
@@ -12,4 +13,7 @@ public interface UserService {
 
     void logout(String accessToken, String refreshToken);
 
+    User detailInfo(String userId);
+
+    String refreshToken(String refreshToken,String accessToken);
 }

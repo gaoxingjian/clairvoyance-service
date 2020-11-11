@@ -1,218 +1,99 @@
-2020-11-02 12:15:55.765  INFO 1483 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MacBook-Pro.local with PID 1483 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
-2020-11-02 12:15:55.784 DEBUG 1483 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-11-02 12:15:55.795  INFO 1483 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
-2020-11-02 12:15:55.912  INFO 1483 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-02 12:15:55.913  INFO 1483 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-02 12:15:57.748  INFO 1483 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-02 12:15:57.754  INFO 1483 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-02 12:15:57.841  INFO 1483 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48ms. Found 0 Redis repository interfaces.
-2020-11-02 12:15:58.114  WARN 1483 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-11-02 12:15:58.871  INFO 1483 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-02 12:15:58.885  INFO 1483 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-02 12:15:58.885  INFO 1483 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-11-02 12:15:59.186  INFO 1483 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-02 12:15:59.190  INFO 1483 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3277 ms
-2020-11-02 12:16:00.555  WARN 1483 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisServiceImpl': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.core.RedisTemplate<java.lang.String, java.lang.Object>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2020-11-02 12:16:00.560  INFO 1483 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-11-02 12:16:00.572  INFO 1483 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-11-02 12:16:00.727 ERROR 1483 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field redisTemplate in com.cav.clairvoyance.service.impl.RedisServiceImpl required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
-
-2020-11-02 12:17:19.338  INFO 1502 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MacBook-Pro.local with PID 1502 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
-2020-11-02 12:17:19.345 DEBUG 1502 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-11-02 12:17:19.346  INFO 1502 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
-2020-11-02 12:17:19.461  INFO 1502 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-02 12:17:19.461  INFO 1502 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-02 12:17:20.916  INFO 1502 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-02 12:17:20.918  INFO 1502 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-02 12:17:20.957  INFO 1502 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
-2020-11-02 12:17:21.098  WARN 1502 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-11-02 12:17:21.615  INFO 1502 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-02 12:17:21.624  INFO 1502 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-02 12:17:21.625  INFO 1502 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-11-02 12:17:21.710  INFO 1502 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-02 12:17:21.711  INFO 1502 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2249 ms
-2020-11-02 12:17:22.302  WARN 1502 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisServiceImpl': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.core.RedisTemplate<java.lang.String, java.lang.Object>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2020-11-02 12:17:22.307  INFO 1502 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-11-02 12:17:22.318  INFO 1502 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-11-02 12:17:22.412 ERROR 1502 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field redisTemplate in com.cav.clairvoyance.service.impl.RedisServiceImpl required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
-
-2020-11-02 12:18:43.426  INFO 1512 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MacBook-Pro.local with PID 1512 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
-2020-11-02 12:18:43.430 DEBUG 1512 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-11-02 12:18:43.431  INFO 1512 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
-2020-11-02 12:18:43.607  INFO 1512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-02 12:18:43.608  INFO 1512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-02 12:18:44.921  INFO 1512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-02 12:18:44.924  INFO 1512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-02 12:18:44.968  INFO 1512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
-2020-11-02 12:18:45.093  WARN 1512 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-11-02 12:18:45.578  INFO 1512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-02 12:18:45.587  INFO 1512 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-02 12:18:45.587  INFO 1512 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-11-02 12:18:45.657  INFO 1512 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-02 12:18:45.657  INFO 1512 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2049 ms
-2020-11-02 12:18:46.238  WARN 1512 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisServiceImpl': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.core.RedisTemplate<java.lang.String, java.lang.Object>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2020-11-02 12:18:46.242  INFO 1512 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-11-02 12:18:46.254  INFO 1512 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-11-02 12:18:46.350 ERROR 1512 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field redisTemplate in com.cav.clairvoyance.service.impl.RedisServiceImpl required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
-
-2020-11-02 12:23:04.511  INFO 1578 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MacBook-Pro.local with PID 1578 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
-2020-11-02 12:23:04.516 DEBUG 1578 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-11-02 12:23:04.518  INFO 1578 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
-2020-11-02 12:23:04.774  INFO 1578 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-02 12:23:04.774  INFO 1578 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-02 12:23:06.271  INFO 1578 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-02 12:23:06.274  INFO 1578 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-02 12:23:06.324  INFO 1578 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
-2020-11-02 12:23:06.504  WARN 1578 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-11-02 12:23:07.093  INFO 1578 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-02 12:23:07.106  INFO 1578 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-02 12:23:07.107  INFO 1578 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-11-02 12:23:07.199  INFO 1578 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-02 12:23:07.200  INFO 1578 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2426 ms
-2020-11-02 12:23:07.863  WARN 1578 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.cav.clairvoyance.service.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2020-11-02 12:23:07.867  INFO 1578 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-11-02 12:23:07.879  INFO 1578 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-11-02 12:23:08.016 ERROR 1578 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field redisService in com.cav.clairvoyance.service.impl.UserServiceImpl required a bean of type 'com.cav.clairvoyance.service.RedisService' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'com.cav.clairvoyance.service.RedisService' in your configuration.
-
-2020-11-02 12:25:13.238  INFO 1597 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MacBook-Pro.local with PID 1597 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
-2020-11-02 12:25:13.243 DEBUG 1597 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-11-02 12:25:13.244  INFO 1597 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
-2020-11-02 12:25:13.379  INFO 1597 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-02 12:25:13.380  INFO 1597 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-02 12:25:14.639  INFO 1597 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-02 12:25:14.641  INFO 1597 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-02 12:25:14.705  INFO 1597 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36ms. Found 0 Redis repository interfaces.
-2020-11-02 12:25:14.888  WARN 1597 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-11-02 12:25:15.412  INFO 1597 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-02 12:25:15.421  INFO 1597 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-02 12:25:15.421  INFO 1597 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-11-02 12:25:15.495  INFO 1597 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-02 12:25:15.496  INFO 1597 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2115 ms
-2020-11-02 12:25:16.199  WARN 1597 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.cav.clairvoyance.service.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2020-11-02 12:25:16.205  INFO 1597 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-11-02 12:25:16.221  INFO 1597 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-11-02 12:25:16.338 ERROR 1597 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field redisService in com.cav.clairvoyance.service.impl.UserServiceImpl required a bean of type 'com.cav.clairvoyance.service.RedisService' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'com.cav.clairvoyance.service.RedisService' in your configuration.
-
-2020-11-02 12:26:51.481  INFO 1602 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MacBook-Pro.local with PID 1602 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
-2020-11-02 12:26:51.486 DEBUG 1602 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-11-02 12:26:51.487  INFO 1602 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
-2020-11-02 12:26:51.627  INFO 1602 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-02 12:26:51.628  INFO 1602 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-02 12:26:53.184  INFO 1602 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-02 12:26:53.186  INFO 1602 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-02 12:26:53.225  INFO 1602 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
-2020-11-02 12:26:53.387  WARN 1602 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-11-02 12:26:53.899  INFO 1602 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-02 12:26:53.908  INFO 1602 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-02 12:26:53.908  INFO 1602 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-11-02 12:26:53.983  INFO 1602 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-02 12:26:53.984  INFO 1602 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2356 ms
-2020-11-02 12:26:55.012  INFO 1602 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-02 12:26:55.137  INFO 1602 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-02 12:26:55.186  INFO 1602 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-02 12:26:55.295  WARN 1602 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-11-02 12:26:55.315  INFO 1602 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-11-02 12:26:55.316  INFO 1602 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-11-02 12:26:55.316  INFO 1602 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-11-02 12:26:55.317  INFO 1602 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-11-02 12:26:55.962  INFO 1602 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-02 12:26:55.964  INFO 1602 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-02 12:26:55.989  INFO 1602 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-02 12:26:56.023  INFO 1602 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-02 12:26:56.159  INFO 1602 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-11-02 12:26:56.162  INFO 1602 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-11-02 12:26:56.259  INFO 1602 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Started ClairvoyanceApplication in 5.607 seconds (JVM running for 6.988)
-2020-11-02 12:27:05.597  INFO 1602 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-02 12:27:05.598  INFO 1602 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-02 12:27:05.607  INFO 1602 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2020-11-02 12:32:27.973  INFO 1602 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-11 15:07:37.854  INFO 93577 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MacBook-Pro.local with PID 93577 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
+2020-11-11 15:07:37.888 DEBUG 93577 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-11-11 15:07:37.889  INFO 93577 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
+2020-11-11 15:07:38.024  INFO 93577 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-11 15:07:38.026  INFO 93577 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-11 15:07:40.021  INFO 93577 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-11 15:07:40.025  INFO 93577 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-11 15:07:40.090  INFO 93577 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
+2020-11-11 15:07:40.343  WARN 93577 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-11-11 15:07:40.523  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.cav.clairvoyance.config.ShiroConfig$$EnhancerBySpringCGLIB$$a911b91f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-11 15:07:40.980  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.cav.clairvoyance.config.RedisConfig$$EnhancerBySpringCGLIB$$f3e04069] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-11 15:07:41.007  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-11 15:07:41.013  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-11 15:07:41.155  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-11 15:07:41.346  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-11 15:07:41.456  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-11 15:07:41.458  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisServiceImpl' of type [com.cav.clairvoyance.service.impl.RedisServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-11 15:07:41.458  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'customHashedCredentialsMatcher' of type [com.cav.clairvoyance.shiro.CustomHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-11 15:07:41.463  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisCacheManager' of type [com.cav.clairvoyance.shiro.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-11 15:07:41.468  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'customRealm' of type [com.cav.clairvoyance.shiro.CustomRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-11 15:07:41.473  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-11 15:07:41.525  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-11 15:07:42.148  INFO 93577 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-11 15:07:42.266  INFO 93577 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-11 15:07:42.266  INFO 93577 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-11 15:07:42.399  INFO 93577 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-11 15:07:42.400  INFO 93577 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4373 ms
+2020-11-11 15:07:44.066  INFO 93577 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-11 15:07:44.314  INFO 93577 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-11 15:07:44.408  INFO 93577 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-11 15:07:44.603  WARN 93577 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-11 15:07:44.655  INFO 93577 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-11 15:07:44.656  INFO 93577 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-11 15:07:44.657  INFO 93577 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-11 15:07:44.658  INFO 93577 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-11-11 15:07:45.019  INFO 93577 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-11-11 15:07:45.237  INFO 93577 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-11 15:07:45.239  INFO 93577 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-11 15:07:45.265  INFO 93577 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-11 15:07:45.304  INFO 93577 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-11 15:07:45.485  INFO 93577 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-11-11 15:07:45.489  INFO 93577 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-11-11 15:07:45.600  INFO 93577 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Started ClairvoyanceApplication in 9.02 seconds (JVM running for 10.945)
+2020-11-11 15:09:06.490  INFO 93577 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-11 15:09:06.491  INFO 93577 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-11 15:09:06.640  INFO 93577 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 122 ms
+2020-11-11 15:09:35.594  INFO 93577 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-11 15:09:35.597  WARN 93577 --- [http-nio-8080-exec-6] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-11-11 15:09:35.949  INFO 93577 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-11 15:10:05.652  INFO 93577 --- [http-nio-8080-exec-6] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: false
+2020-11-11 15:10:05.652  INFO 93577 --- [http-nio-8080-exec-6] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
+2020-11-11 15:10:05.652  INFO 93577 --- [http-nio-8080-exec-6] c.c.c.shiro.CustomAccessControlFilter    : GET
+2020-11-11 15:10:05.653  INFO 93577 --- [http-nio-8080-exec-6] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
+2020-11-11 15:10:10.903  INFO 93577 --- [http-nio-8080-exec-4] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
+2020-11-11 15:10:10.903  INFO 93577 --- [http-nio-8080-exec-4] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
+2020-11-11 15:10:10.903  INFO 93577 --- [http-nio-8080-exec-4] c.c.c.shiro.CustomAccessControlFilter    : GET
+2020-11-11 15:10:10.903  INFO 93577 --- [http-nio-8080-exec-4] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
+2020-11-11 15:10:15.167  INFO 93577 --- [http-nio-8080-exec-10] c.c.c.service.impl.UserServiceImpl       : subject.getPrincipals()=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2YmZlMzAxYS1mNjNhLTQ3ZjAtODk3Zi1hNTIzZTlhMTEzOTciLCJpc3MiOiJjbGFpcnZveWFuY2UiLCJqd3QtdXNlci1uYW1lLWtleSI6Ikphc29uIiwiZXhwIjoxNjA1MDg1ODA0LCJpYXQiOjE2MDUwNzg2MDR9.f_yEXuJMXrvlIO7Oq45Xg3HzwBOwB89Im20b28kg8po
+2020-11-11 15:10:15.168  INFO 93577 --- [http-nio-8080-exec-10] com.cav.clairvoyance.shiro.RedisCache    : remove key [eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2YmZlMzAxYS1mNjNhLTQ3ZjAtODk3Zi1hNTIzZTlhMTEzOTciLCJpc3MiOiJjbGFpcnZveWFuY2UiLCJqd3QtdXNlci1uYW1lLWtleSI6Ikphc29uIiwiZXhwIjoxNjA1MDg1ODA0LCJpYXQiOjE2MDUwNzg2MDR9.f_yEXuJMXrvlIO7Oq45Xg3HzwBOwB89Im20b28kg8po]
+2020-11-11 15:10:28.467  INFO 93577 --- [http-nio-8080-exec-8] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: false
+2020-11-11 15:10:28.468  INFO 93577 --- [http-nio-8080-exec-8] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
+2020-11-11 15:10:28.468  INFO 93577 --- [http-nio-8080-exec-8] c.c.c.shiro.CustomAccessControlFilter    : GET
+2020-11-11 15:10:28.468  INFO 93577 --- [http-nio-8080-exec-8] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
+2020-11-11 15:10:58.187  INFO 93577 --- [http-nio-8080-exec-8] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
+2020-11-11 15:10:58.188  INFO 93577 --- [http-nio-8080-exec-8] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
+2020-11-11 15:10:58.188  INFO 93577 --- [http-nio-8080-exec-8] c.c.c.shiro.CustomAccessControlFilter    : GET
+2020-11-11 15:10:58.188  INFO 93577 --- [http-nio-8080-exec-8] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
+2020-11-11 15:11:16.994  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
+2020-11-11 15:11:16.994  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
+2020-11-11 15:11:16.994  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : GET
+2020-11-11 15:11:16.994  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
+2020-11-11 15:11:48.742  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
+2020-11-11 15:11:48.742  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
+2020-11-11 15:11:48.742  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : GET
+2020-11-11 15:11:48.742  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
+2020-11-11 15:11:54.168  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
+2020-11-11 15:11:54.168  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
+2020-11-11 15:11:54.168  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : GET
+2020-11-11 15:11:54.169  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
+2020-11-11 15:25:27.441  INFO 93577 --- [http-nio-8080-exec-7] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
+2020-11-11 15:25:27.442  INFO 93577 --- [http-nio-8080-exec-7] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
+2020-11-11 15:25:27.443  INFO 93577 --- [http-nio-8080-exec-7] c.c.c.shiro.CustomAccessControlFilter    : GET
+2020-11-11 15:25:27.443  INFO 93577 --- [http-nio-8080-exec-7] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
+2020-11-11 15:25:38.920  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.service.impl.UserServiceImpl       : subject.getPrincipals()=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2YmZlMzAxYS1mNjNhLTQ3ZjAtODk3Zi1hNTIzZTlhMTEzOTciLCJpc3MiOiJjbGFpcnZveWFuY2UiLCJqd3QtdXNlci1uYW1lLWtleSI6Ikphc29uIiwiZXhwIjoxNjA1MDg1ODI3LCJpYXQiOjE2MDUwNzg2Mjd9.02ULsc93_zXsA003K86bz4WQ56MZN1PDckbDwCs4jwA
+2020-11-11 15:25:38.921  INFO 93577 --- [http-nio-8080-exec-2] com.cav.clairvoyance.shiro.RedisCache    : remove key [eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2YmZlMzAxYS1mNjNhLTQ3ZjAtODk3Zi1hNTIzZTlhMTEzOTciLCJpc3MiOiJjbGFpcnZveWFuY2UiLCJqd3QtdXNlci1uYW1lLWtleSI6Ikphc29uIiwiZXhwIjoxNjA1MDg1ODI3LCJpYXQiOjE2MDUwNzg2Mjd9.02ULsc93_zXsA003K86bz4WQ56MZN1PDckbDwCs4jwA]
+2020-11-11 15:34:13.996  INFO 93577 --- [http-nio-8080-exec-5] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: false
+2020-11-11 15:34:13.998  INFO 93577 --- [http-nio-8080-exec-5] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
+2020-11-11 15:34:13.998  INFO 93577 --- [http-nio-8080-exec-5] c.c.c.shiro.CustomAccessControlFilter    : GET
+2020-11-11 15:34:13.998  INFO 93577 --- [http-nio-8080-exec-5] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
+2020-11-11 15:34:17.554  INFO 93577 --- [http-nio-8080-exec-3] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
+2020-11-11 15:34:17.554  INFO 93577 --- [http-nio-8080-exec-3] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
+2020-11-11 15:34:17.554  INFO 93577 --- [http-nio-8080-exec-3] c.c.c.shiro.CustomAccessControlFilter    : GET
+2020-11-11 15:34:17.554  INFO 93577 --- [http-nio-8080-exec-3] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
+2020-11-11 15:34:53.905  INFO 93577 --- [http-nio-8080-exec-6] c.c.c.service.impl.UserServiceImpl       : subject.getPrincipals()=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2YmZlMzAxYS1mNjNhLTQ3ZjAtODk3Zi1hNTIzZTlhMTEzOTciLCJpc3MiOiJjbGFpcnZveWFuY2UiLCJqd3QtdXNlci1uYW1lLWtleSI6Ikphc29uIiwiZXhwIjoxNjA1MDg3MjUyLCJpYXQiOjE2MDUwODAwNTJ9.j5L4YWSrlDO28Q9nVOyNKCPYBhSismzLRKSLxnub124
+2020-11-11 15:34:53.905  INFO 93577 --- [http-nio-8080-exec-6] com.cav.clairvoyance.shiro.RedisCache    : remove key [eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2YmZlMzAxYS1mNjNhLTQ3ZjAtODk3Zi1hNTIzZTlhMTEzOTciLCJpc3MiOiJjbGFpcnZveWFuY2UiLCJqd3QtdXNlci1uYW1lLWtleSI6Ikphc29uIiwiZXhwIjoxNjA1MDg3MjUyLCJpYXQiOjE2MDUwODAwNTJ9.j5L4YWSrlDO28Q9nVOyNKCPYBhSismzLRKSLxnub124]
+2020-11-11 15:55:36.488  INFO 93577 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-11-11 15:55:36.497  INFO 93577 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-11 15:55:36.501  INFO 93577 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-11 15:55:36.509  INFO 93577 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

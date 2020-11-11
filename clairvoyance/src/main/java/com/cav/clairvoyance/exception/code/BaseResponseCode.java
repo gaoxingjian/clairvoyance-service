@@ -29,6 +29,8 @@ public enum  BaseResponseCode implements ResponseCodeInterface {
 
     NOT_ACCOUNT(401004,"该用户不存在,请先注册"),
 
+    HAS_ACCOUNT(401004,"该邮箱已被注册，请更换其他邮箱"),
+
     USER_LOCK(401005,"该用户已被锁定，请联系运营人员"),
 
     PASSWORD_ERROR(401006,"用户名或密码错误"),

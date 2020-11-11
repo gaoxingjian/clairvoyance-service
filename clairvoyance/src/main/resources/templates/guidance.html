@@ -13,25 +13,28 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+<!--    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">-->
+<!--    <link rel="icon" href="/favicon.ico" type="image/x-icon">-->
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
+<!--    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">-->
     <title>Clairvoyance</title>
     <!-- Bootstrap Core CSS -->
-    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->
-    <link href="bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <link href="/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
     <!-- Animation CSS -->
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
     <!-- Custom CSS -->
     <!-- <link href="css/style.css" rel="stylesheet"> -->
     <!-- button CSS -->
-    <link href="css/button.css" rel="stylesheet">
+    <link href="/css/button.css" rel="stylesheet">
     <!--NProgress CSS -->
-    <link rel="stylesheet" href="css/nprogress.css">
-    <link rel="stylesheet" href="css/nprogress_style.css">
+    <link rel="stylesheet" href="/css/nprogress.css">
+    <link rel="stylesheet" href="/css/nprogress_style.css">
 
-    <link href="css/stylenew.css" rel="stylesheet">
-    <link href="css/style-responsive.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="/css/stylenew.css" rel="stylesheet">
+    <link href="/css/style-responsive.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet"/>
     <!--Font -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -39,7 +42,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- We have chosen the skin-blue (blue.css) for this starter
           page. However, you can choose any other skin from folder css / colors .-->
 
-    <link href="css/colors/blue-dark.css" id="theme" rel="stylesheet">
+    <link href="/css/colors/blue-dark.css" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -50,93 +53,95 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <body>
 
-    <section id="container" >
-        <!-- **********************************************************************************************************************************************************
-        TOP BAR CONTENT & NOTIFICATIONS
-        *********************************************************************************************************************************************************** -->
-        <!--header start-->
-        <header class="header black-bg ">
-                <div class="sidebar-toggle-box">
-                    <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
-                </div>
-              <!--logo start-->
-              <a href="#" class="logo"><b>CLAIRVOYANCE</b></a>
-              <!--logo end-->
-  
-              <div class="top-menu">
-                  <ul class="nav pull-right top-menu">
-                      <li><a class="logout" href="login.html">Login</a></li>
-                  </ul>
-              </div>
-          </header>
-  
-        <aside>
-            <div id="sidebar"  class="nav-collapse ">
-                <!-- sidebar menu start-->
-                <ul class="sidebar-menu" id="nav-accordion">
-                
-                      <p class="centered"><a href="#"><img src="images/eye-logo.png" class="img-circle" width="60"></a></p>
-                      <h5 class="centered">CLAIRVOYANCE</h5>
-                          
-                    <li>
-                        <a href="code_test.html" class="waves-effect">
-                            <i class="fa fa-code fa-fw"></i>
-                            <span>Code Test</span>
-                        </a>
-                    </li>
-                    <li >
-                      <a class="waves-effect" href="batch_test.html" >
-                          <i class="fa fa-file-archive-o fa-fw" aria-hidden="true"></i>
-                          <span>Batch test</span></a>
-                  </li>
-                  <li>
-                      <a href="https://toolman-demo.readthedocs.io/en/latest/index.html." class="waves-effect">
-                          <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
-                          <span>Tool Website</span></a>
-                  </li>
-                  <li> 
-                    <a href="guidance.html" class="waves-effec active">
+<section id="container">
+    <!-- **********************************************************************************************************************************************************
+    TOP BAR CONTENT & NOTIFICATIONS
+    *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg ">
+        <div class="sidebar-toggle-box">
+            <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+        </div>
+        <!--logo start-->
+        <a href="/" class="logo"><b>CLAIRVOYANCE</b></a>
+        <!--logo end-->
+
+        <div class="top-menu">
+            <ul class="nav pull-right top-menu">
+                <li><a id="top" class="logout" href="/login"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+
+                <p class="centered"><a href="/"><img src="images/eye-logo.png" class="img-circle" width="60"></a></p>
+                <h5 class="centered">CLAIRVOYANCE</h5>
+
+                <li>
+                    <a href="/code" class="waves-effect">
+                        <i class="fa fa-code fa-fw"></i>
+                        <span>Code Test</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/batch" class="waves-effect">
+                        <i class="fa fa-file-archive-o fa-fw" aria-hidden="true"></i>
+                        <span>Batch test</span></a>
+                </li>
+                <li>
+                    <a href="https://toolman-demo.readthedocs.io/en/latest/index.html." class="waves-effect">
+                        <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                        <span>Tool Website</span></a>
+                </li>
+                <li>
+                    <a href="/guidance" class="waves-effec active">
                         <i class="fa fa-desktop fa-fw"></i>
                         <span>Guidance</span>
                     </a>
                 </li>
-                </ul>
-                <!-- sidebar menu end-->
-            </div>
-        </aside>
-        <!--sidebar end-->
-          <!-- Page Content -->
-      <section id="main-content">
-        <section class="wrapper">
-          
-  
+            </ul>
+            <!-- sidebar menu end-->
+        </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- Page Content -->
+    <section id="main-content">
+        <section class="wrapper" style="padding-top: 15px">
+            <iframe src="//player.bilibili.com/player.html?aid=245005350&bvid=BV16v411k7Sx&cid=248834631&page=1&high_quality=1&danmaku=0"
+                    width="100%" height="800"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
         </section>
     </section>
-    
-  </section>
-  <footer class="footer text-center"> &copy; Copyright 2020, USTC</footer>
-  <!-- jQuery -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+</section>
+<footer class="footer text-center"> &copy; Copyright 2020, USTC</footer>
+<!-- jQuery -->
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="/js/jquery.sparkline.js"></script>
+<script src="/js/common-scripts.js"></script>
 <!-- Bootstrap Core JavaScript -->
-<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- Menu Plugin JavaScript -->
-<script src="bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+<script src="/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
 <!--slimscroll JavaScript -->
-<script src="js/jquery.slimscroll.js"></script>
+<script src="/js/jquery.slimscroll.js"></script>
 <!--Wave Effects -->
-<script src="js/waves.js"></script>
+<script src="/js/waves.js"></script>
 <!--Nprogress -->
-<script src="js/nprogress.js" rel='stylesheet'></script>
+<script src="/js/nprogress.js" rel='stylesheet'></script>
 <!-- Custom Theme JavaScript -->
-<script src="js/custom.min.js"></script>
-<script src="js/common-scripts.js"></script>
+<script src="/js/custom.min.js"></script>
+<script src="/layui/layui.all.js"></script>
+<script src="/js/core.util.js"></script>
 
 <script>
-    //custom select box
-
-    $(function(){
-        $('select.styled').customSelect();
-    });
+    CoreUtil.load();
 
 </script>
 

@@ -1,4 +1,8 @@
 package com.cav.clairvoyance.service;
 
-public class RoleService {
+import java.util.List;
+
+public interface RoleService {
+
+    List<String> getRoleNames(String userId);
 }
