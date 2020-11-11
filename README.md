@@ -4,6 +4,9 @@
 
 Clairvoyance是一个智能合约重入代码检测平台。
 
+#### 演示
+[观看演示视频](https://www.bilibili.com/video/BV1Nv411r7kh) 
+
 #### 架构
 
 平台架构说明
@@ -33,8 +36,6 @@ Clairvoyance是一个智能合约重入代码检测平台。
 - Login http://localhost:8080/login
 - Register http://localhost:8080/register
 
-#### 演示
-[观看演示视频](http://localhost:8080/register) 
 #### 目录描述     
 ```
 ├── README.md	// help
