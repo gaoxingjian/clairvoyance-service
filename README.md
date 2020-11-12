@@ -66,3 +66,92 @@ Clairvoyance是一个智能合约重入代码检测平台，主要有以下功�
 └── logs	// 日志
 ```
 
+#### application.yml
+
+```yaml
+spring:
+  application:
+    name: clairvoyance
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/clairvoyance?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: asd
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      enabled: true
+      max-request-size: 200MB
+      # multipart上传文件时懒加载
+      resolve-lazily: false
+      # 上传文件的临时目录
+      #location:
+  redis:
+    host: localhost
+    #host: 47.100.164.141
+    #password: asd
+    port: 6379
+    lettuce:
+      pool:
+        # 连接池最大连接数（使用负值表示没有限制） 默认 8
+        max-active: 100
+        # 连接池最大阻塞等待时间（使用负值表示没有限制） 默认 -1
+        max-wait: PT10s
+        # 连接池中的最大空闲连接 默认 8
+        max-idle: 30
+        # 连接池中的最小空闲连接 默认 0
+        min-idle: 1
+    # 链接超时时间
+    timeout: PT10S
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: utf-8
+    cache: false
+    #enabled: true
+    #check-template: true
+    #check-template-location: true
+mybatis:
+  type-aliases-package: com.cav.clairvoyance.domain
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  file:
+    name: ${logging.file.path}/${spring.application.name}.log
+    path: logs
+  level:
+    com.cav.clairvoyance: debug
+file:
+  root:
+    dir:
+      # 合约根目录
+      windows: e:\\contract-repository
+      mac: /Users/jason/files/contract-repository
+      linux: /root/files/contract-repository
+  # 文件扩展名
+  extension:
+    contract: sol
+    report: txt
+  # overwrite开关, 若为true,则覆盖之前已有的报告; 若为false, 则不覆盖
+  overwrite: false
+  # delete, 若为true,则根据上传的文件, 从仓库里删除对应的报告; 若为false, 则不删除;
+  # 注: 此功能打开时, analyse功能将禁用
+  delete: false
+cmd:
+  # 检测命令
+  str: slither --detect ICfgReentrancy
+  # 执行timeout 单位ms
+  timeout: 300000   #1800000
+swagger2:
+  # 接口文档开关
+  enable: true
+#JWT 密钥
+jwt:
+  secretKey: 78944878877848fg)
+  accessTokenExpireTime: PT2H
+  refreshTokenExpireTime: PT8H
+  refreshTokenExpireAppTime: P30D
+  issuer: clairvoyance
+```
+
