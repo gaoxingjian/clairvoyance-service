@@ -37,6 +37,7 @@ Clairvoyance是一个智能合约重入代码检测平台，主要有以下功�
 - 导入clairvoyance.sql
 - 启动redis
 - 修改application.yml中mysql、redis、合约仓库路径、检测超时时间、检测模式、检测指令等配置信息
+- 安装检测指令对应的检测工具
 - 启动项目
 - 项目访问地址http://localhost:8080
 - 接口文档访问 http://localhost:8080/swagger-ui.html
