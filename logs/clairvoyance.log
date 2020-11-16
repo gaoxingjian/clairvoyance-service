@@ -1,147 +1,224 @@
-2020-11-11 15:07:37.854  INFO 93577 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MacBook-Pro.local with PID 93577 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
-2020-11-11 15:07:37.888 DEBUG 93577 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-11-11 15:07:37.889  INFO 93577 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
-2020-11-11 15:07:38.024  INFO 93577 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-11 15:07:38.026  INFO 93577 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-11 15:07:40.021  INFO 93577 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-11 15:07:40.025  INFO 93577 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-11 15:07:40.090  INFO 93577 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
-2020-11-11 15:07:40.343  WARN 93577 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-11-11 15:07:40.523  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.cav.clairvoyance.config.ShiroConfig$$EnhancerBySpringCGLIB$$a911b91f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 15:07:40.980  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.cav.clairvoyance.config.RedisConfig$$EnhancerBySpringCGLIB$$f3e04069] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 15:07:41.007  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 15:07:41.013  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 15:07:41.155  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 15:07:41.346  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 15:07:41.456  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 15:07:41.458  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisServiceImpl' of type [com.cav.clairvoyance.service.impl.RedisServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 15:07:41.458  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'customHashedCredentialsMatcher' of type [com.cav.clairvoyance.shiro.CustomHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 15:07:41.463  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisCacheManager' of type [com.cav.clairvoyance.shiro.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 15:07:41.468  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'customRealm' of type [com.cav.clairvoyance.shiro.CustomRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 15:07:41.473  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 15:07:41.525  INFO 93577 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 15:07:42.148  INFO 93577 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 15:07:42.266  INFO 93577 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 15:07:42.266  INFO 93577 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-11-11 15:07:42.399  INFO 93577 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 15:07:42.400  INFO 93577 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4373 ms
-2020-11-11 15:07:44.066  INFO 93577 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-11 15:07:44.314  INFO 93577 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 15:07:44.408  INFO 93577 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 15:07:44.603  WARN 93577 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-11-11 15:07:44.655  INFO 93577 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-11-11 15:07:44.656  INFO 93577 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-11-11 15:07:44.657  INFO 93577 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-11-11 15:07:44.658  INFO 93577 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-11-11 15:07:45.019  INFO 93577 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2020-11-11 15:07:45.237  INFO 93577 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 15:07:45.239  INFO 93577 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-11 15:07:45.265  INFO 93577 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-11 15:07:45.304  INFO 93577 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-11 15:07:45.485  INFO 93577 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-11-11 15:07:45.489  INFO 93577 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-11-11 15:07:45.600  INFO 93577 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Started ClairvoyanceApplication in 9.02 seconds (JVM running for 10.945)
-2020-11-11 15:09:06.490  INFO 93577 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-11 15:09:06.491  INFO 93577 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-11 15:09:06.640  INFO 93577 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 122 ms
-2020-11-11 15:09:35.594  INFO 93577 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-11 15:09:35.597  WARN 93577 --- [http-nio-8080-exec-6] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2020-11-11 15:09:35.949  INFO 93577 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-11 15:10:05.652  INFO 93577 --- [http-nio-8080-exec-6] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: false
-2020-11-11 15:10:05.652  INFO 93577 --- [http-nio-8080-exec-6] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
-2020-11-11 15:10:05.652  INFO 93577 --- [http-nio-8080-exec-6] c.c.c.shiro.CustomAccessControlFilter    : GET
-2020-11-11 15:10:05.653  INFO 93577 --- [http-nio-8080-exec-6] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
-2020-11-11 15:10:10.903  INFO 93577 --- [http-nio-8080-exec-4] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
-2020-11-11 15:10:10.903  INFO 93577 --- [http-nio-8080-exec-4] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
-2020-11-11 15:10:10.903  INFO 93577 --- [http-nio-8080-exec-4] c.c.c.shiro.CustomAccessControlFilter    : GET
-2020-11-11 15:10:10.903  INFO 93577 --- [http-nio-8080-exec-4] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
-2020-11-11 15:10:15.167  INFO 93577 --- [http-nio-8080-exec-10] c.c.c.service.impl.UserServiceImpl       : subject.getPrincipals()=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2YmZlMzAxYS1mNjNhLTQ3ZjAtODk3Zi1hNTIzZTlhMTEzOTciLCJpc3MiOiJjbGFpcnZveWFuY2UiLCJqd3QtdXNlci1uYW1lLWtleSI6Ikphc29uIiwiZXhwIjoxNjA1MDg1ODA0LCJpYXQiOjE2MDUwNzg2MDR9.f_yEXuJMXrvlIO7Oq45Xg3HzwBOwB89Im20b28kg8po
-2020-11-11 15:10:15.168  INFO 93577 --- [http-nio-8080-exec-10] com.cav.clairvoyance.shiro.RedisCache    : remove key [eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2YmZlMzAxYS1mNjNhLTQ3ZjAtODk3Zi1hNTIzZTlhMTEzOTciLCJpc3MiOiJjbGFpcnZveWFuY2UiLCJqd3QtdXNlci1uYW1lLWtleSI6Ikphc29uIiwiZXhwIjoxNjA1MDg1ODA0LCJpYXQiOjE2MDUwNzg2MDR9.f_yEXuJMXrvlIO7Oq45Xg3HzwBOwB89Im20b28kg8po]
-2020-11-11 15:10:28.467  INFO 93577 --- [http-nio-8080-exec-8] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: false
-2020-11-11 15:10:28.468  INFO 93577 --- [http-nio-8080-exec-8] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
-2020-11-11 15:10:28.468  INFO 93577 --- [http-nio-8080-exec-8] c.c.c.shiro.CustomAccessControlFilter    : GET
-2020-11-11 15:10:28.468  INFO 93577 --- [http-nio-8080-exec-8] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
-2020-11-11 15:10:58.187  INFO 93577 --- [http-nio-8080-exec-8] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
-2020-11-11 15:10:58.188  INFO 93577 --- [http-nio-8080-exec-8] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
-2020-11-11 15:10:58.188  INFO 93577 --- [http-nio-8080-exec-8] c.c.c.shiro.CustomAccessControlFilter    : GET
-2020-11-11 15:10:58.188  INFO 93577 --- [http-nio-8080-exec-8] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
-2020-11-11 15:11:16.994  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
-2020-11-11 15:11:16.994  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
-2020-11-11 15:11:16.994  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : GET
-2020-11-11 15:11:16.994  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
-2020-11-11 15:11:48.742  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
-2020-11-11 15:11:48.742  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
-2020-11-11 15:11:48.742  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : GET
-2020-11-11 15:11:48.742  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
-2020-11-11 15:11:54.168  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
-2020-11-11 15:11:54.168  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
-2020-11-11 15:11:54.168  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : GET
-2020-11-11 15:11:54.169  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
-2020-11-11 15:25:27.441  INFO 93577 --- [http-nio-8080-exec-7] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
-2020-11-11 15:25:27.442  INFO 93577 --- [http-nio-8080-exec-7] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
-2020-11-11 15:25:27.443  INFO 93577 --- [http-nio-8080-exec-7] c.c.c.shiro.CustomAccessControlFilter    : GET
-2020-11-11 15:25:27.443  INFO 93577 --- [http-nio-8080-exec-7] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
-2020-11-11 15:25:38.920  INFO 93577 --- [http-nio-8080-exec-2] c.c.c.service.impl.UserServiceImpl       : subject.getPrincipals()=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2YmZlMzAxYS1mNjNhLTQ3ZjAtODk3Zi1hNTIzZTlhMTEzOTciLCJpc3MiOiJjbGFpcnZveWFuY2UiLCJqd3QtdXNlci1uYW1lLWtleSI6Ikphc29uIiwiZXhwIjoxNjA1MDg1ODI3LCJpYXQiOjE2MDUwNzg2Mjd9.02ULsc93_zXsA003K86bz4WQ56MZN1PDckbDwCs4jwA
-2020-11-11 15:25:38.921  INFO 93577 --- [http-nio-8080-exec-2] com.cav.clairvoyance.shiro.RedisCache    : remove key [eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2YmZlMzAxYS1mNjNhLTQ3ZjAtODk3Zi1hNTIzZTlhMTEzOTciLCJpc3MiOiJjbGFpcnZveWFuY2UiLCJqd3QtdXNlci1uYW1lLWtleSI6Ikphc29uIiwiZXhwIjoxNjA1MDg1ODI3LCJpYXQiOjE2MDUwNzg2Mjd9.02ULsc93_zXsA003K86bz4WQ56MZN1PDckbDwCs4jwA]
-2020-11-11 15:34:13.996  INFO 93577 --- [http-nio-8080-exec-5] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: false
-2020-11-11 15:34:13.998  INFO 93577 --- [http-nio-8080-exec-5] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
-2020-11-11 15:34:13.998  INFO 93577 --- [http-nio-8080-exec-5] c.c.c.shiro.CustomAccessControlFilter    : GET
-2020-11-11 15:34:13.998  INFO 93577 --- [http-nio-8080-exec-5] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
-2020-11-11 15:34:17.554  INFO 93577 --- [http-nio-8080-exec-3] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
-2020-11-11 15:34:17.554  INFO 93577 --- [http-nio-8080-exec-3] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
-2020-11-11 15:34:17.554  INFO 93577 --- [http-nio-8080-exec-3] c.c.c.shiro.CustomAccessControlFilter    : GET
-2020-11-11 15:34:17.554  INFO 93577 --- [http-nio-8080-exec-3] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
-2020-11-11 15:34:53.905  INFO 93577 --- [http-nio-8080-exec-6] c.c.c.service.impl.UserServiceImpl       : subject.getPrincipals()=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2YmZlMzAxYS1mNjNhLTQ3ZjAtODk3Zi1hNTIzZTlhMTEzOTciLCJpc3MiOiJjbGFpcnZveWFuY2UiLCJqd3QtdXNlci1uYW1lLWtleSI6Ikphc29uIiwiZXhwIjoxNjA1MDg3MjUyLCJpYXQiOjE2MDUwODAwNTJ9.j5L4YWSrlDO28Q9nVOyNKCPYBhSismzLRKSLxnub124
-2020-11-11 15:34:53.905  INFO 93577 --- [http-nio-8080-exec-6] com.cav.clairvoyance.shiro.RedisCache    : remove key [eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2YmZlMzAxYS1mNjNhLTQ3ZjAtODk3Zi1hNTIzZTlhMTEzOTciLCJpc3MiOiJjbGFpcnZveWFuY2UiLCJqd3QtdXNlci1uYW1lLWtleSI6Ikphc29uIiwiZXhwIjoxNjA1MDg3MjUyLCJpYXQiOjE2MDUwODAwNTJ9.j5L4YWSrlDO28Q9nVOyNKCPYBhSismzLRKSLxnub124]
-2020-11-11 15:55:36.488  INFO 93577 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
-2020-11-11 15:55:36.497  INFO 93577 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-11 15:55:36.501  INFO 93577 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-11-11 15:55:36.509  INFO 93577 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2020-11-11 17:39:48.652  INFO 94658 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MacBook-Pro.local with PID 94658 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
-2020-11-11 17:39:48.658 DEBUG 94658 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-11-11 17:39:48.659  INFO 94658 --- [restartedMain] c.c.c.ClairvoyanceApplication            : No active profile set, falling back to default profiles: default
-2020-11-11 17:39:48.789  INFO 94658 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-11 17:39:48.790  INFO 94658 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-11 17:39:50.807  INFO 94658 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-11 17:39:50.811  INFO 94658 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-11 17:39:50.874  INFO 94658 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35ms. Found 0 Redis repository interfaces.
-2020-11-11 17:39:51.594  WARN 94658 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
-2020-11-11 17:39:52.007  INFO 94658 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.cav.clairvoyance.config.ShiroConfig$$EnhancerBySpringCGLIB$$a47f4d63] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 17:39:52.409  INFO 94658 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.cav.clairvoyance.config.RedisConfig$$EnhancerBySpringCGLIB$$ef4dd4ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 17:39:52.440  INFO 94658 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 17:39:52.444  INFO 94658 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 17:39:52.588  INFO 94658 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 17:39:52.770  INFO 94658 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 17:39:52.872  INFO 94658 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 17:39:52.874  INFO 94658 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisServiceImpl' of type [com.cav.clairvoyance.service.impl.RedisServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 17:39:52.874  INFO 94658 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'customHashedCredentialsMatcher' of type [com.cav.clairvoyance.shiro.CustomHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 17:39:52.877  INFO 94658 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisCacheManager' of type [com.cav.clairvoyance.shiro.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 17:39:52.881  INFO 94658 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'customRealm' of type [com.cav.clairvoyance.shiro.CustomRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 17:39:52.886  INFO 94658 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 17:39:52.945  INFO 94658 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-11 17:39:53.762  INFO 94658 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-11 17:39:53.776  INFO 94658 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-11 17:39:53.777  INFO 94658 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-11-11 17:39:54.010  INFO 94658 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-11 17:39:54.011  INFO 94658 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5220 ms
-2020-11-11 17:39:56.460  INFO 94658 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-11 17:39:56.743  INFO 94658 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-11 17:39:56.841  INFO 94658 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-11 17:39:57.092  WARN 94658 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-11-11 17:39:57.159  INFO 94658 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-11-11 17:39:57.160  INFO 94658 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-11-11 17:39:57.161  INFO 94658 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-11-11 17:39:57.161  INFO 94658 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-11-11 17:39:57.440  INFO 94658 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2020-11-11 17:39:57.658  INFO 94658 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-11 17:39:57.663  INFO 94658 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-11 17:39:57.699  INFO 94658 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-11 17:39:57.743  INFO 94658 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-11 17:39:57.984  INFO 94658 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
-2020-11-11 17:39:57.986  INFO 94658 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
-2020-11-11 17:39:58.087  INFO 94658 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Started ClairvoyanceApplication in 10.598 seconds (JVM running for 12.665)
-2020-11-11 17:41:32.227  INFO 94658 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-11 17:41:32.230  INFO 94658 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-11 17:41:32.319  INFO 94658 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 89 ms
-2020-11-11 22:23:06.335  INFO 94658 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
-2020-11-11 22:23:06.338  INFO 94658 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-16 15:20:08.691  INFO 2501 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MacBook-Pro.local with PID 2501 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
+2020-11-16 15:20:08.697 DEBUG 2501 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-11-16 15:20:08.698  INFO 2501 --- [restartedMain] c.c.c.ClairvoyanceApplication            : The following profiles are active: dev
+2020-11-16 15:20:08.915  INFO 2501 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-16 15:20:08.916  INFO 2501 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-16 15:20:10.211  INFO 2501 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-16 15:20:10.216  INFO 2501 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-16 15:20:10.311  INFO 2501 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59ms. Found 0 Redis repository interfaces.
+2020-11-16 15:20:10.536  WARN 2501 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-11-16 15:20:10.684  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.cav.clairvoyance.config.ShiroConfig$$EnhancerBySpringCGLIB$$25c16d41] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:20:11.039  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.cav.clairvoyance.config.RedisConfig$$EnhancerBySpringCGLIB$$708ff48b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:20:11.061  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:20:11.064  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:20:11.195  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:20:11.337  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:20:11.444  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:20:11.445  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisServiceImpl' of type [com.cav.clairvoyance.service.impl.RedisServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:20:11.446  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'customHashedCredentialsMatcher' of type [com.cav.clairvoyance.shiro.CustomHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:20:11.449  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisCacheManager' of type [com.cav.clairvoyance.shiro.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:20:11.454  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'customRealm' of type [com.cav.clairvoyance.shiro.CustomRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:20:11.458  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:20:11.499  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:20:11.963  INFO 2501 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-16 15:20:12.101  INFO 2501 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-16 15:20:12.102  INFO 2501 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-16 15:20:12.195  INFO 2501 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-16 15:20:12.196  INFO 2501 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3280 ms
+2020-11-16 15:20:13.605  INFO 2501 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-16 15:20:13.895  INFO 2501 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-16 15:20:13.979  INFO 2501 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-16 15:20:14.150  WARN 2501 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-16 15:20:14.194  INFO 2501 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-16 15:20:14.195  INFO 2501 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-16 15:20:14.195  INFO 2501 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-16 15:20:14.196  INFO 2501 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-11-16 15:20:14.410  INFO 2501 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-11-16 15:20:14.599  INFO 2501 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-16 15:20:14.602  INFO 2501 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-16 15:20:14.628  INFO 2501 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-16 15:20:14.672  INFO 2501 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-16 15:20:14.833  INFO 2501 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-11-16 15:20:14.837  INFO 2501 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-11-16 15:20:14.934  INFO 2501 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Started ClairvoyanceApplication in 7.388 seconds (JVM running for 9.678)
+2020-11-16 15:21:04.945  INFO 2501 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-16 15:21:04.945  INFO 2501 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-16 15:21:04.963  INFO 2501 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-11-16 15:21:19.632  INFO 2501 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-16 15:21:19.637  WARN 2501 --- [http-nio-8080-exec-8] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-11-16 15:21:19.894  INFO 2501 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-16 15:21:20.813  INFO 2501 --- [http-nio-8080-exec-7] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: false
+2020-11-16 15:21:20.814  INFO 2501 --- [http-nio-8080-exec-7] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
+2020-11-16 15:21:20.815  INFO 2501 --- [http-nio-8080-exec-7] c.c.c.shiro.CustomAccessControlFilter    : GET
+2020-11-16 15:21:20.816  INFO 2501 --- [http-nio-8080-exec-7] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
+2020-11-16 15:29:06.295  INFO 2501 --- [Thread-18] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-11-16 15:29:06.297  INFO 2501 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-16 15:29:06.300  INFO 2501 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-16 15:29:06.312  INFO 2501 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-16 15:30:00.976  INFO 2501 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MacBook-Pro.local with PID 2501 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
+2020-11-16 15:30:00.977  INFO 2501 --- [restartedMain] c.c.c.ClairvoyanceApplication            : The following profiles are active: prod
+2020-11-16 15:30:01.195  WARN 2501 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance.mapper]' package. Please check your configuration.
+2020-11-16 15:30:01.240  WARN 2501 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-11-16 15:30:01.270  INFO 2501 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-16 15:30:01.271  INFO 2501 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-16 15:30:01.278  INFO 2501 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 Redis repository interfaces.
+2020-11-16 15:30:01.428  WARN 2501 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-11-16 15:30:01.634  INFO 2501 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-16 15:30:01.636  INFO 2501 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-16 15:30:01.636  INFO 2501 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-16 15:30:01.668  INFO 2501 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-11-16 15:30:01.668  INFO 2501 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 686 ms
+2020-11-16 15:30:01.844  INFO 2501 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-16 15:30:01.931  WARN 2501 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-16 15:30:01.972  INFO 2501 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-16 15:30:01.972  INFO 2501 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-16 15:30:01.972  INFO 2501 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-16 15:30:01.973  INFO 2501 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-11-16 15:30:02.155  INFO 2501 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-11-16 15:30:02.217  INFO 2501 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-16 15:30:02.249  INFO 2501 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-16 15:30:02.265  INFO 2501 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Started ClairvoyanceApplication in 1.362 seconds (JVM running for 597.006)
+2020-11-16 15:30:02.275  INFO 2501 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   MapperAutoConfiguration.MapperScannerRegistrarNotFoundConfiguration matched:
+      - @ConditionalOnMissingBean (types: tk.mybatis.spring.mapper.MapperFactoryBean; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RedisAutoConfiguration#redisTemplate matched:
+      - @ConditionalOnMissingBean (names: redisTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-11-16 15:30:07.779  INFO 2501 --- [Thread-27] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-11-16 15:30:07.784  INFO 2501 --- [Thread-27] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-16 15:30:08.098  INFO 2501 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Starting ClairvoyanceApplication on JasonGaos-MacBook-Pro.local with PID 2501 (/Users/jason/develop/clairvoyance-service/clairvoyance/target/classes started by jason in /Users/jason/develop/clairvoyance-service)
+2020-11-16 15:30:08.100  INFO 2501 --- [restartedMain] c.c.c.ClairvoyanceApplication            : The following profiles are active: prod
+2020-11-16 15:30:08.774  INFO 2501 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-16 15:30:08.774  INFO 2501 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-16 15:30:08.801  INFO 2501 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2020-11-16 15:30:08.863  WARN 2501 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cav.clairvoyance]' package. Please check your configuration.
+2020-11-16 15:30:08.918  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.cav.clairvoyance.config.ShiroConfig$$EnhancerBySpringCGLIB$$25c16d41] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:30:08.936  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.cav.clairvoyance.config.RedisConfig$$EnhancerBySpringCGLIB$$708ff48b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:30:08.949  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:30:08.953  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:30:08.959  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:30:08.961  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:30:08.974  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:30:08.975  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisServiceImpl' of type [com.cav.clairvoyance.service.impl.RedisServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:30:08.975  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'customHashedCredentialsMatcher' of type [com.cav.clairvoyance.shiro.CustomHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:30:08.978  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisCacheManager' of type [com.cav.clairvoyance.shiro.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:30:08.986  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'customRealm' of type [com.cav.clairvoyance.shiro.CustomRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:30:08.990  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:30:09.006  INFO 2501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-16 15:30:09.286  INFO 2501 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-16 15:30:09.288  INFO 2501 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-16 15:30:09.289  INFO 2501 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-16 15:30:09.309  INFO 2501 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-11-16 15:30:09.309  INFO 2501 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1203 ms
+2020-11-16 15:30:10.467  INFO 2501 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-16 15:30:10.874  INFO 2501 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-16 15:30:10.948  INFO 2501 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-16 15:30:11.176  WARN 2501 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-16 15:30:11.253  INFO 2501 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-16 15:30:11.259  INFO 2501 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-16 15:30:11.259  INFO 2501 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-16 15:30:11.259  INFO 2501 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-11-16 15:30:11.537  INFO 2501 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-11-16 15:30:11.722  INFO 2501 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-16 15:30:11.725  INFO 2501 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-16 15:30:11.751  INFO 2501 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-16 15:30:11.775  INFO 2501 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-16 15:30:11.850  INFO 2501 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_1
+2020-11-16 15:30:11.853  INFO 2501 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: codeTestUsingGET_2
+2020-11-16 15:30:12.025  INFO 2501 --- [restartedMain] c.c.c.ClairvoyanceApplication            : Started ClairvoyanceApplication in 3.998 seconds (JVM running for 606.766)
+2020-11-16 15:30:12.034  INFO 2501 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ShiroConfig#defaultAdvisorAutoProxyCreator matched:
+      - @ConditionalOnMissingBean (types: org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   Swagger2DocumentationConfiguration matched:
+      - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+
+
+Negative matches:
+-----------------
+
+   MapperAutoConfiguration.MapperScannerRegistrarNotFoundConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: tk.mybatis.spring.mapper.MapperFactoryBean; SearchStrategy: all) found beans of type 'tk.mybatis.spring.mapper.MapperFactoryBean' &recordMapper, &roleMapper, &userMapper (OnBeanCondition)
+
+   RedisAutoConfiguration#redisTemplate:
+      Did not match:
+         - @ConditionalOnMissingBean (names: redisTemplate; SearchStrategy: all) found beans named redisTemplate (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-11-16 15:47:53.090  INFO 2501 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-16 15:47:53.094  INFO 2501 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-16 15:47:53.107  INFO 2501 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-11-16 15:47:55.753  INFO 2501 --- [http-nio-8080-exec-1] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
+2020-11-16 15:47:55.754  INFO 2501 --- [http-nio-8080-exec-1] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
+2020-11-16 15:47:55.755  INFO 2501 --- [http-nio-8080-exec-1] c.c.c.shiro.CustomAccessControlFilter    : GET
+2020-11-16 15:47:55.755  INFO 2501 --- [http-nio-8080-exec-1] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
+2020-11-16 15:47:55.896  INFO 2501 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-11-16 15:47:55.897  WARN 2501 --- [http-nio-8080-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-11-16 15:47:56.125  INFO 2501 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-11-16 15:47:58.761  INFO 2501 --- [http-nio-8080-exec-6] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
+2020-11-16 15:47:58.761  INFO 2501 --- [http-nio-8080-exec-6] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
+2020-11-16 15:47:58.761  INFO 2501 --- [http-nio-8080-exec-6] c.c.c.shiro.CustomAccessControlFilter    : GET
+2020-11-16 15:47:58.761  INFO 2501 --- [http-nio-8080-exec-6] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
+2020-11-16 15:48:24.623  INFO 2501 --- [http-nio-8080-exec-4] c.c.c.shiro.CustomAccessControlFilter    : isAuthenticated: true
+2020-11-16 15:48:24.623  INFO 2501 --- [http-nio-8080-exec-4] c.c.c.shiro.CustomAccessControlFilter    : isAjaxRequest: true
+2020-11-16 15:48:24.623  INFO 2501 --- [http-nio-8080-exec-4] c.c.c.shiro.CustomAccessControlFilter    : GET
+2020-11-16 15:48:24.623  INFO 2501 --- [http-nio-8080-exec-4] c.c.c.shiro.CustomAccessControlFilter    : http://localhost:8080/user
+2020-11-16 15:48:31.590  INFO 2501 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-11-16 15:48:31.591  INFO 2501 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-16 15:48:31.593  INFO 2501 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-11-16 15:48:31.599  INFO 2501 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
