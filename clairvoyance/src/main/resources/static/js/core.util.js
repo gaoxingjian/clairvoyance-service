@@ -4,7 +4,7 @@ var CoreUtil = (function () {
     var coreUtil = {};
     /*ajax请求*/
     coreUtil.sendAjax = function (url, params, ft, method, headers, noAuthorityFt, contentType, async) {
-        var roleSaveLoading = top.layer.msg('数据提交中，请稍候', {icon: 16, time: false, shade: 0.8});
+        var roleSaveLoading = top.layer.msg('Data submission, please wait', {icon: 16, time: false, shade: 0.8});
         $.ajax({
             url: url,
             cache: false,
@@ -28,7 +28,7 @@ var CoreUtil = (function () {
                 top.layer.close(roleSaveLoading);
                 if (typeof ft == "function") {
                     if (res.code == 401001) { //凭证过期重新登录
-                        layer.msg("凭证过期请重新登录")
+                        layer.msg("Certificate expired, please login again")
                         CoreUtil.clearData();
                         top.window.location.href = "/login"
                     } else if (res.code == 401002) {  //根据后端提示刷新token
@@ -48,7 +48,7 @@ var CoreUtil = (function () {
                                 /*刷新成功后继续重复请求*/
                                 CoreUtil.sendAjax(reUrl, reParams, reFt, reMethod, reHeaders, reNoAuthorityFt, reContentType, reAsync);
                             } else {
-                                layer.msg("凭证过期请重新登录");
+                                layer.msg("Certificate expired, please login again");
                                 top.window.location.href = "/login"
                             }
                         }, "GET", true)
@@ -73,7 +73,7 @@ var CoreUtil = (function () {
                 if (XMLHttpRequest.status == 404) {
                     top.window.location.href = "/404";
                 } else {
-                    layer.msg("服务器好像除了点问题！请稍后试试");
+                    layer.msg("There seems to be something wrong with the server! Please try later");
                 }
             }
         });

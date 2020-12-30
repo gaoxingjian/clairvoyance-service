@@ -29,23 +29,23 @@
         <h2 class="form-register-heading">Create Your Account</h2>
         <br>
         <div class="item">
-            <label for="username" class="item-label">用户名:</label>
-            <input type="text" id="username" name="username" class="item-text" placeholder="设置用户名"
-                   autocomplete="off" tip="请输入用户名">
+            <label for="username" class="item-label">Username:</label>
+            <input type="text" id="username" name="username" class="item-text" placeholder="Set username"
+                   autocomplete="off" tip="Please enter your username">
         </div>
         <div class="item">
-            <label for="password" class="item-label">密码:</label>
+            <label for="password" class="item-label">Password:</label>
             <input type="password" id="password" name="password" class="item-text"
-                   placeholder="设置密码" tip="长度为3-16个字符">
+                   placeholder="Set password" tip="The length is 3-16 characters">
         </div>
         <div class="item">
-            <label for="password" class="item-label">确认密码:</label>
-            <input type="password" name="confirm_password" class="item-text" placeholder="设置确认密码" tip="请再次输入密码">
+            <label for="password" class="item-label">Confirm:</label>
+            <input type="password" name="confirm_password" class="item-text" placeholder="Set confirm password" tip="Please enter the password again">
         </div>
         <div class="item">
-            <label for="semail" class="item-label">邮箱:</label>
-            <input type="text" id="semail" name="email" class="item-text" placeholder="设置邮箱"
-                   autocomplete="off" tip="请输入邮箱">
+            <label for="semail" class="item-label">Email:</label>
+            <input type="text" id="semail" name="email" class="item-text" placeholder="Set email"
+                   autocomplete="off" tip="Please enter your email">
         </div>
         <!-- <div class="item">
             <label for="simage" class="item-label">头像:</label>
@@ -54,7 +54,7 @@
         <!-- <button class="btn btn-block" href="index.html" type="submit"><i class="fa fa-angle-double-right"></i>&nbsp; &nbsp;&nbsp;&nbsp;   提 &nbsp;&nbsp; 交&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-left"></i></button> -->
         <div>
             <button class="btn btn-theme item-submit"  ><i
-                    class="fa fa-angle-double-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;提 &nbsp;&nbsp; 交&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                    class="fa fa-angle-double-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;Submit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
                     class="fa fa-angle-double-left"></i></button>
         </div>
         <br>
@@ -64,7 +64,7 @@
         <div class="login-social-link centered ">
             <div class="registration">
                 <a href="/login">
-                    <u> 登&nbsp;&nbsp;&nbsp;录</u>
+                    <u> Login</u>
                 </a>
             </div>
             <br>
@@ -123,7 +123,7 @@
             submitHandler: function () {
                 let data = CoreUtil.formJson("registerform");
                 CoreUtil.sendAjax("/user/register", data, function (res) {
-                    layer.msg("注册成功，3秒后自动跳转到登录界面");
+                    layer.msg("Register successfully, 3 seconds later automatically jump to the login interface");
                     setTimeout(function () {
                         window.location.href = "/login";
                     }, 3000)
@@ -151,21 +151,21 @@
             },
             messages: {
                 username: {
-                    required: "请输入用户名",
-                    rangelength: $.validator.format("用户名长度为{0}-{1}个字符"),
-                    remote: "该用户名已存在！"
+                    required: "Please enter your username",
+                    rangelength: $.validator.format("The length of the username is {0}-{1} characters"),
+                    remote: "The username already exists!"
                 },
                 password: {
-                    required: "请输入密码",
-                    rangelength: $.validator.format("密码长度为{0}-{1}个字符")
+                    required: "Please enter your password",
+                    rangelength: $.validator.format("The length of the password is {0} - {1} characters")
                 },
                 confirm_password: {
-                    required: "请再次输入密码",
-                    equalTo: "两次密码必须一致" //表示和id="spass"的值相同
+                    required: "Please enter your password again",
+                    equalTo: "The two passwords must be the same" //表示和id="spass"的值相同
                 },
                 email: {
-                    required: "请填写邮件",
-                    email: "邮箱格式不正确"
+                    required: "Please enter your email",
+                    email: "E-mail format is not correct"
                 }
 
             }

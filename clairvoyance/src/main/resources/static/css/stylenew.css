@@ -1960,7 +1960,7 @@ label {
 
 
 .form-register {
-	max-width: 550px;
+	max-width: 400px;
 	margin: 120px auto 0;
 	background: #fff;
 	border-radius: 5px;
@@ -2135,7 +2135,7 @@ label {
     /* Safari and Chrome */
     .panel-footer.revenue-foot {
         margin-bottom: -4px;
-    };
+    }
     }
 
 

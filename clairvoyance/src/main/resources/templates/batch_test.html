@@ -87,7 +87,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <li>
                     <a href="/batch" class="waves-effect active" >
                         <i class="fa fa-file-archive-o fa-fw" aria-hidden="true"></i>
-                        <span>Batch test</span></a>
+                        <span>Batch Test</span></a>
                 </li>
                 <li>
                     <a href="https://toolman-demo.readthedocs.io/en/latest/index.html." class="waves-effect">
@@ -117,22 +117,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                    style="visibility: hidden" data-multiple-caption="{count} files selected" multiple
                                    onchange="filefujianChange(this);"/>
                             <label for="fileup">
-                                <span>选择文件</span></label>
+                                <span>Select File</span></label>
 
                             <br>
-                            <button id="upload" class="myButtonnew" type="button">上传文件</button>
+                            <button id="upload" class="myButtonnew" type="button">Upload File</button>
                         </form>
                     </div>
                     <div class="row bg-title" style="margin-top:10px ">
                         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                            <button id="anlyse_btn" type="button" class="myButtonnew" data-id="">开始检测该文件</button>
+                            <button id="anlyse_btn" type="button" class="myButtonnew" data-id="">Start Detecting the File</button>
                         </div>
                         <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
 
                             <ol class="breadcrumb">
                                 <li>
                                     <button type="button" class="myButtonnew" style="visibility: hidden" id="download"
-                                            data-id="">下载检测报告
+                                            data-id="">Download Test Report
                                     </button>
                                 </li>
                             </ol>
@@ -174,7 +174,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     $("#upload").click(function () {
 
         if($('#fileup').val()=="") {
-            layer.msg("请选择文件")
+            layer.msg("Please select file")
             return
         }
         NProgress.start();
@@ -188,7 +188,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             success: function (res) {
                 NProgress.done();
                 if (res.code == 0) {
-                    layer.msg("上传成功");
+                    layer.msg("Upload succeeded");
                     $("#anlyse_btn").attr('data-id', res.data);
                 } else {
                     layer.msg(res.msg);
@@ -202,7 +202,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     $("#anlyse_btn").click(function () {
         let id = $("#anlyse_btn").attr('data-id');
         if (id == "" || $('#fileup').val()=="") {
-            layer.msg("请上先传待测文件");
+            layer.msg("Please upload the file to be detected");
             return;
         }
         NProgress.start();
@@ -213,7 +213,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             success: function (res) {
                 NProgress.done();
                 if (res.code == 0) {
-                    layer.msg("检测完毕");
+                    layer.msg("Detection complete");
                     $("#download").attr('data-id', res.data);
                     document.getElementById("download").setAttribute("style", "visibility: visible");
                 }
@@ -309,12 +309,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
         }
         var size = fileSize / 1024;console.log(size);
         if (size > 100000) {
-            layer.msg("上传的文件不能大于100M");
+            layer.msg("The uploaded file cannot be larger than 100MB");
             target.value = "";
             return
         } else if(size > 100) {
             if(!CoreUtil.getData("access_token")) {
-                layer.msg("上传的文件大于100KB,请登录")
+                layer.msg("The uploaded file is larger than 100KB, please login")
                 target.value = "";
                 setTimeout(function () {
                     window.location.href = "/login"
@@ -325,7 +325,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         var name = target.value;
         var fileName = name.substring(name.lastIndexOf(".") + 1).toLowerCase();
         if (fileName != "sol" && fileName != "zip") {
-            layer.msg("请选择sol或者zip格式文件上传!");
+            layer.msg("Please choose sol or zip format file to upload!");
             target.value = "";
             return
         }
