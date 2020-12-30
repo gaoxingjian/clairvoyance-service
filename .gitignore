@@ -4,6 +4,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### SpringBoot
+application-prod.yml
+
 ### MacOS
 .DS_Store
 .DS_Store?
