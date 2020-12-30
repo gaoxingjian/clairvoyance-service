@@ -15,7 +15,9 @@ Clairvoyance是一个智能合约重入代码检测平台，主要有以下功�
 9. 注册
 
 #### 演示
-[观看演示视频](https://www.bilibili.com/video/BV1Nv411r7kh) 
+
+- [在线演示](http://47.100.164.141:8080/)
+- [观看演示视频](https://www.bilibili.com/video/BV1Nv411r7kh) 
 
 #### 架构
 
@@ -33,12 +35,14 @@ Clairvoyance是一个智能合约重入代码检测平台，主要有以下功�
 
 #### **部署**
 
+- 启动mysql
 - 创建clairvoyance数据库
 - 导入clairvoyance.sql
 - 启动redis
 - 修改application.yml中mysql、redis、合约仓库路径、检测超时时间、检测模式、检测指令等配置信息
 - 安装检测指令对应的检测工具
 - 启动项目
+- 服务器端防止内存溢出可以这样部署：`nohup java -Xms1024m -Xmx1024m -Xss1024K -XX:PermSize=128m -XX:MaxPermSize=256m -jar clairvoyance-0.0.1-SNAPSHOT.jar &`
 - 项目访问地址http://localhost:8080
 - 接口文档访问 http://localhost:8080/swagger-ui.html
 - Code Test http://localhost:8080/code
