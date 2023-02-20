@@ -5,7 +5,10 @@ target/
 !**/src/test/**/target/
 
 ### SpringBoot
-application-prod.yml
+ application-prod.yml
+
+###
+logs/
 
 ### MacOS
 .DS_Store

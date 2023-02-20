@@ -1,0 +1,12 @@
+Process finished with exit code 0
+Start Contract Reentrance
+	To analyze: Reentrance.donate(address)
+		CFG analysis is safe, so start analyzing XCFG
+	To analyze: Reentrance.balanceOf(address)
+		CFG analysis is safe, so start analyzing XCFG
+	To analyze: Reentrance.withdraw(uint256)
+		contract: Reentrance | function: withdraw(uint256) | private: False | Execution Locks and Eth money balance modification: False
+			path: ['entryPoint', 'balances[msg.sender] >= _amount', 'msg.sender.call.value(_amount)()']
+[cfg_Reentrancy in] contract: Reentrance . function: withdraw(uint256) | ../../files/contract-repository/contracts/2020-10-23/6b403282e2664f40bba9a4f1a899ffb920201023193332.sol#15-22
+	To analyze: Reentrance.fallback()
+		CFG analysis is safe, so start analyzing XCFG
